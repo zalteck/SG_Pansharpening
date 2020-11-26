@@ -12,7 +12,7 @@ Directories:
         These implementations have been taken from https://rscl-grss.org/coderecord.php?id=541, used in
 
        Vivone, G.; Alparone, L.; Chanussot, J.; Dalla Mura, M.; Garzelli, A.; Licciardi, G.A.; Restaino, R.; Wald, L. 
-        A critical comparison among pansharpening algorithms. IEEE Trans. Geosci. Remote Sens. 2015, 53, 2565â€“2586.
+        A critical comparison among pansharpening algorithms. IEEE Trans. Geosci. Remote Sens. 2015, 53, 2565-2586.
 
     source
         This directory holds implementations for the methods proposed in papers
@@ -21,7 +21,7 @@ Directories:
             Variational Bayesian Pansharpening with Super-Gaussian Sparse Image Priors. Sensors, 20(18), 5308. 
 
             M. Vega, J. Mateos, R. Molina, and A. K. Katsaggelos, â€œSuper resolution of multispectral images using TV image models, 
-            in International Conference on Knowledge-Based and Intelligent Information and Engineering Systems, 2008, pp. 408â€“415.
+            in International Conference on Knowledge-Based and Intelligent Information and Engineering Systems, 2008, pp. 408-415.
    
     work
         This directory holds functions and scripts to perform all experiments in Pérez-Bueno, F. 2020 paper.
