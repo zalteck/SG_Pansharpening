@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Revision: 1.4.4.17 $  $Date: 2012/07/01 03:38:43 $ -->
+<demos>
+   <name>Wavelet</name>
+   <type>toolbox</type>
+   <icon>$toolbox/matlab/icons/matlabicon.gif</icon>
+   <description isCdata="no">
+<p>Wavelet Toolbox&#8482; software extends the MATLAB&#174; technical computing environment with graphical tools and command-line functions for developing wavelet-based algorithms for the analysis, synthesis, denoising, and compression of signals and images. Wavelet analysis provides more precise information about signal data than other signal analysis techniques, such as Fourier. The Wavelet Toolbox supports the interactive exploration of wavelet properties and applications. It is useful for speech and audio processing, image and video processing, biomedical imaging, and 1-D and 2-D applications in communications and geophysics. </p>
+   </description>
+   <demosection>
+       <label>Tutorials: 1-D</label>
+       <demoitem>
+         <label>Continuous Wavelet 1-D</label>
+         <type>M-GUI</type>
+         <source>dguicw1d</source>
+       </demoitem>
+       <demoitem>
+           <label>Continuous Wavelet 1-D (Complex)</label>
+           <type>M-GUI</type>
+           <source>dguicwim</source>
+       </demoitem>
+       <demoitem>
+           <label>Signal Reconstruction from Continuous Wavelet Transform Coefficients</label>
+           <type>M-file</type>
+           <source>cwtftdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Detecting Self-Similarity</label>
+           <type>M-file</type>
+           <source>selfsimidemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet 1-D</label>
+           <type>M-GUI</type>
+           <source>dguidw1d</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Coefficients 1-D</label>
+           <type>M-GUI</type>
+           <source>dguicf1d</source>
+       </demoitem>
+       <demoitem>
+           <label>Continuous and Discrete Wavelet Analysis</label>
+           <type>M-file</type>
+           <source>cwtdwtdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Stationary Wavelet 1-D</label>
+           <type>M-GUI</type>
+           <source>dguisw1d</source>
+       </demoitem>
+       <demoitem>
+           <label>Multisignal 1-D Wavelet Analysis</label>
+           <type>M-file</type>
+           <source>mdw1dcmddemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Coherence</label>
+           <type>M-file</type>
+           <source>wcoherdemo</source>
+       </demoitem>
+   </demosection>
+   <demosection>
+       <label>Tutorials: 2-D and 3-D</label>
+       <demoitem>
+           <label>Wavelet 2-D</label>
+           <type>M-GUI</type>
+           <source>dguidw2d</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Coefficients 2-D</label>
+           <type>M-GUI</type>
+           <source>dguicf2d</source>
+       </demoitem>
+       <demoitem>
+           <label>Stationary Wavelet 2-D</label>
+           <type>M-GUI</type>
+           <source>dguisw2d</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Analysis for 3D Data</label>
+           <type>M-file</type>
+           <source>wavelet3ddemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Detecting Discontinuities and Breakdown Points</label>
+           <type>M-file</type>
+           <source>discontdemo</source>
+       </demoitem>
+   </demosection>
+   <demosection>
+       <label>Tutorials: Wavelet Packets</label>
+       <demoitem>
+           <label>Wavelet Packets: Decomposing the Details</label>
+           <type>M-file</type>
+           <source>waveletpacketsdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Packet 1-D</label>
+           <type>M-GUI</type>
+           <source>dguiwp1d</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Packet 2-D</label>
+           <type>M-GUI</type>
+           <source>dguiwp2d</source>
+       </demoitem>
+   </demosection>
+   <demosection>
+       <label>Application Examples: Denoising</label>
+       <demoitem>
+           <label>De-Noising Signals and Images</label>
+           <type>M-file</type>
+           <source>denoisingsignalsdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Interval-Dependent Denoising</label>
+           <type>M-file</type>
+           <source>cmddenodemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Multivariate Wavelet Denoising</label>
+           <type>M-file</type>
+           <source>wmuldendemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Density Estimation</label>
+           <type>M-GUI</type>
+           <source>dguide1d</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Regression Estimation</label>
+           <type>M-GUI</type>
+           <source>dguire1d</source>
+       </demoitem>
+   </demosection>
+   <demosection>
+       <label>Application Examples: Compression and Fusion</label>
+       <demoitem>
+           <label>Data Compression using 2D Wavelet Analysis</label>
+           <type>M-file</type>
+           <source>datacompressiondemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Two-Dimensional True Compression</label>
+           <type>M-file</type>
+           <source>truecompdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Image Fusion</label>
+           <type>M-file</type>
+           <source>imagefusiondemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Multiscale Principal Components Analysis</label>
+           <type>M-file</type>
+           <source>wmspcademo</source>
+       </demoitem>
+   </demosection>
+   <demosection>
+       <label>Wavelet Design</label>
+       <demoitem>
+           <label>Wavelet Display</label>
+           <type>M-GUI</type>
+           <source>dguiwvdi</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Packet Display</label>
+           <type>M-GUI</type>
+           <source>dguiwpdi</source>
+       </demoitem>
+       <demoitem>
+           <label>Adding User-Defined Wavelets</label>
+           <type>M-file</type>
+           <source>addnewwaveletdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Pattern Adapted Wavelets for Signal Detection</label>
+           <type>M-file</type>
+           <source>wdetectdemo</source>
+       </demoitem>
+   </demosection>
+   <demosection>
+       <label>Miscellaneous</label>
+       <demoitem>
+           <label>Non-Decimated Wavelet Analysis</label>
+           <type>M-file</type>
+           <source>ndwtdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Wavelet Scalogram Using 1D Wavelet Analysis</label>
+           <type>M-file</type>
+           <source>wscalogramdemo</source>
+       </demoitem>
+       <demoitem>
+           <label>Signal Extension</label>
+           <type>M-GUI</type>
+           <source>dguisext</source>
+       </demoitem>
+       <demoitem>
+           <label>Image Extension</label>
+           <type>M-GUI</type>
+           <source>dguiiext</source>
+       </demoitem>
+   </demosection>
+</demos>

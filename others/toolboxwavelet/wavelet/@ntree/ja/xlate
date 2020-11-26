@@ -1,0 +1,16 @@
+% Copyright 2001-2005 The MathWorks, Inc.
+% $Revision: 1.2.4.3 $
+<(read)Node Action  
+>(read)ノードアクション  
+<(disp) Tree Object Structure 
+>(disp) ツリーオブジェクト構造 
+<(disp) order          : 
+>(disp) 次数          : 
+<(disp) depth          : 
+>(disp) 深さ          : 
+<(disp) terminal nodes : 
+>(disp) 終端ノード : 
+<(ntree)Invalid argument name: %s
+>(ntree) 不適切な引数名: %s 
+<(ntree)* STOP *
+>(ntree)* 停止 *

@@ -1,0 +1,231 @@
+% Copyright 2008-2009 The MathWorks, Inc.
+% $Revision: 1.1.6.9 $
+% Compression
+<(compress)Image
+>(compress)イメージ
+<(compress)Wavelet
+>(compress)ウェーブレット
+<(compress)Level
+>(compress)レベル
+<(compress)Decompose
+>(compress)分解
+<(compress)   Compression Parameters   
+>(compress)   圧縮パラメータ   
+<(compress)Nb. Cfs.
+>(compress)Cfs の数
+<(compress)Compression Method
+>(compress)圧縮法
+<(compress)Bit Per Pixel (BPP)
+>(compress)ビット/ピクセル (BPP)
+<(compress)Nb. Kept Cfs.
+>(compress)残りの Cfs の数
+<(compress)Nb. Symbols for Quantization
+>(compress)量子化に対するシンボル数
+<(compress)Nb. Encoding Loops
+>(compress)符号化ループの数
+<(compress)Show Compression Steps
+>(compress)圧縮ステップの表示
+<(compress)Stepwise
+>(compress)ステップワイズ
+<(compress)Next
+>(compress)次へ
+<(compress)Finish
+>(compress)終了
+<(compress)Inspect Wavelet Trees
+>(compress)ウェーブレットツリーの検査
+<(compress)Return to Main Window
+>(compress)メインウィンドウに戻る
+<(compress)Original Image
+>(compress)オリジナルイメージ
+<(compress)Decomposition of Compressed Image
+>(compress)圧縮イメージの分解構造
+<(compress)Compression Ratio
+>(compress)圧縮比
+<(compress)M.S.E.
+>(compress)M.S.E.
+<(compress)Max Error
+>(compress)最大誤差
+<(compress)L2-Norm Ratio
+>(compress)L2-ノルム比
+<(compress)P.S.N.R.
+>(compress)P.S.N.R.
+<(compress)B.P.P.
+>(compress)B.P.P.
+<(compress)Comp. Ratio
+>(compress)圧縮比
+<(compress)Normalized Histogram
+>(compress)正規化ヒストグラム
+<(compress)Normalized Histogram (truncated)
+>(compress)正規化ヒストグラム (打ち切り)
+<(compress)Wavelet Coefficients
+>(compress)ウェーブレット係数
+<(compress)Original Decomposition
+>(compress)オリジナルの分解構造
+<(compress)Thresholded Decomposition
+>(compress)閾値の分解構造
+<(compress)Residual Image
+>(compress)残差イメージ
+<(compress)Save the Compressed image ?
+>(compress)圧縮したイメージを保存しますか?
+<(compress)Save Image
+>(compress)イメージの保存
+<(compress)wavelet
+>(compress)ウェーブレット
+<(compress)level
+>(compress)レベル
+<(compress)method
+>(compress)手法
+<(compress)"True" Compression 2-D
+>(compress)"True" 2 次元圧縮
+<(compress)Wavelet 2-D -- Image Compression
+>(compress)ウェーブレット 2-D -- イメージ圧縮
+<(compress)Coefficients: node %s or %s
+>(compress)係数: ノード %s または %s
+<(compress)Reconstructed Coefficients: node %s or %s
+>(compress)再構成係数: ノード %s または %s
+<(compress)Loop %s
+>(compress)ループ %s
+<(compress)Loop %s - %s
+>(compress)ループ %s - %s
+<(compress)Loop %s - %s %s
+>(compress)ループ %s - %s %s
+<(compress)Save Compressed Image
+>(compress)圧縮したイメージを保存
+<(compress)Matlab Supported Formats
+>(compress)MATLAB サポート形式
+<(compress)Wavelet Toolbox Compressed Image
+>(compress)Wavelet Toolbox の圧縮イメージ
+<(compress)Grayscale Images 
+>(compress)グレースケールイメージ 
+<(compress)Color Images 
+>(compress)カラーイメージ 
+<(compress)Compression using Wavelets
+>(compress)ウェーブレットを使った圧縮
+<(compress)Number of Coefficients in Wavelet Decomposition
+>(compress)ウェーブレット分解構造における係数の数
+<(compress)Number of Kept Wavelet Coefficients
+>(compress)残ったウェーブレット係数の数
+<(compress)Color Conversion
+>(compress)色変換
+<(compress)%s %s - wavelet: %s - level: %s - method: %s
+>(compress)%s %s - ウェーブレット: %s - レベル: %s - 手法: %s
+<(compress)Compressed Image
+>(compress)圧縮したイメージ
+
+<(cf1dtool)Compress
+>(cf1dtool)圧縮
+<(dynvtool)View Axes
+>(dynvtool)座標軸を表示
+<(dynvtool)History
+>(dynvtool)履歴
+<(dynvtool)Info
+>(dynvtool)情報
+<(utthrset)Close
+>(utthrset)閉じる
+<(utcolmap)Colormap
+>(utcolmap)カラーマップ
+<(utcolmap)Nb. Colors
+>(utcolmap)カラー数
+<(utcolmap)Brightness
+>(utcolmap)明るさ
+<(wmachdep)Center On
+>(wmachdep)中央
+<(utentpar)Threshold
+>(utentpar)しきい値
+
+<(wc2dtool)Wait ... Coding and Computing !
+>(wc2dtool)お待ちください ... 符号化処理中 !
+<()Save Compressed Image as
+>()圧縮したイメージを保存
+<()Load W.T. Compressed Image
+>()ウェーブレット変換による圧縮したイメージの読み込み
+
+<(compress)Node Label
+>(compress)ノードラベル
+<(compress)Node Action
+>(compress)ノードアクション
+<(compress)Index
+>(compress)インデックス
+<(compress)Depth_Pos
+>(compress)深さ_位置
+<(compress)Size
+>(compress)サイズ
+<(compress)Type
+>(compress)タイプ
+<(compress)% L2 Norm Original
+>(compress)% L2 ノルム-オリジナル
+<(compress)% L2 Norm Compressed
+>(compress)% L2 ノルム-圧縮
+<(compress)% L2 Norm Residual
+>(compress)% L2 ノルム-残差
+<(compress)Visualize
+>(compress)可視化
+<(compress)Reconstruct
+>(compress)再構成
+
+<()End
+>()終了
+% two words are used in image coding JPEG2000.
+%<()Refinement Pass
+%>()Refinement Pass
+%<()Significant Pass
+%>()Significant Pass
+
+<(compress)The number of rows and columns of image must be a power of two.
+>(compress)イメージの行数と列数は 2 のべき乗でなければなりません。
+
+%%% 9b
+%
+%% wavelet/compression/wc2dtool.m
+<(wc2dtool)All Files (*.*)
+>(wc2dtool)すべてのファイル (*.*)
+<(wc2dtool)Hierarchical Data Format files (*.hdf)
+>(wc2dtool)階層データ形式ファイル (*.hdf)
+<(wc2dtool)Joint Photographic Experts Group files (*.jpg)
+>(wc2dtool)Joint Photographic Experts Group ファイル (*.jpg)
+<(wc2dtool)MAT-files (*.mat)
+>(wc2dtool)MAT-ファイル (*.mat)
+<(wc2dtool)Portable Bitmap filees (*.pbm)
+>(wc2dtool)Portable Bitmap ファイル (*.pbm)
+<(wc2dtool)Portable Graymap files (*.pgm)
+>(wc2dtool)Portable Graymap ファイル (*.pgm)
+<(wc2dtool)Portable Network Graphics  (*.png)
+>(wc2dtool)Portable Network Graphics  (*.png)
+<(wc2dtool)Portable Pixmap files (*.ppm)
+>(wc2dtool)Portable Pixmap ファイル (*.ppm)
+<(wc2dtool)Sun Raster files (*.ras)
+>(wc2dtool)Sun ラスタファイル (*.ras)
+<(wc2dtool)Tagged Image File Format files (*.tif)
+>(wc2dtool)Tagged Image File Format ファイル (*.tif)
+<(wc2dtool)WTC files - EZW method (*.ezw)
+>(wc2dtool)WTC ファイル - EZW 法 (*.ezw)
+<(wc2dtool)WTC files - SPIHT or SPIHT-3D method (*.spi)
+>(wc2dtool)WTC ファイル - SPIHT または SPIHT-3D 法 (*.spi)
+<(wc2dtool)WTC files - STW method (*.stw)
+>(wc2dtool)WTC ファイル - STW 法 (*.stw)
+<(wc2dtool)WTC files - WDR or ASWDR method (*.wdr)
+>(wc2dtool)WTC ファイル - WDR または ASWDR 法 (*.wdr)
+<(wc2dtool)Wavelet Toolbox Compression Files (*.wtc)
+>(wc2dtool)Wavelet Toolbox 圧縮ファイル (*.wtc)
+<(wc2dtool)Windows Bitmap files (*.bmp)
+>(wc2dtool)Windows ビットマップファイル (*.bmp)
+<(wc2dtool)Windows Paintbrush files (*.pcx)
+>(wc2dtool)Windows Paintbrush ファイル (*.pcx)
+<(wc2dtool)X Window Dump (*.xwd)
+>(wc2dtool)X ウィンドウダンプ (*.xwd)
+
+%% wavelet/compression/wconvimg.m
+<(wconvimg)Invalid Argument Value for map.
+>(wconvimg)map への無効な引数値です。
+
+%% wavelet/compression/wloadimages.m
+<(wloadimages)The file must be contain an image.
+>(wloadimages)ファイルはイメージを含んでいなければなりません。
+
+%% wavelet/compression/wtc_ezw.m
+<(wtc_ezw)End of stream ...
+>(wtc_ezw)ストリームの終端 ...
+
+<(wc2dtool)Click Next Button or Finish Button to Continue ...
+>(wc2dtool)[次へ] ボタンまたは [終了] ボタンをクリックして継続 ...
+

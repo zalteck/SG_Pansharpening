@@ -1,0 +1,56 @@
+% Copyright 2001-2008 The MathWorks, Inc.
+% $Revision: 1.2.4.5 $
+
+<(set)Invalid Number of arguments!
+>(set)引数の数が無効です。
+<(set)Use property/value pairs.
+>(set)プロパティ-値の組み合わせを使用してください。
+<(wpviewcf)Frequency Order : Global + abs
+>(wpviewcf)周波数順 : グローバル + 絶対値
+<(wpviewcf)Frequency Order : By Level + abs
+>(wpviewcf)周波数順 : レベル毎 + 絶対値
+<(wpviewcf)Frequency Order : Global
+>(wpviewcf)周波数順 : グローバル
+<(wpviewcf)Frequency Order : By Level
+>(wpviewcf)周波数順 : レベル毎
+<(wpviewcf)Natural Order : Global + abs
+>(wpviewcf)自然順 : グローバル + 絶対値
+<(wpviewcf)Natural Order : By Level + abs
+>(wpviewcf)自然順 : レベル毎 + 絶対値
+<(wpviewcf)Natural Order : Global
+>(wpviewcf)自然順 : グローバル
+<(wpviewcf)Natural Order : By Level
+>(wpviewcf)自然順 : レベル毎
+<(read)switch error ... 
+>(read)スイッチエラー ... 
+<(disp) Wavelet Packet Object Structure 
+>(disp) ウェーブレットパケットオブジェクト構造 
+<(disp) size of initial data       : 
+>(disp) 初期データのサイズ       : 
+<(disp)	order                      :  
+>(disp)	次数                      :  
+<(disp)	depth                      : 
+>(disp)	深さ                      : 
+<(disp)	terminal nodes             : 
+>(disp)	終端ノード             : 
+<(disp)	Wavelet Name               : 
+>(disp)	ウェーブレット名               : 
+<(disp) Low Decomposition filter   : 
+>(disp) 分解ローパスフィルタ   : 
+<(disp) High Decomposition filter  : 
+>(disp) 分解ハイパスフィルタ  : 
+<(disp) Low Reconstruction filter  : 
+>(disp) 再構成ローパスフィルタ  : 
+<(disp) High Reconstruction filter : 
+>(disp) 再構成ハイパスフィルタ : 
+<(disp)	Entropy Name               : 
+>(disp)	エントロピー名               : 
+<(disp)	Entropy Parameter          : 
+>(disp)	エントロピーパラメータ          : 
+<(entrupd)*** Invalid function name for user entropy ***
+>(entrupd)*** 無効なユーザ指定のエントロピーの関数名 ***
+<(wpsplt)Invalid node value
+>(wpsplt)無効なノードの値
+<(write)invalid number of arguments ... 
+>(write)無効な引数の個数 ... 
+

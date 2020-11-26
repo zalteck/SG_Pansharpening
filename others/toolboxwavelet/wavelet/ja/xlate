@@ -1,0 +1,3253 @@
+% Copyright 2001-2011 The MathWorks, Inc.
+% $Revision: 1.7.4.45 $
+
+<(wp2dcomp)Wavelet Packet 2-D  --  Compression
+>(wp2dcomp)2 次元ウェーブレットパケット  --  圧縮
+<(wp2dcomp)Compressed &Image 
+>(wp2dcomp)圧縮したイメージ(&I) 
+<(wp2dcomp)Wait ... initialization
+>(wp2dcomp)お待ちください ... 初期化中
+<(wp2dcomp)Original image
+>(wp2dcomp)オリジナルイメージ
+<(wp2dcomp)Energy ratio 
+>(wp2dcomp)エネルギー比 
+<(wp2dcomp)Retained energy 
+>(wp2dcomp)残りのエネルギー 
+<(wp2dcomp)Compressed image
+>(wp2dcomp)圧縮したイメージ
+<(wp2dcomp)Save Compressed Image
+>(wp2dcomp)圧縮したイメージを保存
+<(wp2dcomp)Wait ... saving
+>(wp2dcomp)お待ちください ... 保存中
+<(wp2dcomp)Save Wavelet Packet Analysis (2D)
+>(wp2dcomp)ウェーブレットパケット解析 (2D) を保存
+<(wp2dcomp)Wait ... saving decomposition
+>(wp2dcomp)お待ちください ... 分解構造を保存中
+<(wp2dcomp)Save FAILED !
+>(wp2dcomp)保存できませんでした。
+<(wp2dcomp)Update the synthesized image ?
+>(wp2dcomp)合成したイメージを更新しますか?
+<(wp2dcomp)Wait ... computing
+>(wp2dcomp)お待ちください ... 計算中
+<(wp2dcomp)Unknown Option
+>(wp2dcomp)不明なオプション
+% 一つのダイアログボックス内につぎの4つのメッセージ
+<(wpdec)Warning: The number of output arguments for the wpdencmp
+>(wpdec)警告: 関数 wpdencmp の出力引数の数は
+<(wpdec)function has change and this calling syntax is obsolete.
+>(wpdec)変更されており、この呼び出しシンタックスは旧式です。
+<(wpdec)Please type "help wtbxmngr" at the MATLAB prompt
+>(wpdec)詳細は、MATLAB のプロンプトで "help wtbxmngr" と
+<(wpdec)for more information.
+>(wpdec)入力してください。
+<(wpdec)Warning Dialog
+>(wpdec)警告ダイアログ
+<(wpdec)*** Invalid function name for user entropy ***
+>(wpdec)*** 無効なユーザ指定のエントロピーの関数名 ***
+<(wp2ddeno)Wavelet Packet 2-D  --  De-noising
+>(wp2ddeno)2 次元ウェーブレットパケット  --  ノイズ除去
+<(wp2ddeno)De-noising Procedure
+>(wp2ddeno)ノイズ除去手順
+<(wp2ddeno)Available Methods
+>(wp2ddeno)利用可能な手法
+<(wp2ddeno)De-noised &Image 
+>(wp2ddeno)ノイズ除去したイメージ(&I) 
+<(wp2ddeno)Save De-noised Image
+>(wp2ddeno)ノイズ除去したイメージを保存(&S)
+<(wp2ddeno)WP2D De-noising
+>(wp2ddeno)WP2D ノイズ除去
+<(wp1dmngr)The decomposition is not a valid one dimensional analysis
+>(wp1dmngr)分解構造は有効な 1 次元解析ではありません。
+%
+<(wp1dmngr)Save Synthesized Signal
+>(wp1dmngr)合成した信号を保存
+<(wp1dmngr)File %s not found!
+>(wp1dmngr)ファイル %s は見つかりません。
+<(wp1dmngr)Wait ... drawing
+>(wp1dmngr)お待ちください ... 描画中
+%
+<(wp2dmngr)Load Image
+>(wp2dmngr)イメージの読み込み
+<(wp2dmngr)Wait ... cleaning
+>(wp2dmngr)お待ちください ... クリア中
+<(wp2dmngr)Load Wavelet Packet Analysis (2D)
+>(wp2dmngr)ウェーブレットパケット解析 (2D) の読み込み
+<(wp2dmngr)The decomposition is not a valid two dimensional analysis
+>(wp2dmngr)分解構造は有効な 2 次元解析ではありません。
+<(wp2dmngr)Invalid entropy parameter value! 
+>(wp2dmngr)エントロピーパラメータ値が無効です。 
+<(wp2dmngr)Invalid entropy name! 
+>(wp2dmngr)エントロピー名が無効です。 
+<(wp2dmngr)Load Image ERROR
+>(wp2dmngr)イメージの読み込みエラー
+<(wp2dmngr)File %s is not a valid file.
+>(wp2dmngr)ファイル %s は有効なファイルではありません。
+<(wp2dmngr)File %s is not a valid file or is empty.
+>(wp2dmngr)ファイル %s は無効なファイル、または空です。
+%
+<(wp2dmngr)Save Synthesized Image
+>(wp2dmngr)合成したイメージを保存
+%
+<(wp2dstat)Coefficients
+>(wp2dstat)係数
+<(wp2dstat)Reconstructed
+>(wp2dstat)再構成
+<(wp2dstat)Number of bins
+>(wp2dstat)ビン数
+<(wp2dstat)Show statistics
+>(wp2dstat)統計量の表示
+<(wp2dstat)Coefficients of 
+>(wp2dstat)係数 
+<(wp2dstat)Reconstructed 
+>(wp2dstat)再構成 
+<(wp2dstat)remaining at level 
+>(wp2dstat)次のレベルの残差 
+<(wp2dstat)Wavelet Packet 2-D -- Statistics
+>(wp2dstat)2 次元ウェーブレットパケット  --  統計量
+<(wp2dstat)Packet ( %.0f )
+>(wp2dstat)パケット ( %.0f )
+<(wp2dstat)Compressed Image
+>(wp2dstat)圧縮したイメージ
+<(wp2dstat)De-noised Image
+>(wp2dstat)ノイズ除去したイメージ
+<(wp2dstat)Histogram
+>(wp2dstat)ヒストグラム
+<(wp2dstat)Cumulative histogram
+>(wp2dstat)累積ヒストグラム
+<(cf1dtool)&Save Synthesized Signal
+>(cf1dtool)合成した信号を保存(&S)
+<(cf1dtool)De-noise
+>(cf1dtool)ノイズ除去
+<(cf1dtool)Display mode : 
+>(cf1dtool)表示モード : 
+<(cf1dtool)More Display Options
+>(cf1dtool)表示オプション
+<(cf1dtool)Statistics
+>(cf1dtool)統計量
+<(cf1dtool)Compress
+>(cf1dtool)圧縮
+<(cf1dtool)Wavelet Coefficients Selection 1-D
+>(cf1dtool)1 次元ウェーブレット係数選択
+<(cf1dtool)One-Dimensional &Selection
+>(cf1dtool)1 次元選択(&S)
+<(cf1dtool)&Example Analysis 
+>(cf1dtool)解析例(&E) 
+<(wfigmngr)Show and Scroll
+>(wfigmngr)表示とスクロール
+<(wfigmngr)Full Decomposition
+>(wfigmngr)完全な分解構造
+<(wfigmngr)Separate Mode
+>(wfigmngr)別モード
+<(wfigmngr)Superimpose Mode
+>(wfigmngr)重ね書きモード
+<(wfigmngr)Tree Mode
+>(wfigmngr)ツリーモード
+<(wfigmngr)Show and Scroll (Stem Cfs)
+>(wfigmngr)表示とスクロール (離散プロット Cfs)
+<(dw1dtool)at level
+>(dw1dtool)レベル
+<(dw1dtool)&Load Signal
+>(dw1dtool)信号の読み込み(&L)
+%信号の読み込み(&L)の後に1スペース
+<(dw1dtool)&Load Signal 
+>(dw1dtool)信号の読み込み(&L) 
+<(dw1dtool)Wavelets in Action
+>(dw1dtool)動作中のウェーブレット
+<(dw1dtool)General Concepts
+>(dw1dtool)一般的な概念
+<(dw1dtool)Wavelet Decomposition
+>(dw1dtool)ウェーブレット分解構造
+<(dw1dtool)Loading and Saving
+>(dw1dtool)読み込みと保存
+<(dw1dtool)Default Display &Mode
+>(dw1dtool)デフォルトの表示モード(&M)
+<(dw1dtool)&Signal
+>(dw1dtool)信号(&S)
+% 信号(&S)の後に1スペース
+<(wp1dcomp)&Signal 
+>(wpldcomp)信号(&S) 
+<(dw1dtool)&Coefficients
+>(dw1dtool)係数(&C)
+<(dw1dtool)&Decomposition
+>(dw1dtool)分解構造(&D)
+<(dw1dtool)&Synthesized Signal
+>(dw1dtool)合成した信号(&S)
+% 信号の後に1スペース
+<(dw1dtool)&Synthesized Signal 
+>(dw1dtool)合成した信号(&S) 
+<(dw1dtool)&Example Analysis
+>(dw1dtool)解析例(&E)
+<(dw1dtool)Noisy Signals - Constant Noise Variance
+>(dw1dtool)ノイズ信号 - 定数のノイズの分散
+<(dw1dtool)Basic Signals
+>(dw1dtool)基本的な信号
+<(dw1dtool)Noisy Signals
+>(dw1dtool)ノイズ信号
+<(dw1dtool)Noisy Signals - Movie
+>(dw1dtool)ノイズ信号 - ムービー
+<(dw1dtool)Sum of sines               
+>(dw1dtool)正弦波の和               
+<(dw1dtool)Frequency breakdown        
+>(dw1dtool)周波数分解        
+<(dw1dtool)Uniform white noise        
+>(dw1dtool)一様白色雑音        
+<(dw1dtool)AR(3) noise                
+>(dw1dtool)AR(3) ノイズ                
+<(dw1dtool)Noisy polynomial           
+>(dw1dtool)ノイズ多項式           
+<(dw1dtool)Step signal                
+>(dw1dtool)ステップ信号                
+<(dw1dtool)Two nearby discontinuities 
+>(dw1dtool)2 つの隣接する不連続 
+<(dw1dtool)Second derivative breakdown
+>(dw1dtool)2 階微分分解
+<(dw1dtool)Ramp + white noise         
+>(dw1dtool)ランプ + 白色雑音         
+<(dw1dtool)Ramp + colored noise       
+>(dw1dtool)ランプ + 有色ノイズ       
+<(dw1dtool)Sine + white noise         
+>(dw1dtool)正弦波 + 白色雑音         
+<(dw1dtool)Triangle + sine            
+>(dw1dtool)三角波 + 正弦波            
+<(dw1dtool)Triangle + sine + noise    
+>(dw1dtool)三角波 + 正弦波 + ノイズ    
+<(dw1dtool)Electrical consumption     
+>(dw1dtool)消費電力     
+<(dw1dtool)Cantor curve               
+>(dw1dtool)Cantor 曲線               
+<(dw1dtool)Koch curve                 
+>(dw1dtool)Koch 曲線                 
+%
+<(dw1dtool)Analyze
+>(dw1dtool)解析
+<(dw1dtool)Histograms
+>(dw1dtool)ヒストグラム
+%
+<(cf1dtool)Noisy blocks
+>(cf1dtool)ノイズブロック
+<(cf1dtool)Noisy bumps
+>(cf1dtool)ノイズを含む突出
+<(cf1dtool)Noisy heavysin
+>(cf1dtool)ノイズを含む heavysin
+<(cf1dtool)Noisy Doppler
+>(cf1dtool)ノイズを含むドップラー
+<(cf1dtool)Noisy quadchirp
+>(cf1dtool)ノイズを含む quadchirp
+<(cf1dtool)Noisy mishmash
+>(cf1dtool)ノイズを含む mishmash
+<(cf1dtool)Wait ... loading
+>(cf1dtool)お待ちください ... 読み込み中
+<(cf1dtool)Synthesized Signal and Original Signal
+>(cf1dtool)合成した信号とオリジナル信号
+<(cf1dtool)Synthesized Signal
+>(cf1dtool)合成した信号
+<(cf2dtool)Noisy Woman
+>(cf2dtool)ノイズを含む女性像
+<(cf2dtool)Noisy Woman (movie)
+>(cf2dtool)ノイズを含む女性像 (ムービー)
+<(cf2dtool)Fingerprint
+>(cf2dtool)指紋
+<(cf2dtool)Fingerprint (movie)
+>(cf2dtool)指紋 (ムービー)
+<(cf2dtool)Facets
+>(cf2dtool)小平面
+<(cf2dtool)Facets (movie)
+>(cf2dtool)小平面 (ムービー)
+<(cf2dtool)Original Decomposition at level %s
+>(cf2dtool)レベル %s のオリジナルの分解構造
+<(cf2dtool)Modified Decomposition at level %s
+>(cf2dtool)レベル %s の修正された分解構造
+<(cf2dtool)Number of kept coefficients: %s 
+>(cf2dtool)残った係数の数:  %s 
+<(cf2dtool)Warning: The number of output arguments for the wpdec2
+>(cf2dtool)警告: 関数 wpdec2 の出力引数の数は
+<(cf2dtool)function has changed and this calling syntax is obsolete.
+>(cf2dtool)変更されており、この呼び出しシンタックスは旧式です。
+<(wpdtool)Wavelets Packets W System Functions Display
+>(wpdtool)ウェーブレットパケット W システム関数表現
+<(wpdtool)Wavelet Packet Dis&play
+>(wpdtool)ウェーブレットパケット表示(&P)
+<(wpdtool)Building Wavelet Packets
+>(wpdtool)ウェーブレットパケットの作成
+<(wpdtool)Wavelet Packets Atoms
+>(wpdtool)ウェーブレットパケットの核
+<(wpdtool)Wav. Pack. from 0 to :
+>(wpdtool)ウェーブレットパケット 0 から :
+<(wpdtool)Information on:
+>(wpdtool)情報:
+<(wpdtool)Haar Family (HAAR)
+>(wpdtool)Haar ファミリ (HAAR)
+<(wpdtool)W Systems
+>(wpdtool)W システム
+<(wpdtool)Refinement
+>(wpdtool)絞り込み
+<(wpdtool)Number of iterations used to calculate the wavelet packets
+>(wpdtool)ウェーブレットパケットを計算するために使われる繰り返し回数
+<(wpfrqord)Invalid Wavelet Number!
+>(wpfrqord)ウェーブレットの番号が無効です。
+<(convv1v2)Invalid number of inputs or outputs!
+>(convv1v2)入力、または出力数が無効です。
+<(wtbxmngr)!  WARNING: Changed Wavelet Toolbox Version  !
+>(wtbxmngr)!  警告: Wavelet Toolbox のバージョンが変わりました。
+<(wtbxmngr)The Wavelet Toolbox is now compatible with versions 1.x
+>(wtbxmngr)Wavelet Toolbox は、今はバージョン 1.x と互換性があります。
+<(wtbxmngr)Obsolete functions are now available.
+>(wtbxmngr)旧式の関数が今も利用可能です。
+<(de1dtool)Invalid size for the first argument!
+>(de1dtool)1 番目の引数のサイズが無効です。
+<(de1dtool)Stationary Wavelet Transform De-noising 1-D
+>(de1dtool)1 次元定常ウェーブレット変換のノイズ除去
+<(de1dtool)One-Dimensional Analysis for De-&noising
+>(de1dtool)ノイズ除去の 1 次元解析(&N)
+<(de1dtool)Stationary Wavelet Transform
+>(de1dtool)定常ウェーブレット変換
+<(de1dtool)Variance Adaptive Thresholding
+>(de1dtool)分散に依存した適用スレッシュホールド手法
+<(de1dtool)Noisy Signals - Interval Dependent Noise Variance
+>(de1dtool)ノイズ信号 - 区間に依存したノイズの分散
+<(de1dtool)Noisy blocks (I)  - 3 intervals
+>(de1dtool)ノイズブロック (I)  - 3 区間
+<(de1dtool)Noisy blocks (II) - 3 intervals
+>(de1dtool)ノイズブロック (II)  - 3 区間
+<(de1dtool)Noisy Doppler (I) - 3 intervals
+>(de1dtool)ノイズを含むドップラー (I)  - 3 区間
+<(de1dtool)Noisy bumps (I)   - 3 intervals
+>(de1dtool)ノイズを含む突出 (I)  - 3 区間
+<(de1dtool)Noisy bumps (II)  - 2 intervals
+>(de1dtool)ノイズを含む突出 (II)  -2 区間
+<(de1dtool)Noisy bumps (III) - 4 intervals
+>(de1dtool)ノイズを含む突出 (III)  -4 区間
+<(de1dtool)Elec. consumption - 3 intervals
+>(de1dtool)消費電力 - 3 区間
+<(de1dtool)Decompose Signal
+>(de1dtool)信号の分解
+<(de1dtool)Overlay De-noised Signal
+>(de1dtool)分解した信号の重ね書き
+<(de1dtool)Save De-noised Signal
+>(de1dtool)ノイズ除去した信号を保存
+<(de1dtool)The level of decomposition 
+>(de1dtool)分解レベル 
+<(de1dtool)and the length of the signal 
+>(de1dtool)と信号の長さ 
+<(de1dtool)are not compatible.
+>(de1dtool)は互換性がありません。
+<(de1dtool)Suggested length: %s
+>(de1dtool)推奨する長さ: %s
+<(de1dtool)2^Level has to divide the length of the signal. 
+>(de1dtool)2^(レベル) は、信号の長さの倍数でなければなりません。 
+<(de1dtool)Signal (S) and De-Noised Signal (D_S)
+>(de1dtool)信号 (S) とノイズ除去した信号 (D_S)
+<(de1dtool)Residuals = S - D_S
+>(de1dtool)残差 = S - D_S
+<(de1dtool)De-Noised Signal (D_S)
+>(de1dtool)ノイズ除去した信号 (D_S)
+<(de1dtool)Non-decimated Details Coefficients
+>(de1dtool)間引きなしの Detail 係数
+<(de1dtool)De-noised non-decimated Details Coefficients
+>(de1dtool)ノイズ除去した間引きなしの Detail 係数
+<(de1dtool)Non-decimated Approximation Coefficients
+>(de1dtool)間引きなしの Approximation 係数
+<(sw2dtool)&Save Denoised Image 
+>(sw2dtool)ノイズ除去したイメージを保存(&S) 
+<(sw2dtool)De-noised image (DI)
+>(sw2dtool)ノイズ除去したイメージ (DI)
+<(sw2dtool)Stationary Wavelet Transform De-noising 2-D
+>(sw2dtool)2 次元定常ウェーブレット変換のノイズ除去
+<(sw2dtool)Two-Dimensional Analysis for De-&noising
+>(sw2dtool)ノイズ除去の 2 次元解析(&N)
+<(sw2dtool)Noisy Barbara
+>(sw2dtool)ノイズを含む Barbara 像
+<(sw2dtool)Noisy Sinsin
+>(sw2dtool)ノイズを含む Sinsin
+<(sw2dtool)Decompose Image
+>(sw2dtool)イメージの分解
+<(sw2dtool)Original Image (I)
+>(sw2dtool)オリジナルイメージ (I)
+<(sw2dtool)Histogram of residuals: (I) - (DI)
+>(sw2dtool)残差のヒストグラム: (I) - (DI)
+<(sw2dtool)De-Noised Image (DI)
+>(sw2dtool)ノイズ除去したイメージ (DI)
+<(swt)2^Level has to divide the length of the signal.
+>(swt)2^(レベル) は、信号の長さの倍数でなければなりません。
+<(swt)Suggested size: %s
+>(swt)推奨するサイズ: %s
+<(swt)2^Level has to divide the size of the image.
+>(swt)2^(レベル) は、イメージのサイズの倍数でなければなりません。
+<(utguidiv)Load Signal ERROR
+>(utguidiv)信号の読み込みエラー
+<(utguidiv)variable : %s not found !
+>(utguidiv)変数: %s が見つかりません。
+<(utguidiv)Load ERROR
+>(utguidiv)読み込みエラー
+<(utnbcfs)Initial
+>(utnbcfs)初期
+<(utnbcfs)Kept   
+>(utnbcfs)残り   
+<(utnbcfs)Define Selection method
+>(utnbcfs)選択方法の定義
+<(utnbcfs)Residuals
+>(utnbcfs)残差
+<(utnbcfs) Residuals 
+>(utnbcfs) 残差 
+<(utnbcfs)Unselect using a select Box
+>(utnbcfs)選択ボックスを使って選択しない
+% 8 spaces at end.
+<(utnbcfs)Global        
+>(utnbcfs)グローバル        
+<(utnbcfs)By Level      
+>(utnbcfs)レベル毎      
+<(utnbcfs)Manual        
+>(utnbcfs)手動        
+% no spaces at end
+<(utnbcfs)Global
+>(utnbcfs)グローバル
+<(utnbcfs)By Level
+>(utnbcfs)レベル毎
+<(utnbcfs)Manual
+>(utnbcfs)手動
+<(utnbcfs)Stepwise Movie
+>(utnbcfs)ステップワイズムービー
+<(utnbcfs)Selected coefficients
+>(utnbcfs)選択した係数
+<(utnbcfs)Select All
+>(utnbcfs)すべて選択
+<(utnbcfs)Selectable
+>(utnbcfs)選択可能
+<(utnbcfs)Unselect
+>(utnbcfs)選択しない
+% 2 スペース
+<(utnbcfs)Unselect  
+>(utnbcfs)選択しない  
+<(utnbcfs)Select
+>(utnbcfs)選択
+<(utnbcfs)Selected Biggest Coefficients
+>(utnbcfs)選択した最大係数
+<(utnbcfs)Apply
+>(utnbcfs)適用
+<(utnbcfs)Set Stepwise Movie Parameters
+>(utnbcfs)ステップワイズムービーパラメータの設定
+<(utnbcfs)Min. ( > 0 )
+>(utnbcfs)最小 ( > 0 )
+<(utnbcfs)Step ( > 0 )
+>(utnbcfs)ステップ ( > 0 )
+<(utnbcfs)Max.
+>(utnbcfs)最大
+<(utnbcfs)AutoPlay
+>(utnbcfs)自動再生
+<(utnbcfs)Start
+>(utnbcfs)開始
+<(utnbcfs)Stop
+>(utnbcfs)停止
+<(utnbcfs)Quit Movie
+>(utnbcfs)ムービーの終了
+<(utnbcfs)More on Residuals
+>(utnbcfs)残差の詳細
+<(utnbcfs)<< Prev
+>(utnbcfs)<< 戻る
+<(utnbcfs)Next >>
+>(utnbcfs)次へ >>
+<(utstats)Mean
+>(utstats)平均
+<(utstats)Median
+>(utstats)中央値
+<(utstats)Mode
+>(utstats)モード
+<(utstats)Maximum
+>(utstats)最大値
+<(utstats)Minimum
+>(utstats)最小値
+<(utstats)Range
+>(utstats)範囲
+<(utstats)Standard deviation
+>(utstats)標準偏差
+<(utstats)Median absolute deviation
+>(utstats)中央絶対偏差
+<(utstats)Mean absolute deviation
+>(utstats)平均絶対偏差
+<(utthrgbl)  Retained energy in %
+>(utthrgbl)  残りのエネルギー (%)
+<(utthrgbl)  Norm coefs recovery in %
+>(utthrgbl)  復元された係数のノルム (%)
+<(utthrgbl)move
+>(utthrgbl)移動
+<(utthrgbl)up
+>(utthrgbl)上
+<(utthrgbl)Select thresholding method
+>(utthrgbl)スレッシュホールド法の選択
+<(utthrgbl)Norm cfs recovery
+>(utthrgbl)復元された cfs のノルム
+<(utthrgbl)Retained energy
+>(utthrgbl)残りのエネルギー
+<(utthrgbl)Threshold
+>(utthrgbl)閾値
+<(utthrgbl)Funct. Name
+>(utthrgbl)関数名
+<(utthrgbl)Select Global Threshold
+>(utthrgbl)グローバルなスレッシュホールドの選択
+<(utthrgbl)Number of zeros
+>(utthrgbl)0 の数
+<(utthrgbl)  Global threshold
+>(utthrgbl)  グローバルなスレッシュホールド
+<(utthrgbl)  Number of zeros in %
+>(utthrgbl)  0 の数 (%)
+<(utthrgbl)Level
+>(utthrgbl)レベル
+<(utthrgbl)Interval Delimiters
+>(utthrgbl)区間の区切り文字
+<(utthrset)Interval Dependent Threshold Settings for 
+>(utthrset)区間に依存したスレッシュホールドの設定 
+<(utthrset)Int. Dependent Threshold Settings for 
+>(utthrset)区間に依存したスレッシュホールドの設定 
+<(utthrset)&One-Dimensional Local Thresholding
+>(utthrset)1 次元のローカルなスレッシュホールド(&O)
+<(utthrset)Delete
+>(utthrset)削除
+<(utthrset)Update thresholds ?
+>(utthrset)スレッシュホールドを更新しますか?
+<(utthrset)Propagate intervals to all levels
+>(utthrset)すべてのレベルに区間を伝播
+<(utthrset)Propagate
+>(utthrset)伝播
+% g392766
+<(utthrset)Number
+>(utthrset)数
+%<(utthrset)Generate
+%>(utthrset)作成
+<(utthrset)Generate Interval Dependent Thresholds
+>(utthrset)区間に依存したスレッシュホールドを作成
+<(utthrset)Close
+>(utthrset)閉じる
+<(utthrset)Default Intervals
+>(utthrset)デフォルトの区間
+<(utthrsetl)Select Number
+>(utthrsetl)区間の
+<(utthrsetl)of Intervals 
+>(utthrsetl)数を選択 
+<(utthrsetl)Select Number of Intervals
+>(utthrsetl)区間の数を選択
+<(utthrsetl)Wait ... computing (only for the first request)
+>(utthrsetl)お待ちください ... 計算中 (最初のリクエストに対してのみ)
+<(utthrsetl)The intervals are generated ...
+>(utthrsetl)区間が作成されます ...
+<(utthrsetl)Selecting the best number of Intervals
+>(utthrsetl)区間の最適数の選択
+<(utthrw1d)-       Sparsity       +
+>(utthrw1d)-       スパース性       +
+<(utthrw1d)Estimate
+>(utthrw1d)推定
+<(utthrw1d)Thresh
+>(utthrw1d)しきい値
+<(utthrw1d)Int. dependent threshold settings
+>(utthrw1d)区間に依存したスレッシュホールドの設定
+<(utthrw1d)soft
+>(utthrw1d)ソフト
+<(utthrw1d)hard
+>(utthrw1d)ハード
+<(utthrw1d)Select noise structure
+>(utthrw1d)ノイズ構造の選択
+<(utthrw1d)Unscaled white noise
+>(utthrw1d)スケーリングされていない白色雑音
+<(utthrw1d)Scaled white noise  
+>(utthrw1d)スケーリングされた白色雑音  
+<(utthrw1d)Non-white noise     
+>(utthrw1d)非白色雑音     
+<(utthrw1d)Interval dependent threshold Settings
+>(utthrw1d)区間に依存したスレッシュホールドの設定
+<(utthrw1d)Fixed form threshold
+>(utthrw1d)固定型のスレッシュホールド
+<(utthrw1d)Rigorous SURE       
+>(utthrw1d)厳密な SURE       
+<(utthrw1d)Heuristic SURE      
+>(utthrw1d)経験的な SURE      
+<(utthrw1d)Minimax             
+>(utthrw1d)ミニマックス             
+% 高い値の後、7スペース
+<(utthrw1d)Penalize high       
+>(utthrw1d)高い値にペナルティ       
+% 中央値の後、5スペース
+<(utthrw1d)Penalize medium     
+>(utthrw1d)中央値にペナルティ     
+% 低い値の後、8スペース
+<(utthrw1d)Penalize low        
+>(utthrw1d)低い値にペナルティ        
+<(utthrw1d)Global threshold    
+>(utthrw1d)グローバルなスレッシュホールド    
+<(utthrw1d)By level threshold 1
+>(utthrw1d)スレッシュホールド 1 のレベル毎
+<(utthrw1d)By level threshold 2
+>(utthrw1d)スレッシュホールド 2 のレベル毎
+<(utthrw1d)By level threshold 3
+>(utthrw1d)スレッシュホールド 3 のレベル毎
+<(utthrw1d)Scarce high          
+>(utthrw1d)高圧縮          
+<(utthrw1d)Scarce medium        
+>(utthrw1d)中圧縮        
+<(utthrw1d)Scarce low           
+>(utthrw1d)低圧縮           
+% 0 の後、8スペース
+<(utthrw1d)Remove near 0        
+>(utthrw1d)0 近傍の除去        
+% スパース性ノルムの後に4スペース
+<(utthrw1d)Balance sparsity-norm     
+>(utthrw1d)バランススパース性ノルム     
+<(utthrw1d)Remove near 0            
+>(utthrw1d)0 近傍の除去            
+<(utthrw1d)Bal. sparsity-norm (sqrt)
+>(utthrw1d)バランススパース性ノルム (二乗)
+<(utthrw2d)Horizontal details coefs
+>(utthrw2d)水平方向の Detail 係数
+% 2 スペース
+<(utthrw2d)Diagonal details coefs
+>(utthrw2d)対角方向の Detail 係数
+% 2 スペース
+<(utthrw2d)Vertical details coefs
+>(utthrw2d)垂直方向の Detail 係数
+<(utthrw2d)names
+>(utthrw2d)名前
+% 5 spaces after threshold
+<(utthrw2d)Fixed form threshold     
+>(utthrw2d)固定型のスレッシュホールド     
+% 高い値の後に12スペース
+<(utthrw2d)Penalize high            
+>(utthrw2d)高い値にペナルティ            
+<(utthrw2d)Penalize medium          
+>(utthrw2d)中央値にペナルティ          
+<(utthrw2d)Penalize low             
+>(utthrw2d)低い値にペナルティ             
+<(utthrw2d)Bal. sparsity-norm (sqrt)    
+>(utthrw2d)バランススパース性ノルム (二乗)    
+<(utthrw2d)Scarce high              
+>(utthrw2d)高圧縮              
+<(utthrw2d)Scarce medium            
+>(utthrw2d)中圧縮            
+<(utthrw2d)Balance sparsity-norm
+>(utthrw2d)バランススパース性ノルム
+<(utthrwpd)Sorted absolute values of coefs
+>(utthrwpd)並べ替えられた係数の絶対値
+<(utthrwpd)Histogram of absolute values of coefs
+>(utthrwpd)係数の絶対値のヒストグラム
+<(utthrwpd)Fixed form thr. (unscaled wn)
+>(utthrwpd)固定型のスレッシュホールド (スケーリングされていない白色雑音)
+<(utthrwpd)Fixed form thr. (scaled wn)  
+>(utthrwpd)固定型のスレッシュホールド (スケーリングされた白色雑音)  
+% 8 スペース
+<(utthrwpd)Balance sparsity-norm        
+>(utthrwpd)バランススパース性ノルム        
+% 4 スペース
+% 12 スペース
+% 高い値の後、16スペース    
+<(utthrwpd)Penalize high                
+>(utthrwpd)高い値にペナルティ                
+% 中央値の後、14スペース
+<(utthrwpd)Penalize medium              
+>(utthrwpd)中央値にペナルティ              
+% 低い値の後、17スペース
+<(utthrwpd)Penalize low                 
+>(utthrwpd)低い値にペナルティ                 
+<(wavefun2)Invalid wavelet type
+>(wavefun2)無効なウェーブレットタイプ
+<(wavefun2)Scale function
+>(wavefun2)スケール関数
+<(wavefun2)Wavelet function (1)
+>(wavefun2)ウェーブレット関数 (1)
+<(wavefun2)Wavelet function (2)
+>(wavefun2)ウェーブレット関数 (2)
+<(wavefun2)Wavelet function (3)
+>(wavefun2)ウェーブレット関数 (3)
+<(wfighelp)Wavelet &Toolbox Help
+>(wfighelp)Wavelet Toolbox のヘルプ(&T)
+<(wfighelp)&What's This?
+>(wfighelp)これはなに?(&W)
+<(wfighelp)&Demos
+>(wfighelp)デモ(&D)
+<(wfighelp)&About Wavelet Toolbox ...
+>(wfighelp)Wavelet Toolbox について(&A)...
+<(wfighelp)Invalid context-sensitive help tag.
+>(wfighelp)状況依存ヘルプのタグが無効です。
+<(wfighelp)Context-sensitive help Tag string must begin with the "WT?" prefix.
+>(wfighelp)状況依存ヘルプのタグの文字列は、"WT?" の接頭語で始まらなければなりません。
+<(wfighelp)Failed to find on-line help entry:
+>(wfighelp)オンラインヘルプのエントリが見つかりません:
+<(wfighelp)The "docroot" command is used to identify the on-line documentation
+>(wfighelp)"docroot" コマンドはオンラインドキュメントパスを識別するために使われ、
+<(wfighelp)path, and it has returned an empty string.  This usually indicates
+>(wfighelp)空の文字列が返されました。このことは、通常オンラインヘルプが
+<(wfighelp)that you have not installed on-line help, or you have not properly
+>(wfighelp)インストールされていないか、MATLAB の設定が適切に設定されて
+<(wfighelp)set up the MATLAB Preferences.
+>(wfighelp)いないことを示しています。
+<(wfighelp)path, and it has returned a non-empty string.  This generally indicates
+>(wfighelp)空でない文字列が返されています。このことは一般的にオンラインヘルプが
+<(wfighelp)that you have installed on-line help, but the specified directory path
+>(wfighelp)インストールされているけれども、指定されたディレクトリパスが正しくない
+<(wfighelp)may be incorrect.
+>(wfighelp)ことを示しています。
+<(wfighelp)To modify your preference settings for the documentation path, go
+>(wfighelp)ドキュメントパスに対するユーザ設定を修正するには、
+<(wfighelp)to the File menu in the Command Window, and choose "Preferences".
+>(wfighelp)コマンドウィンドウのファイルメニューで "設定" を選択してください。
+<(wfighelp)Select "Help Browser", then check the "Documentation Location"
+>(wfighelp)"ヘルプブラウザ" を選択し、オンラインヘルプの位置を指定するために
+<(wfighelp)directory path to ensure it points the location of your on-line
+>(wfighelp)"ドキュメントの位置" ディレクトリをチェックして
+<(wfighelp)help.
+>(wfighelp)ください。
+<(wfighelp)Wavelet Toolbox Help Error
+>(wfighelp)Wavelet Toolbox ヘルプエラー
+<(wwaitans)Wait answer
+>(wwaitans)回答待ち
+<(wwaitans)Wait ... answer
+>(wwaitans)回答待ち ...
+<(allnodes)invalid level value
+>(allnodes)無効なレベル値
+<(cwimtool)Complex Continuous Wavelet 1-D
+>(cwimtool)1 次元複素連続ウェーブレット
+<(cwimtool)&Complex Continuous Analysis
+>(cwimtool)複素連続解析(&C)
+<(cwimtool)Continuous Transform
+>(cwimtool)連続変換
+<(cwimtool)Continuous Versus Discrete (1)
+>(cwimtool)連続 VS 離散 (1)
+<(cwimtool)Continuous Versus Discrete (2)
+>(cwimtool)連続 VS 離散 (2)
+<(cwimtool)Test Singularities (I)
+>(cwimtool)特異性のテスト (I)
+<(cwimtool)Test Singularities (II)
+>(cwimtool)特異性のテスト (II)
+<(cwimtool)Test Singularities (III)
+>(cwimtool)特異性のテスト (III)
+<(cwimtool)Near Breaks (I)
+>(cwimtool)ブレークポイントの近傍 (I)
+<(cwimtool)Near Breaks (II)
+>(cwimtool)ブレークポイントの近傍 (II)
+<(cwimtool)Symmetric Cantor curve
+>(cwimtool)対称 Cantor 曲線
+<(cwimtool)Noisy sine
+>(cwimtool)ノイズを含む正弦波
+<(cwimtool)Sampling Period:
+>(cwimtool)サンプリング周期:
+<(cwimtool)Sampling Period
+>(cwimtool)サンプリング周期
+<(cwimtool)Scale Settings
+>(cwimtool)スケール設定
+<(cwimtool)Step by Step Mode
+>(cwimtool)ステップ毎のモード
+<(cwimtool)Power 2 Mode
+>(cwimtool)2 のべき乗モード
+<(cwimtool)Manual Mode
+>(cwimtool)手動モード
+<(cwimtool)New Coefficients Line
+>(cwimtool)新規の係数ライン
+<(cwimtool)Refresh Maxima Lines
+>(cwimtool)極大値ラインのリフレッシュ
+<(cwimtool)Min  ( > 0)
+>(cwimtool)最小  ( > 0 )
+<(cwimtool)Max  ( <= %.0f )    
+>(cwimtool)最大  ( <= %.0f )    
+<(cwimtool)Power
+>(cwimtool)べき乗
+<(cwimtool)Scales : MATLAB Vector
+>(cwimtool)スケール : MATLAB のベクトル
+<(cwimtool)Selected Axes
+>(cwimtool)選択した座標軸
+<(cwimtool)Modulus
+>(cwimtool)絶対値
+<(cwimtool)Angle
+>(cwimtool)角度
+<(cwimtool)Both
+>(cwimtool)両方
+<(cwimtool)Maxima Lines
+>(cwimtool)極大値ライン
+<(cwimtool)Coefficients Line
+>(cwimtool)係数ライン
+<(cwimtool)Scales
+>(cwimtool)スケール
+<(cwimtool)Frequencies
+>(cwimtool)周波数
+<(cwimtool)Coloration Mode
+>(cwimtool)カラーリングモード
+<(cwimtool)Computing - scale a = %5.3f
+>(cwimtool)計算中 - スケール a = %5.3f
+<(cwimtool)Wait ... saving coefficients
+>(cwimtool)お待ちください ... 係数の保存中
+<(cwimtool)Wait ... cleaning and computing
+>(cwimtool)お待ちください ... クリアして計算中
+<(cwldtool)&Save Coefficients
+>(cwldtool)係数を保存(&S)
+<(cw1dtool)&Continuous Analysis
+>(cw1dtool)連続解析(&C)
+<(cw1dtool)Cantor curve
+>(cw1dtool)Cantor 曲線
+<(cw1dtool)Cantor curve (non-abs. cfs)
+>(cw1dtool)Cantor 曲線 (絶対値でない cfs)
+<(cw1dtool)Koch curve
+>(cw1dtool)Koch 曲線
+<(cw1dtool)Koch curve (non-abs. cfs)
+>(cw1dtool)Koch 曲線 (絶対値でない cfs)
+<(cw1dtool)Frequency breakdown
+>(cw1dtool)周波数分解
+<(cw1dtool)Frequency breakdown (non-abs. cfs)
+>(cw1dtool)周波数分解 (絶対値でない cfs)
+<(cw1dtool)Electrical consumption
+>(cw1dtool)消費電力
+<(cw1dtool)Local Maxima Lines
+>(cw1dtool)極大値ライン
+<(cw1dutil)Analyzed Signal  (length = %s)
+>(cw1dutil)解析した信号  (長さ = %s)
+<(cw1dutil)Angle of 
+>(cw1dutil)角度 
+<(cw1dutil)Modulus of 
+>(cw1dutil)絶対値 
+<(cw1dutil)Ca,b Coefficients
+>(cw1dutil)Ca,b 係数
+<(cw1dutil)  - Coloration mode : %s
+>(cw1dutil)  - カラーリングモード : %s
+<(cwt)time (or space) b
+>(cwt)時間 (空間) b
+<(cwt)scales a
+>(cwt)スケール a
+<(cwt)Invalid Value for Scales !
+>(cwt)スケールの値が無効です。
+<(cwt)Real part of Ca,b for a = %s
+>(cwt)a = %s に対する Ca,b の実部
+<(cwt)Imaginary part of Ca,b for a = %s
+>(cwt)a = %s に対する Ca,b の虚部
+<(cwt)Modulus of Ca,b for a = %s
+>(cwt)a = %s に対する Ca,b の絶対値
+<(cwt)Angle of Ca,b for a = %s
+>(cwt)a = %s に対する Ca,b の角度
+<(cwt)Invalid Daubechies wavelet number !
+>(cwt)Daubechies のウェーブレットの番号が無効です。
+<(ddencmp)Wavelet 1-D  --  Compression
+>(ddencmp)1 次元ウェーブレット  --  圧縮
+<(ddencmp)Signal Compression
+>(ddencmp)信号の圧縮
+<(ddencmp)Compression Procedure
+>(ddencmp)圧縮手順
+<(ddencmp)Compressed &Signal 
+>(ddencmp)圧縮した信号(&S) 
+% 2 spaces at end
+<(ddencmp)Global thresholding  
+>(ddencmp)グローバルなスレッシュホールド  
+% no spaces at end
+<(ddencmp)Global thresholding
+>(ddencmp)グローバルなスレッシュホールド
+<(ddencmp)By Level thresholding
+>(ddencmp)レベル毎の閾値
+<(ddencmp)Original signal
+>(ddencmp)オリジナル信号
+<(ddencmp)Original coefficients
+>(ddencmp)オリジナル係数
+<(ddencmp)Level number
+>(ddencmp)レベル番号
+<(ddencmp)Original details coefficients
+>(ddencmp)オリジナルの Detail 係数
+<(ddencmp)Original and compressed signals
+>(ddencmp)オリジナルと圧縮した信号
+<(ddencmp)Thresholded coefficients
+>(ddencmp)スレッシュホールド後の係数
+<(ddencmp)Update the synthesized signal ?
+>(ddencmp)合成した信号を更新しますか?
+<(dw1ddeno)&Decomposition 
+>(dw1ddeno)分解構造(&D) 
+<(dw1ddeno)&Coefficients 
+>(dw1ddeno)係数(&C) 
+<(dw1ddeno)Wavelet 1-D  --  De-noising
+>(dw1ddeno)1 次元ウェーブレット  --  ノイズ除去
+<(dw1ddeno)Signal De-noising
+>(dw1ddeno)信号のノイズ除去
+<(dw1ddeno)De-noised &Signal 
+>(dw1ddeno)ノイズ除去した信号(&S) 
+<(dw1ddeno)Visible
+>(dw1ddeno)表示
+<(dw1ddisp)Close window
+>(dw1ddisp)ウィンドウを閉じる
+<(dw1ddisp)More Display Options : Fig. %.0f
+>(dw1ddisp)詳細な表示オプション : Fig. %.0f
+<(dw1ddisp)Keep Display Options ?
+>(dw1ddisp)表示オプションを保持しますか?
+<(dw1ddisp)Cancel
+>(dw1ddisp)キャンセル
+%
+%
+<(dw1ddisp)Show Coefs. Axes
+>(dw1ddisp)係数の座標軸を表示
+<(dw1ddisp)Coefficients Values
+>(dw1ddisp)係数値
+<(dw1ddisp)Absolute values
+>(dw1ddisp)絶対値
+<(dw1ddisp)Signal
+>(dw1ddisp)信号
+<(dw1ddisp)Show %s Sig.
+>(dw1ddisp)%s の信号を表示
+<(dw1ddisp)Show Approx. Axes
+>(dw1ddisp)Approximation 係数の座標軸を表示
+<(dw1ddisp)Show Detail Axes
+>(dw1ddisp)Detail 係数の座標軸を表示
+<(dw1ddisp)Show Left Signal Axes
+>(dw1ddisp)左の信号の座標軸を表示
+<(dw1ddisp)Show Right Signal Axes
+>(dw1ddisp)右の信号の座標軸を表示
+<(dw1ddisp)Approximations Axes
+>(dw1ddisp)Approximation 係数の座標軸
+<(dw1ddisp)Details Axes
+>(dw1ddisp)Detail 係数の座標軸
+<(dw1ddisp)Approximation levels
+>(dw1ddisp)Approximation レベル
+<(dw1ddisp)Detail levels
+>(dw1ddisp)Detail レベル
+<(dw1ddisp)All
+>(dw1ddisp)すべて
+<(dw1ddisp)None
+>(dw1ddisp)なし
+<(dw1dhist)original signal - 
+>(dw1dhist)オリジナル信号 - 
+<(dw1dhist)Synthesized signal
+>(dw1dhist)合成した信号
+<(dw1dhist)Wavelet 1-D  --  Histograms
+>(dw1dhist)1 次元ウェーブレット  --  ヒストグラム
+<(dw1dhist)Show histograms
+>(dw1dhist)ヒストグラムの表示
+<(dw1dhist)coefficients remaining at level 
+>(dw1dhist)次のレベルで残っている係数 
+<(dw1dhist)Wavelet 1-D -- Histograms
+>(dw1dhist)1 次元ウェーブレット  --  ヒストグラム
+<(dw1dhist)original signal - reconstructed details
+>(dw1dhist)オリジナル信号 - 再構成した Detail 係数
+<(dw1dhist)original signal - approximations and details
+>(dw1dhist)オリジナル信号 - Approximation と Detail
+<(dw1dhist)original signal -  approximations
+>(dw1dhist)オリジナル信号 - Approximation
+<(dw1dhist)original signal - details coefficients
+>(dw1dhist)オリジナル信号 - Detail 係数
+<(dw1dhist)Nothing selected
+>(dw1dhist)選択なし
+%
+<(dw1dhist)De-noised signal
+>(dw1dhist)ノイズ除去した信号
+<(dw1dhist)Compressed signal
+>(dw1dhist)圧縮した信号
+<(dw1dhist)Approximations
+>(dw1dhist)Approximation
+<(dw1dhist)Details
+>(dw1dhist)Detail
+%
+% 対角後、2スペース
+<(dw2dcomp)Diagonal  
+>(dw2dcomp)対角  
+% 垂直後、2スペース
+<(dw2dcomp)Vertical  
+>(dw2dcomp)垂直方向  
+<(dw2dcomp)Wavelet 2-D  --  Compression
+>(dw2dcomp)2 次元ウェーブレット  --  圧縮
+<(dw2dcomp)Image Compression
+>(dw2dcomp)イメージの圧縮
+<(dw2dcomp)Compressing Images
+>(dw2dcomp)イメージの圧縮
+<(dw2dcomp)Save Wavelet Analysis (2D)
+>(dw2dcomp)ウェーブレット解析 (2D) を保存
+<(dw2ddeno)De-noised image
+>(dw2ddeno)ノイズ除去したイメージ
+<(dw2ddeno)Wavelet 2-D  --  De-noising
+>(dw2ddeno)2 次元ウェーブレット  --  ノイズ除去
+<(dw2ddeno)Image De-noising
+>(dw2ddeno)イメージのノイズ除去
+<(dw2dhist)Wavelet 2-D  --  Histograms
+>(dw2dhist)2 次元ウェーブレット  --  ヒストグラム
+<(dw2dhist)Wavelet 2-D -- Histograms
+>(dw2dhist)2 次元ウェーブレット  --  ヒストグラム
+<(dw2dhist)original image - 
+>(dw2dhist)オリジナルイメージ - 
+<(dw2dhist)approximations and 
+>(dw2dhist)Approximation + 
+%
+<(dw2dhist)Synthesized image
+>(dw2dhist)合成したイメージ
+<(dw2dhist)De_noised image
+>(dw2dhist)ノイズ除去したイメージ
+<(dw2dhist)Horizontal
+>(dw2dhist)水平方向
+%
+<(dw2dmngr)End Full Size
+>(dw2dmngr)フルサイズを終了
+<(dw2dmngr)Diagonal Details
+>(dw2dmngr)対角 Detail
+<(dw2dmngr)Horizontal Details
+>(dw2dmngr)水平 Detail
+<(dw2dmngr)Vertical Details
+>(dw2dmngr)垂直 Detail
+<(dw2dmngr)Load Coefficients (2D)
+>(dw2dmngr)係数 (2D) の読み込み
+<(dw2dmngr)Save Coefficients (2D)
+>(dw2dmngr)係数 (2D) を保存
+<(dw2dmngr)Load Wavelet Analysis (2D)
+>(dw2dmngr)ウェーブレット解析 (2D) の読み込み
+<(dw2dmngr)Reconstructed Image
+>(dw2dmngr)再構成したイメージ
+<(dw2dmngr)Synthesized Image
+>(dw2dmngr)合成したイメージ
+<(dw2dmngr)Original Synthesized Image
+>(dw2dmngr)オリジナルの合成したイメージ
+<(dw2dmngr)Approximation at
+>(dw2dmngr)Approximation
+<(dw2dmngr)Detail at
+>(dw2dmngr)Detail
+<(dw2dmngr)Level 
+>(dw2dmngr)レベル 
+<(mdw1dtool)level 
+>(mdw1dtool)レベル 
+<(dw2dmngr)Coefficients of approximation at level 
+>(dw2dmngr)Approximation 係数 - レベル 
+<(dw2dmngr)Reconstructed approximation at level 
+>(dw2dmngr)再構成した Approximation - レベル 
+<(dw2dmngr)Reconstructed detail at level 
+>(dw2dmngr)再構成した Detail - レベル 
+<(dw2dmngr)Coefficients of detail at level 
+>(dw2dmngr)Detail 係数 - レベル 
+<(dw2dmngr)Wavelet 2-D -- Statistics
+>(dw2dmngr)2 次元ウェーブレット  --  統計量
+<(dw2dmngr)ScreenSize
+>(dw2dmngr)スクリーンサイズ
+<(dw2dtool)&Synthesized Image 
+>(dw2dtool)合成したイメージ(&S) 
+<(dw2dtool)Wavelet 2-D
+>(dw2dtool)2 次元ウェーブレット
+<(dw2dtool)T&wo-Dimensional Analysis
+>(dw2dtool)2 次元解析(&W)
+<(dw2dtool)Working with Images
+>(dw2dtool)イメージの取り扱い
+<(dw2dtool)Synthesize
+>(dw2dtool)合成
+<(dw2dtool)Operations on selected image : 
+>(dw2dtool)選択したイメージの処理 : 
+<(dw2dtool)Reconstruct
+>(dw2dtool)再構成
+<(dw2dtool)Visualize
+>(dw2dtool)可視化
+<(dw2dtool)Full Size
+>(dw2dtool)フルサイズ
+<(dw2dtool)View mode : Square
+>(dw2dtool)表示モード : 方形
+<(dw2dtool)View mode : Tree
+>(dw2dtool)表示モード : ツリー
+<(dw2dtool)View original image
+>(dw2dtool)オリジナルイメージの表示
+<(dw2dtool)View synthesized image
+>(dw2dtool)合成したイメージの表示
+<(dw2dtool)View selected image
+>(dw2dtool)選択したイメージの表示
+<(dw2dtool)View wavelet decomposition
+>(dw2dtool)ウェーブレット分解構造を表示
+<(dw2dtool)Decomposition at level : 
+>(dw2dtool)分解レベル : 
+<(dw2dutil)Image Selection
+>(dw2dutil)イメージの選択
+<(dw2dutil)off
+>(dw2dutil)オフ
+<(dw2dutil)Initial Image ... None
+>(dw2dutil)初期イメージ ...なし
+<(dw2dutil)Original Image
+>(dw2dutil)オリジナルイメージ
+<(dwtmode)!  WARNING: Change DWT Extension Mode  !
+>(dwtmode)!  警告: DWT 拡張モードを変更してください。
+<(dwtmode)Saving DWT Extension in %s !
+>(dwtmode)%s の DWT 拡張モードを保存中です。
+<(dwtmode)Default DWT Mode is : %s
+>(dwtmode)デフォルトの DWT モード : %s
+<(dwtmode)Save DWT Extension Mode failed !
+>(dwtmode)DWT 拡張モードを保存できませんでした。
+<(dwtmode)Invalid DWT Extension Mode !
+>(dwtmode)DWT 拡張モードが無効です。
+<(dwtmode)Save DWT Extension Mode
+>(dwtmode)DWT 拡張モードを保存
+<(dwtmode)Invalid field name
+>(dwtmode)無効なフィールド名
+<(dwtmode)Unknown Extension Mode
+>(dwtmode)不明な拡張モード
+<(dwtmode)**  DWT Extension Mode: Zero Padding  **
+>(dwtmode)**  DWT 拡張モード: ゼロパディング  **
+<(dwtmode)**  DWT Extension Mode: Symmetrization  **
+>(dwtmode)**  DWT 拡張モード: 対称  **
+<(dwtmode)**  DWT Extension Mode: Smooth Padding of order 0  **
+>(dwtmode)**  DWT 拡張モード: 0 次の平滑化パデイング  **
+<(dwtmode)**  DWT Extension Mode: Smooth Padding of order 1  **
+>(dwtmode)**  DWT 拡張モード: 1 次の平滑化パデイング  **
+<(dwtmode)** DWT Extension Mode: Periodized Padding  **
+>(dwtmode)**  DWT 拡張モード: 周期的なパディング  **
+<(dwtmode)**  DWT Extension Mode: Periodization  **
+>(dwtmode)**  DWT 拡張モード: 周期性  **
+<(dwtmode)Smooth Padding of order 1
+>(dwtmode)次数 1 の平滑化パデイング
+<(gendens)Invalid argument value for proba
+>(gendens)proba に対する無効な引数値
+<(dyaddown)too many arguments.
+>(dyaddown)引数が多すぎます。
+<(dyaddown)invalid argument value
+>(dyaddown)無効な引数の値
+<(dynvtool)Info
+>(dynvtool)情報
+<(dynvtool)To zoom, select an area in one of plots by holding down
+>(dynvtool)ズームするには、左マウスボタンを押したままドラッグし、
+<(dynvtool)the left-mouse button and dragging. Then click on the
+>(dynvtool)プロット内のある領域を選択してください。そして、適切な
+<(dynvtool)appropriate zoom button.
+>(dynvtool)ズームボタンをクリックしてください。
+<(dynvtool)Wavelet Toolbox Zoom
+>(dynvtool)Wavelet Toolbox のズーム
+<(dynvtool)Zoom in X
+>(dynvtool)X 軸方向に拡大
+<(dynvtool)Zoom out X
+>(dynvtool)X 軸方向に縮小
+<(dynvtool)Zoom in Y
+>(dynvtool)Y 軸方向にズームイン
+<(dynvtool)Zoom out Y
+>(dynvtool)Y 軸方向に縮小
+<(dynvtool)Zoom in XY
+>(dynvtool)XY 軸方向に拡大
+<(dynvtool)Zoom out XY
+>(dynvtool)XY 軸方向に縮小
+<(dynvtool)View Axes
+>(dynvtool)座標軸を表示
+<(dynvtool)History
+>(dynvtool)履歴
+<(dynvtool)&Load Image 
+>(dynvtool)イメージの読み込み(&L) 
+<(imgxtool)Extend / Truncate
+>(imgxtool)拡張 / 切り取り
+<(imgxtool)Save Transformed Image
+>(imgxtool)変換したイメージを保存
+<(imgxtool) Do you want to save the transformed image ?
+>(imgxtool) 変換したイメージを保存しますか?
+<(imgxtool)&Save Transformed Image
+>(imgxtool)変換したイメージを保存(&S)
+<(imgxtool)&Load Image
+>(imgxtool)イメージの読み込み(&L)
+<(imgxtool)Image Extension / Truncation
+>(imgxtool)イメージの拡張 / 切り取り
+<(imgxtool)Two-Dimensional &Extension
+>(imgxtool)2 次元の拡張(&E)
+<(imgxtool)Dealing with Border Distortion
+>(imgxtool)境界の歪みの取り扱い
+<(imgxtool)&Example Extension
+>(imgxtool)拡張例 (&E)
+<(imgxtool)Image
+>(imgxtool)画像
+<(imgxtool)Length
+>(imgxtool)長さ
+<(imgxtool)Next Power of 2
+>(imgxtool)次の 2 のべき乗
+<(imgxtool)Previous Power of 2
+>(imgxtool)前の 2 のべき乗
+<(imgxtool)Desired Length
+>(imgxtool)目的の長さ
+<(imgxtool)Direction to extend
+>(imgxtool)拡張方向
+<(imgxtool)Both 
+>(imgxtool)両方 
+<(imgxtool)Left 
+>(imgxtool)左 
+<(imgxtool)Right
+>(imgxtool)右
+<(imgxtool)Up   
+>(imgxtool)上   
+<(imgxtool)Down 
+>(imgxtool)下 
+<(imgxtool)Vertical
+>(imgxtool)垂直方向
+<(imgxtool)Extension Mode
+>(imgxtool)拡張モード
+<(imgxtool)Symmetric    
+>(imgxtool)対称    
+<(imgxtool)Periodic     
+>(imgxtool)周期的     
+<(imgxtool)Zero Padding 
+>(imgxtool)ゼロパディング 
+<(imgxtool)Continuous   
+>(imgxtool)連続   
+<(imgxtool)Smooth       
+>(imgxtool)平滑化       
+<(imgxtool)For SWT      
+>(imgxtool)SWT      
+<(imgxtool)Extend
+>(imgxtool)拡張
+<(imgxtool)SWT Decomposition Level
+>(imgxtool)SWT 分解レベル
+<(imgxtool)Computed Length
+>(imgxtool)計算した長さ
+<(imgxtool)Minimal length of the 
+>(imgxtool)SWT 分解に対して 
+<(imgxtool)periodic extended signal 
+>(imgxtool)周期的に拡張された信号の 
+<(imgxtool)for SWT decomposition
+>(imgxtool)最小の長さ
+<(imgxtool)Down
+>(imgxtool)下
+<(imgxtool)Transformed image
+>(imgxtool)変換したイメージ
+<(imgxtool)The size of the image 
+>(imgxtool)イメージのサイズ 
+<(imgxtool)The SWT extension is not necessary!
+>(imgxtool)SWT 拡張は必要ありません。
+<(imgxtool)SWT Extension Mode
+>(imgxtool)SWT 拡張モード
+<(errargt)integer(s) > 0 , expected
+>(errargt)整数 > 0 が必要
+<(errargt)real(s) > 0 , expected
+>(errargt)実数 > 0 が必要
+<(errargt)string expected
+>(errargt)文字列が必要
+<(errargt)vector expected
+>(errargt)ベクトルが必要
+<(errargt)row vector expected
+>(errargt)行ベクトルが必要
+<(errargt)column vector expected
+>(errargt)列ベクトルが必要
+<(errargt)date expected
+>(errargt)日が必要
+<(errargt)month expected
+>(errargt)月が必要
+<(errargt)undefined type of variable
+>(errargt)未定義の変数タイプ
+<(errargt)ERROR ... 
+>(errargt)エラー ... 
+<(errargt)ARGUMENTS ERROR
+>(errargt)引数エラー
+<(scal2frq)Invalid Value for Scales a !
+>(scal2frq)スケール a の値が無効です。
+<(scal2frq)Invalid Value for Delta !
+>(scal2frq)デルタの値が無効です。
+<(scal2frq)Signal Extension / Truncation
+>(scal2frq)信号の拡張 / 切り取り
+<(sigxtool)Original Signal
+>(sigxtool)オリジナル信号
+<(sigxtool)One-Dimensional &Extension
+>(sigxtool)1 次元の拡張(&E)
+<(sigxtool)&Save Transformed Signal 
+>(sigxtool)変換した信号を保存(&S) 
+<(sigxtool)Transformed signal
+>(sigxtool)変換した信号
+<(sigxtool)Direction to truncate
+>(sigxtool)切り取り方向
+<(sigxtool)Truncate
+>(sigxtool)切り取り
+<(sigxtool)The length of the signal ( %s ) is a power of 2.
+>(sigxtool)信号 ( %s ) の長さは 2 のべき乗です。
+<(sigxtool)Unknown Action
+>(sigxtool)不明なアクション
+<(sigxtool)Save Transformed Signal
+>(sigxtool)変換した信号を保存
+<(sigxtool) Do you want to save the transformed signal ?
+>(sigxtool) 変換した信号を保存しますか?
+<(sigxtool)n must be a power of two !
+>(sigxtool)n は 2 のべき乗でなければなりません。
+<(sigxtool)The interval [LB,UB] is not valid !
+>(sigxtool)区間 [LB,UB] は有効ではありません。
+<(waveinfo)invalid wavelet family short name : %s
+>(waveinfo)無効なウェーブレットファミリの省略名 : %s
+<(wavemenu)Wavelet Toolbox Main Menu
+>(wavemenu)Wavelet Toolbox メインメニュー
+<(wavemenu)Wavelet 1-D
+>(wavemenu)1 次元ウェーブレット
+<(wavemenu)Wavelet Packet 1-D
+>(wavemenu)1 次元ウェーブレットパケット
+<(wavemenu)Continuous Wavelet 1-D
+>(wavemenu)1 次元連続ウェーブレット
+<(wavemenu)Wavelet Packet 2-D
+>(wavemenu)2 次元ウェーブレットパケット
+<(wavemenu)Wavelet Display
+>(wavemenu)ウェーブレット表示
+<(wavemenu)Wavelet Packet Display
+>(wavemenu)ウェーブレットパケットの表示
+<(wavemenu)SWT De-noising 1-D
+>(wavemenu)1 次元 SWT ノイズ除去
+<(wavemenu)Density Estimation 1-D
+>(wavemenu)1 次元密度推定
+<(wavemenu)Regression Estimation 1-D
+>(wavemenu)1 次元回帰推定
+<(wavemenu)SWT De-noising 2-D
+>(wavemenu)2 次元 SWT ノイズ除去
+<(wavemenu)Wavelet Coefficients Selection 2-D
+>(wavemenu)2 次元ウェーブレット係数選択
+<(wavemenu)Signal Extension
+>(wavemenu)信号の拡張
+<(wavemenu)Image Extension
+>(wavemenu)イメージの拡張
+<(wavemenu) One-Dimensional 
+>(wavemenu) 1 次元 
+<(wavemenu) Two-Dimensional 
+>(wavemenu) 2 次元 
+<(wavemenu)  Display  
+>(wavemenu)  表示  
+<(wavemenu)Display
+>(wavemenu)表示
+<(wavemenu) Specialized Tools 1-D 
+>(wavemenu) 1 次元特殊ツール 
+<(wavemenu) Specialized Tools 2-D 
+>(wavemenu) 2 次元特殊ツール 
+<(wavemenu)  Extension  
+>(wavemenu)  拡張  
+<(wavemenu)One-Dimensional Discrete Wavelet Analysis Tool
+>(wavemenu)1 次元離散ウェーブレット解析ツール
+<(wavemenu)One-Dimensional Discrete Wavelet Packet Analysis Tool
+>(wavemenu)1 次元離散ウェーブレットパケット解析ツール
+<(wavemenu)One-Dimensional Continuous Wavelet Analysis Tool
+>(wavemenu)1 次元連続ウェーブレット解析ツール
+<(wavemenu)One-Dimensional Continuous Wavelet (Complex Case) Analysis Tool
+>(wavemenu)1 次元連続ウェーブレット (複素数) 解析ツール
+<(wavemenu)Two-Dimensional Discrete Wavelet Analysis Tool
+>(wavemenu)2 次元離散ウェーブレット解析ツール
+<(wavemenu)Two-Dimensional Discrete Wavelet Packet Analysis Tool
+>(wavemenu)2 次元離散ウェーブレットパケット解析ツール
+<(wavemenu)Wavelet Display Tool
+>(wavemenu)ウェーブレット表示ツール
+<(wavemenu)Wavelet Packet Display Tool
+>(wavemenu)ウェーブレットパケット表示ツール
+<(wavemenu)One-Dimensional Stationary Wavelet Analysis Tool
+>(wavemenu)1 次元定常ウェーブレット解析ツール
+<(wavemenu)One-Dimensional Density Estimation Tool
+>(wavemenu)1 次元密度推定ツール
+<(wavemenu)One-Dimensional Regression Estimation Tool
+>(wavemenu)1 次元回帰推定ツール
+<(wavemenu)One-Dimensional Wavelet Coefficient Selection Tool
+>(wavemenu)1 次元ウェーブレット係数選択ツール
+<(wavemenu)Two-Dimensional Stationary Wavelet Analysis Tool
+>(wavemenu)2 次元定常ウェーブレット解析ツール
+<(wavemenu)Two-Dimensional Wavelet Coefficient Selection Tool
+>(wavemenu)2 次元ウェーブレット係数選択ツール
+<(wavemenu)One-Dimensional Signal Extension and Truncation Tool
+>(wavemenu)1 次元信号拡張と切り取りツール
+<(wavemenu)Two-Dimensional Image Extension and Truncation Tool
+>(wavemenu)2 次元イメージ拡張と切り取りツール
+<(wavemenu)Exit the Wavelet Toolbox Main Menu
+>(wavemenu)Wavelet Toolbox メインメニューの終了
+%
+%
+<(wavemngr)Wavelet test
+>(wavemngr)ウェーブレットテスト
+<(wavemngr)Wavelet Family Name is empty !
+>(wavemngr)ウェーブレットファミリ名が空です。
+<(wavemngr)The Wavelet Family Name is already used !
+>(wavemngr)ウェーブレットファミリ名が既に使われています。
+<(wavemngr)Wavelet Family Short Name is empty !
+>(wavemngr)ウェーブレットファミリの省略名が空です。
+<(wavemngr)The Wavelet Family Short Name is already used !
+>(wavemngr)ウェーブレットファミリの省略名が既に使われています。
+<(wavemngr)Invalid Wavelet Type !
+>(wavemngr)ウェーブレットタイプが無効です。
+<(wavemngr)Invalid Wavelet type of numbers !
+>(wavemngr)ウェーブレットタイプの番号が無効です。
+<(wavemngr)Invalid Wavelet numbers !
+>(wavemngr)ウェーブレットの番号が無効です。
+<(wavemngr)Invalid Wavelet File Name !
+>(wavemngr)ウェーブレットのファイル名が無効です。
+<(wavemngr)Invalid number of arguments !
+>(wavemngr)引数の数が無効です。
+<(wavemngr)Invalid value for wavelet bounds !
+>(wavemngr)ウェーブレットの範囲が無効です。
+<(wavemngr)Add New Wavelet FAILED !!
+>(wavemngr)新規のウェーブレットを追加できません。
+<(wavemngr)Wavelet Family (Short) Name is empty !
+>(wavemngr)ウェーブレットファミリの (省略) 名が空です。
+<(wavemngr)Invalid Wavelet Family (Short) Name !
+>(wavemngr)ウェーブレットファミリの (省略) 名が無効です。
+<(wavemngr)You can't delete %s Wavelet Family !
+>(wavemngr)%s のウェーブレットファミリを削除できません。
+<(wavemngr)One-Dimensional Estimation - &Random Design
+>(wavemngr)1 次元推定 - ランダム設計(&R)
+<(wavemngr)One-Dimensional Estimation - &Fixed Design
+>(wavemngr)1 次元推定 - 固定設計(&F)
+<(wavemngr)Regression Estimation
+>(wavemngr)回帰推定
+<(wavemngr)Data for &Fixed Design Regression
+>(wavemngr)固定設計の回帰用データ(&F)
+<(wavemngr)Data for &Stochastic Design Regression
+>(wavemngr)確率的な設計の回帰用データ(&S)
+<(wavemngr)Fixed Design
+>(wavemngr)固定設計
+<(wavemngr)Example I
+>(wavemngr)例 I
+<(wavemngr)Example II
+>(wavemngr)例 II
+<(wavemngr)Fixed Design - Interval Dependent Noise Variance
+>(wavemngr)固定設計  - 区間に依存したノイズの分散
+<(wavemngr)Stochastic Design
+>(wavemngr)確率的な設計
+<(wavemngr)Example III
+>(wavemngr)例 III
+<(wavemngr)&One-Dimensional Estimation
+>(wavemngr)1 次元推定(&O)
+<(wavemngr)Decompose
+>(wavemngr)分解
+<(wavemngr)Overlay Estimated Function
+>(wavemngr)推定関数の重ね書き
+<(wavemngr)File not found or invalid values for variables!
+>(wavemngr)ファイルが見つからない、または変数の値が無効です。
+<(wavemngr)Data (X,Y)
+>(wavemngr)データ (X,Y)
+<(wavemngr)Processed Data (X,Y)
+>(wavemngr)処理されたデータ (X,Y)
+<(wavemngr)Regression Estimation 1-D - Fixed Design
+>(wavemngr)1 次元回帰推定 - 固定設計
+<(wavemngr)Regression Estimation 1-D - Stochastic Design
+>(wavemngr)1 次元回帰推定 - 確率的な設計
+<(wavemngr)Binned Data
+>(wavemngr)ビン化されたデータ
+<(wavemngr)Histogram of X
+>(wavemngr)X のヒストグラム
+<(wavemngr)Regression Estimate Y = f(X)
+>(wavemngr)回帰推定 Y = f(X)
+<(wavemngr)Data
+>(wavemngr)データ
+<(wavemngr)Density Estimate
+>(wavemngr)密度推定
+<(wavemngr)Details coefficients
+>(wavemngr)Detail 係数
+<(wgfields)Invalid Value for HandleVisibility
+>(wgfields)無効な HandleVisibility の値
+<(wgfields)Coefficient Coloration Mode
+>(wgfields)係数のカラーリングモード
+<(wgfields)Separator
+>(wgfields)区切り記号
+<(wgfields)Absolute Mode
+>(wgfields)絶対値モード
+<(wgfields)Normal Mode
+>(wgfields)ノーマルモード
+<(wgfields)Print Pre&view...
+>(wgfields)印刷プレビュー(&V)...
+<(wgfields)Print Set&up...
+>(wgfields)プリンタの設定(&U)...
+<(wgfields)Pa&ge Setup...
+>(wgfields)ページ設定(&G)...
+<(wgfields)Pre&ferences...
+>(wgfields)設定(&F)...
+<(wgfields)E&xport...
+>(wgfields)エクスポート(&X)...
+<(wgfields)Save &As...
+>(wgfields)別名で保存(&A)...
+<(wgfields)Figure &As...
+>(wgfields)別名で Figure を保存(&A)...
+<(wgfields)&Load
+>(wgfields)読み込み(&L)
+<(wgfields)&Save
+>(wgfields)保存(&S)
+<(wfigutil)invalid biorthogonal wavelet file : 
+>(wfigutil)無効な双直交ウェーブレットファイル : 
+<(wguidiv)The decomposition is not a 
+>(wguidiv)分解構造ではありません 
+<(wguidiv)More on Residuals for %s
+>(wguidiv)%s の詳細な残差
+<(wguidiv)One-Dimensional Residuals
+>(wguidiv)1 次元残差
+<(wguidiv)Two-Dimensional Residuals
+>(wguidiv)2 次元残差
+<(wguidiv)Histogram and Cumul. Histogram
+>(wguidiv)ヒストグラムと累積ヒストグラム
+<(wguidiv)Histogram and Cumul. Hist.
+>(wguidiv)ヒストグラムと累積ヒストグラム
+<(wguidiv)Autocorrelations and Spectrum
+>(wguidiv)自己相関とスペクトル
+<(wguidiv)Descriptive Statistics
+>(wguidiv)記述統計
+<(wguidiv)Autocorrelations
+>(wguidiv)自己相関
+<(wguidiv)FFT - Spectrum
+>(wguidiv)FFT - スペクトル
+<(wguidiv)Frequency
+>(wguidiv)周波数
+<(wguidiv)Energy
+>(wguidiv)エネルギー
+<(wguidiv)Page 1
+>(wguidiv)ページ 1
+<(wguidiv)Page 2
+>(wguidiv)ページ 2
+<(wguidiv)Page 3
+>(wguidiv)ページ 3
+<(whelpfun)Information window
+>(whelpfun)情報ウィンドウ
+<(whelpfun)Information window : %s
+>(whelpfun)情報ウィンドウ : %s
+<(whelpfun)Wavelet Packet 1-D  --  Compression
+>(whelpfun)1 次元ウェーブレットパケット  --  圧縮
+<(whelpfun)Save Wavelet Packet Analysis (1D)
+>(whelpfun)ウェーブレットパケット解析 (1D) を保存
+<(wmemtool)Frequency Order : Global + abs
+>(wmemtool)周波数順 : グローバル + 絶対値
+<(wmemtool)Frequency Order : By Level + abs
+>(wmemtool)周波数順 : レベル毎 + 絶対値
+<(wmemtool)Frequency Order : Global
+>(wmemtool)周波数順 : グローバル
+<(wmemtool)Frequency Order : By Level
+>(wmemtool)周波数順 : レベル毎
+<(wmemtool)Natural Order : Global + abs
+>(wmemtool)自然順 : グローバル + 絶対値
+<(wmemtool)Natural Order : By Level + abs
+>(wmemtool)自然順 : レベル毎 + 絶対値
+<(wmemtool)Natural Order : Global
+>(wmemtool)自然順 : グローバル
+<(wmemtool)Natural Order : By Level
+>(wmemtool)自然順 : レベル毎
+<(wmemtool)Fontsize
+>(wmemtool)フォントサイズ
+<(wfileinf)Wavelet Packet 1-D  --  De-noising
+>(wfileinf)1 次元ウェーブレットパケット  --  ノイズ除去
+<(wfileinf)Analyzed Signal : length = %.0f
+>(wfileinf)解析した信号 : 長さ = %.0f
+<(wfileinf)Decomposition Tree
+>(wfileinf)分解ツリー
+<(wfileinf)Node Action Result
+>(wfileinf)ノードアクションの結果
+<(wp1dtool)Wavelet Packets 1-D
+>(wp1dtool)1 次元ウェーブレットパケット
+<(wp1dtool)&One-Dimensional Analysis
+>(wp1dtool)1 次元解析(&O)
+<(wp1dtool)Wavelet Packets
+>(wp1dtool)ウェーブレットパケット
+<(wp1dtool)Tool Features
+>(wp1dtool)ツールの機能
+<(wp1dtool)Best Tree
+>(wp1dtool)ベストツリー
+<(wp1dtool)Best Level
+>(wp1dtool)ベストレベル
+<(wp1dtool)Initial Tree
+>(wp1dtool)初期ツリー
+<(wp1dtool)Wavelet Tree
+>(wp1dtool)ウェーブレットツリー
+<(wp1dtool)Cut Tree at Level : 
+>(wp1dtool)次のレベルでツリーをカット : 
+<(wp1dtool)Node Label : 
+>(wp1dtool)ノードラベル : 
+<(wp1dtool)Depth_Pos
+>(wp1dtool)深さ_位置
+<(wp1dtool)Index
+>(wp1dtool)インデックス
+<(wp1dtool)Type
+>(wp1dtool)タイプ
+<(wp1dtool)Node Action : 
+>(wp1dtool)ノードアクション : 
+<(wp1dtool)Split / Merge
+>(wp1dtool)分割 / 結合
+<(wp1dtool)Recons.
+>(wp1dtool)再構成
+<(wp1dtool)Select On
+>(wp1dtool)選択開始
+<(wp1dtool)Select Off
+>(wp1dtool)選択終了
+<(wp1dtool)View Col. Cfs
+>(wp1dtool)列係数を表示
+<(wp1dtool)Select Nodes and
+>(wp1dtool)ノードを選択して
+<(wp1dtool)View decomposition tree
+>(wp1dtool)分解ツリーを表示
+<(wp1dtool)View node action result
+>(wp1dtool)ノードアクションの結果を表示
+<(wp1dtool)View analyzed signal
+>(wp1dtool)解析した信号を表示
+<(wp1dtool)View colored coefficients
+>(wp1dtool)カラーリングした係数を表示
+<(wp1dtool)Invalid figure !
+>(wp1dtool)Figure が無効です。
+%
+%
+<(wsfields)Unknown object field(s):
+>(wsfields)不明なオブジェクトのフィールド:
+<(wsfields)Field Names ERROR ...
+>(wsfields)フィールド名エラー ...
+<(wsfields)Invalid field settings!
+>(wsfields)フィールドの設定が無効です。
+<(wpssnode)Best Level Tree
+>(wpssnode)ベストレベルのツリー
+<(wpssnode)Cut Tree
+>(wpssnode)カットされたツリー
+<(wpssnode)Parent
+>(wpssnode)親
+<(wpssnode)frequency ordered coefficients
+>(wpssnode)周波数順の係数
+<(wpssnode)Wavelet
+>(wpssnode)ウェーブレット
+<(wpssnode)&Image 
+>(wpssnode)イメージ(&I) 
+<(wpssnode)Wavelet Packets 2-D
+>(wpssnode)2 次元ウェーブレットパケット
+<(wp2dtool)Size
+>(wp2dtool)サイズ
+<(wp2dtool)View analyzed image
+>(wp2dtool)解析したイメージを表示
+%
+%
+<(wvdtool)Wavelet Dis&play
+>(wvdtool)ウェーブレットの表示(&P)
+<(wvdtool)Available Wavelets
+>(wvdtool)利用可能なウェーブレット
+<(wvdtool)Wavelet Families
+>(wvdtool)ウェーブレットファミリ
+<(wvdtool)Properties of Wavelet Families
+>(wvdtool)ウェーブレットファミリのプロパティ
+<(wvdtool)Adding Your Own Wavelets
+>(wvdtool)ユーザ独自のウェーブレットを追加
+<(wvdtool)All Wavelet Families
+>(wvdtool)すべてのウェーブレット名
+<(wvdtool)The wavelet is computed on a 2^Refinement grid
+>(wvdtool)2^リファインメントのグリッド上で計算されたウェーブレット
+<(wvdtool)Decomposition low-pass filter
+>(wvdtool)分解ローパスフィルタ
+<(wvdtool)Reconstruction low-pass filter
+>(wvdtool)再構成ローパスフィルタ
+<(wvdtool)Decomposition high-pass filter
+>(wvdtool)分解ハイパスフィルタ
+<(wvdtool)Reconstruction high-pass filter
+>(wvdtool)再構成ハイパスフィルタ
+<(wvdtool)Biorthogonal Wavelet --> %s
+>(wvdtool)双直交ウェーブレット --> %s
+<(wvdtool)Decomposition scaling function phi
+>(wvdtool)分解スケーリング関数 phi
+<(wvdtool)Reconstruction scaling function phi
+>(wvdtool)再構成スケーリング関数 phi
+<(wvdtool)Reconstruction wavelet function psi
+>(wvdtool)再構成ウェーブレット関数 psi
+<(wvdtool)Scaling function phi
+>(wvdtool)スケーリング関数 phi
+<(wvdtool)Wavelet function psi
+>(wvdtool)ウェーブレット関数 psi
+<(wvdtool)Real part of function psi
+>(wvdtool)関数 psi の実部
+<(wvdtool)Imaginary part of function psi
+>(wvdtool)関数 psi の虚部
+<(wvdtool)Modulus of function psi
+>(wvdtool)関数 psi の絶対値
+<(wvdtool)Angle of function psi 
+>(wvdtool)関数 psi の角度 
+<(wvdtool)The decomposition is not a
+>(wvdtool)分解構造ではありません
+<(wvdtool)Load Wavelet Packet Analysis (1D)
+>(wvdtool)ウェーブレットパケット解析 (1D) の読み込み
+<(wp1dstat)Wavelet Packet 1-D  --  Statistics
+>(wp1dstat)1 次元ウェーブレットパケット  --  統計量
+<(wp1dstat)Wavelet Packet 1-D -- Statistics
+>(wp1dstat)1 次元ウェーブレットパケット  --  統計量
+%
+%
+<(wfigmngr)Dynamical Visualization Tool
+>(wfigmngr)動的可視化ツール
+<(wfigmngr)&File
+>(wfigmngr)ファイル(&F)
+<(wfigmngr)&Close
+>(wfigmngr)閉じる(&C)
+<(wfigmngr)&Print...
+>(wfigmngr)印刷(&P)...
+<(wfigmngr)&Open...
+>(wfigmngr)開く(&O)...
+<(wfigmngr)&New Figure
+>(wfigmngr)新規 Figure(&N)
+<(wfigmngr)&Figure 
+>(wfigmngr)Figure(&F) 
+<(wfigmngr)&Print Tools
+>(wfigmngr)印刷ツール(&P)
+%
+%
+<(utanapar)Data  (Size)
+>(utanapar)データ  (サイズ)
+<(utcolmap)Colormap
+>(utcolmap)カラーマップ
+<(utcolmap)Nb. Colors
+>(utcolmap)カラー数
+<(utcolmap)Brightness
+>(utcolmap)明るさ
+<(wmachdep)Center On
+>(wmachdep)中央
+<(dw1dtool)Load Coefficients (1D)
+>(dw1dtool)(1D) 係数の読み込み
+<(dw1dcfsm)Loaded Signal
+>(dw1dcfsm)読み込まれた信号
+<(dw1dcfsm)Signal and Approximation at level %.0f
+>(dw1dcfsm)%.0f レベルの信号と Approximation
+<(dw1dcfsm)Original Synthesized Signal and Approximation at level %.0f
+>(dw1dcfsm)%.0f レベルのオリジナルの合成した信号と Approximation
+<(dw1dcfsm)Detail at level %.0f
+>(dw1dcfsm)%.0f レベルの Detail
+<(dw1dcfsm)Details Coefficients
+>(dw1dcfsm)Detail 係数
+<(dw1dcfsm)Loaded Details Coefficients from level 
+>(dw1dcfsm)読み込まれた Detail 係数 - レベル 
+<(dw1dscrm) Approximation at level %d (reconstructed). 
+>(dw1dscrm) レベル %d の Approximation (再構成) 
+
+%
+<(dw1dcfsm) Detail at level 
+>(dw1dcfsm) Detail - レベル 
+<(dw1dcfsm)Synthesized Signal
+>(dw1dcfsm)合成した信号
+<(dw1dcfsm)De-noised Signal
+>(dw1dcfsm)ノイズ除去した信号
+<(dw1dcfsm)Compressed Signal
+>(dw1dcfsm)圧縮した信号
+%
+<(dynvzaxe)View Axes for fig. %s
+>(dynvzaxe)Figure %s の軸表示
+<(dw1dmngr)The level of the decomposition \nis too large (max = %.0f).
+>(dw1dmngr)分解レベルが大きすぎます\n(max = %.0f)
+<(dw1dmngr)Load Wavelet Analysis (1D)
+>(dw1dmngr)ウェーブレット解析 (1D) の読み込み
+<(dw1dmngr)Save Coefficients (1D)
+>(dw1dmngr)(1D) 係数を保存
+<(dw1dmngr)Save Wavelet Analysis (1D)
+>(dw1dmngr)ウェーブレット解析 (1D) を保存
+<(dw1dmngr)Scale of colors from MIN to MAX
+>(dw1dmngr)最小から最大までのカラースケール
+<(dw1dmngr)Wavelet 1-D  --  Statistics
+>(dw1dmngr)1 次元ウェーブレット  --  統計量
+%
+%
+<(cw1dmngr)Wait ... coefficients coloration
+>(cw1dmngr)お待ちください ... 係数のカラーリング
+<(cw1dmngr)Load Signal
+>(cw1dmngr)信号の読み込み
+<(cw1dmngr)Save Coefficients (CW1D)
+>(cw1dmngr)(CW1D) 係数を保存
+<(dw1dtrem)DWT : Wavelet Tree
+>(dw1dtrem)DWT : ウェーブレットツリー
+<(dw1dtrem)Signal (approximation at level 0).
+>(dw1dtrem)信号 (レベル 0 の Approximation)
+<(dw1dtrem)Synthesized signal (approximation at level 0).
+>(dw1dtrem)合成した信号 (レベル 0 の Approximation)
+%
+<(dw1dtrem)Detail at level %d (reconstructed).
+>(dw1dtrem)レベル %d の Detail (再構成)
+<(dw1dtrem)Synthesized
+>(dw1dtrem)合成した
+<(dw1dtrem)Compressed
+>(dw1dtrem)圧縮した
+<(dw1dtrem)De-noised
+>(dw1dtrem)ノイズ除去した
+<(dw1dtrem)Signal and 
+>(dw1dtrem)信号と 
+<(dw1dtrem) signal.
+>(dw1dtrem) 信号.
+%
+<(symwavf)Invalid Symlets wavelet number !
+>(symwavf)Symlets のウェーブレットの番号が無効です。
+<(wp2ddraw)Analyzed Image : size = (%.0f, %.0f)
+>(wp2ddraw)解析したイメージ : サイズ = (%.0f, %.0f)
+%
+<(wp2ddraw)Colored Coefficients for Terminal Nodes
+>(wp2ddraw)終端ノードに対してカラーリングした係数
+<(wp2ddraw)Scale of Colors from Min to Max
+>(wp2ddraw)最小から最大までのカラースケール
+%
+%
+%
+<(cf1dtool)Original Coefficients
+>(cf1dtool)オリジナル係数
+<(cf1dtool)Selected Coefficients
+>(cf1dtool)選択した係数
+<(cf1dtool)Show Original Signal
+>(cf1dtool)オリジナル信号の表示
+<(dwlddeno)Original and de-noised signals
+>(dwlddeno)オリジナルとノイズ除去した信号
+<(utentpar)Entropy
+>(utentpar)エントロピー
+<(utentpar)threshold 
+>(utentpar)スレッシュホールド 
+<(utentpar)norm      
+>(utentpar)ノルム      
+<(utentpar)log energy
+>(utentpar)対数エネルギー
+<(utentpar)user      
+>(utentpar)ユーザ      
+<(utthrw1d)Lev
+>(utthrw1d)レベル
+<(wdretool)Nb bins
+>(wdretool)ビン番号
+<(wdretool)Stochastic Design - Interval Dependent Noise Variance
+>(wdretool)確率的な設計  - 区間に依存したノイズの分散
+<(wdretool)&Save Estimated Function
+>(wdretool)推定関数を保存(&S)
+<(wdretool)Save estimated 
+>(wdretool)推定を保存 
+<(wdretool)Load data - density estimation
+>(wdretool)データの読み込み - 密度推定
+<(wdretool)Load data - fixed design
+>(wdretool)データの読み込み - 固定設計
+<(wdretool)Load data - stochastic design
+>(wdretool)データの読み込み - 確率的な設計
+<(wdretool)density estimation
+>(wdretool)密度推定
+<(wdretool)fixed design
+>(wdretool)固定設計
+<(wdretool)stochastic design
+>(wdretool)確率的な設計
+<(wdretool)&Load data for Density Estimate
+>(wdretool)密度推定用のデータの読み込み(&L)
+<(wdretool)&Save Density
+>(wdretool)密度を保存(&S)
+<(wmoreres)&Save Residuals
+>(wmoreres)残差を保存(&S)
+<(wmoreres)Save Residuals
+>(wmoreres)残差を保存
+<(sw1dtool)&Save De-Noised Signal
+>(sw1dtool)ノイズ除去した信号を保存(&S)
+<(wpdtool) wavelet
+>(wpdtool) ウェーブレット
+<(wpdtool) wavelets
+>(wpdtool) ウェーブレット
+<(wp1ddeno)WP1D De-noising
+>(wp1ddeno)WP1D ノイズ除去
+<(cbanapar)Select Wavelet Number
+>(cbanapar)ウェーブレット番号の選択
+<(utnbcfs)Max < %.0f
+>(utnbcfs)最大 < %.0f
+<(wpcf_wcf)Analyzed signal: length = %s
+>(wpcf_wcf)解析した信号 : 長さ = %s
+<(cwimtool)Max     
+>(cwimtool)最大     
+<(dw1ddecm)Decomposition at level %s : s = a%s
+>(dw1ddecm)%s の分解レベル : s = a%s
+<(dw2dmngr)Decomposition at level %.0f
+>(dw2dmngr)%.0f の分解レベル
+<(dw2dutil)Decomposition at level ...
+>(dw2dutil)分解レベル ...
+%
+%
+<(dw1ddisp)Show %s
+>(dw1ddisp)%s を表示
+<(dw1ddisp)Show %s Signal
+>(dw1ddisp)%s 信号を表示
+<(wavemngr)***     Using rescue resource ... !     ***
+>(wavemngr)***     レスキューリソースの使用 ... !     ***
+<(wreadinf)File Error ...
+>(wreadinf)ファイルエラー ...
+<(dwtmode)Default DWT Mode is : %s'
+>(dwtmode)デフォルトの DWT モード : %s'
+<(imgxtool)The size of the image %s is a power of 2.
+>(imgxtool)イメージ %s のサイズは 2 のべき乗です。
+<(readtree)no tree and data structures in the figure %s'
+>(readtree)Figure %s' にはツリーとデータ構造がありません。
+<(readtree)invalid number for figure : %s
+>(readtree)無効な Figure 番号 : %s
+<(sigxtool)The length of the signal (%s) is a power of 2.
+>(sigxtool)信号 ( %s ) の長さは 2 のべき乗です。
+<(wvdtool)File %s not found !
+>(wvdtool)ファイル %s は見つかりません。
+<(wguidiv)The decomposition is not a %s dimensional analysis
+>(wguidiv)分解は %s 次元解析ではありません。
+<(wfilters)invalid wavelet file : %s
+>(wfilters)無効なウェーブレットのファイル : %s
+<(wavemngr)Invalid wavelet name : %s
+>(wavemngr)無効なウェーブレット名: %s
+<(wfilters)invalid biorthogonal wavelet file : %s
+>(wfilters)無効な双直交ウェーブレットファイル : %s
+<(wfilters)The wavelet %s is not valid!
+>(wfilters)ウェーブレット %s は有効ではありません。
+<(wdretool)File %s doesn''t contain real data.
+>(wdretool)ファイル %s は実数データを含んでいません。
+<(utguidiv)File %s doesn''t contain one dimensional Signal.
+>(utguidiv)ファイル %s は 1 次元信号を含んでいません。
+<(utguidiv)File %s doesn''t contain a real Signal.
+>(utguidiv)ファイル %s は実信号を含んでいません。
+<(utguidiv)File %s doesn''t contain an Image.
+>(utguidiv)ファイル %s はイメージを含んでいません。
+<(utguidiv)File %s doesn''t contain  an indexed Image.
+>(utguidiv)ファイル %s はインデックス付きイメージを含んでいません。
+<(dw2dstat)Level %2.0f
+>(dw2dstat)%2.0f のレベル
+
+%
+<(dw1dscrm) Approximation at level 
+>(dw1dscrm) Approximation - レベル 
+%
+<(cw1dmngr)Warning ...
+>(cw1dmngr)警告 ...
+<(wdretool)Data (X,Y) and Estimate Y = f(X)
+>(wdretool)データ (X,Y) と推定 Y = f(X)
+<(wdretool)Processed Data (X,Y) and Estimate Y = f(X)
+>(wdretool)処理されたデータ (X,Y) と推定 Y = f(X)
+<(wdretool)%d bins - Histogram
+>(wdretool)%d ビン - ヒストグラム
+<(dw1ddisp)Show and Scroll Options
+>(dw1ddisp)表示とスクロールオプション
+<(dw1ddisp)Separate Mode Options
+>(dw1ddisp)別モードオプション
+<(dw1ddisp)Superimpose Mode Options
+>(dw1ddisp)重ね書きモードオプション
+<(dw1ddisp)Show and Scroll (Stem Cfs) Options
+>(dw1ddisp)表示とスクロール (離散プロット Cfs) オプション
+<(dw1ddisp)Current values 
+>(dw1ddisp)現在の値 
+<(dw2dmngr)Image Selection : 
+>(dw2dmngr)イメージの選択 : 
+%
+%
+<(wpdtool)%s Family (%s)
+>(wpdtool)%s ファミリ (%s)
+<(wvdtool)Decomposition wavelet function psi
+>(wvdtool)分解ウェーブレット関数 psi
+<(errargt)integer(s) expected
+>(errargt)整数が必要です
+<(sw1dtool)Signal (S)
+>(sw1dtool)信号 (S)
+<(cf2dtool)Original Image - size = (%s, %s)
+>(cf2dtool)オリジナルイメージ - サイズ = (%s, %s)
+%
+<(cf2dtool)&Save Synthesized Image
+>(cf2dtool)合成したイメージを保存(&S)
+%
+%
+%
+<(dw1dsupm)Approximation(s) at level(s) :
+>(dw1dsupm)Approximation - レベル :
+%
+<(dw1dsepm)Orig. Synt. Sig.
+>(dw1dsepm)オリジナル. 合成. 信号
+<(dw1dsepm)Synt.
+>(dw1dsepm)合成
+<(dw1dsepm)Deno.
+>(dw1dsepm)ノイズ除去
+<(dw1dsepm)Comp.
+>(dw1dsepm)圧縮
+<(dw1dsepm) Signal
+>(dw1dsepm) 信号
+<(dw1dsepm)Approximation(s)
+>(dw1dsepm)Approximation
+
+%%%%% A lot of strings are in *.fig files in R14.
+%% R14 new of Wavelet Main Menu
+<()  Wavelet Design  
+>()  ウェーブレット設計  
+<()New Wavelet for CWT
+>()CWT の新規ウェーブレット
+<()Image Fusion
+>()イメージフュージョン
+<()Fractional Brownian Generation 1-D
+>()1 次元非整数ブラウン運動生成
+<()New Wavelet Tool for Continuous Analysis
+>()連続解析の新規ウェーブレットツール
+<()Two-Dimensional Wavelet Image Fusion Tool
+>()2 次元ウェーブレットイメージフュージョンツール
+<()Fractional Brownian Generation Tool
+>()非整数ブラウン運動生成ツール
+
+%% R14 new of nwavtool: New Wavelet for CWT
+<(nwavtool)Pattern Adapted Admissible Wavelet Design
+>(nwavtool)パターン適応許容ウェーブレット設計
+<(nwavtool)&Example 
+>(nwavtool)例(&E) 
+<(nwavtool)&Save Adapted Wavelet
+>(nwavtool)適応ウェーブレットを保存(&S)
+<(nwavtool)Save Adapted Wavelet
+>(nwavtool)適応ウェーブレットを保存
+<(nwavtool)&Load Pattern
+>(nwavtool)パターンの読み込み(&L)
+<(nwavtool)Load Pattern
+>(nwavtool)パターンの読み込み
+<(nwavtool)&New Wavelet for CWT
+>(nwavtool)CWT の新規ウェーブレット(&N)
+<(nwavtool)Polynomial Degree
+>(nwavtool)多項式の次数
+<(nwavtool)Two patterns
+>(nwavtool)2 つのパターン
+<(nwavtool)Noise
+>(nwavtool)ノイズ
+<(nwavtool)Superimposed
+>(nwavtool)重ね書き
+<(nwavtool)Translated
+>(nwavtool)変換
+<(nwavtool)With an Additional 
+>(nwavtool)追加 
+<(nwavtool)Triangle
+>(nwavtool)三角形
+<(nwavtool)Running Signal
+>(nwavtool)実行する信号
+<(nwavtool)Compare
+>(nwavtool)比較
+<(nwavtool)Run
+>(nwavtool)実行
+<(nwavtool)Boundary Conditions
+>(nwavtool)境界条件
+<(nwavtool)Approximation Method
+>(nwavtool)近似法
+<(nwavtool)Interval
+>(nwavtool)区間
+<(nwavtool)Approximate
+>(nwavtool)近似
+<(nwavtool)Pattern
+>(nwavtool)パターン
+<(nwavtool)Upper Bound
+>(nwavtool)上限
+<(nwavtool)Lower Bound
+>(nwavtool)下限
+<(nwavtool)Support
+>(nwavtool)サポート
+<(nwavtool)Polynomial
+>(nwavtool)多項式
+<(nwavtool)Orth. to Constants
+>(nwavtool)直交を定数に
+<(nwavtool)Differentiable
+>(nwavtool)微分可能
+<(nwavtool)Continuous
+>(nwavtool)連続
+<(nwavtool)Pattern F
+>(nwavtool)パターン F
+<(nwavtool)Pattern detection using adapted wavelet versus well known wavelet
+>(nwavtool)適応ウェーブレットとよく知られたウェーブレットを利用したパターン検出
+<(nwavtool)Two patterns from F
+>(nwavtool)F からの 2 つのパターン
+<(nwavtool)Two other patterns
+>(nwavtool)2 つの他のパターン
+<(nwavtool)Which are
+>(nwavtool)いずれか選択
+<(nwavtool)Coefficients Display
+>(nwavtool)係数表示
+<(nwavtool)Contours with threshold
+>(nwavtool)スレッシュホールド付き等高線
+<(nwavtool)Images
+>(nwavtool)イメージ
+<(nwavtool)Adapted Wavelet
+>(nwavtool)適応ウェーブレット
+
+%% R14 new of wfbmtool: Fractional Brownian Generation 1-D
+<(wfbmtool)One-Dimensional Fractional Brownian Motion Synthesis
+>(wfbmtool)1 次元非整数ブラウン運動合成
+<(wfbmtool)&Fractional Brownian Motion Synthesis
+>(wfbmtool)非整数ブラウン運動合成(&F)
+<(wfbmtool)Current State
+>(wfbmtool)現在の状態
+<(wfbmtool)Seed
+>(wfbmtool)シード
+<(wfbmtool)Generate
+>(wfbmtool)生成
+<(wfbmtool)Fractal Index
+>(wfbmtool)非整数インデックス
+<(wfbmtool)Show Statistics
+>(wfbmtool)統計量の表示
+<(wfbmtool)Order Difference
+>(wfbmtool)n 次微分
+<(wfbmtool)Autocorrelation & Spectrum
+>(wfbmtool)自己相関とスペクトル
+<(wfbmtool)Fractional Brownian Motion
+>(wfbmtool)非整数ブラウン運動
+<(wfbmtool)Save the synthesized signal ?
+>(wfbmtool)合成した信号を保存しますか?
+<(wfbmtool)Save the synthesized image ?
+>(wfbmtool)合成したイメージを保存しますか?
+<(wfbmtool)Synthesized Fractional Brownian Motion
+>(wfbmtool)合成した非整数ブラウン運動
+<(wfbmtool)First order increments
+>(wfbmtool)1 次増分
+<(wfbmtool)Fractional Brownian Motion Increments of order 1
+>(wfbmtool)非整数ブラウン運動の 1 次増分
+<(wfbmtool)Fractional Brownian Motion Increments of Order 1
+>(wfbmtool)非整数ブラウン運動の 1 次増分
+<()Cumulative Histogram
+>()累積ヒストグラム
+<()FFT - Energy Spectrum
+>()FFT - エネルギースペクトル
+
+%% R14 new of wfustool: Image Fusion
+<(wfustool)Wavelet 2-D -- Image Fusion
+>(wfustool)ウェーブレット 2-D -- イメージフュージョン
+<(wfustool)&Image Fusion
+>(wfustool)イメージフュージョン(&I)
+<(wfustool)&Load Image 2
+>(wfustool)イメージ 2 の読み込み(&L)
+<(wfustool)&Load Image 1
+>(wfustool)イメージ 1 の読み込み(&L)
+<(wfustool)Node Action
+>(wfustool)ノードアクション
+<(wfustool)Node Label
+>(wfustool)ノードラベル
+<(wfustool)Inspect Fusion Tree
+>(wfustool)フュージョンツリーの検査
+<(wfustool)Select Fusion Method
+>(wfustool)フュージョン法の選択
+<(wfustool)Image 2
+>(wfustool)イメージ 2
+<(wfustool)Image 1
+>(wfustool)イメージ 1
+<(wfustool)Return to Decompositions
+>(wfustool)分解構造に戻る
+<(wfustool)Decomposition 1
+>(wfustool)分解 1
+<(wfustool)Decomposition 2
+>(wfustool)分解 2
+<(wfustool)Fusion of Decompositions
+>(wfustool)分解の合成
+<(wfustool)Original Pattern
+>(wfustool)オリジナルパターン
+<(wfustool)Pattern and Adapted Wavelet
+>(wfustool)パターンと適応ウェーブレット
+<(wfustool)Pattern Detection using Adapted Wavelet
+>(wfustool)適応ウェーブレットを利用したパターン検出
+
+<(wavemenu)Multiscale Princ. Comp. Analysis
+>(wavemenu)マルチスケール主成分解析
+<(wavemenu)Multivariate Denoising
+>(wavemenu)多変量ノイズ除去
+<(wavemenu)Multiple 1-D
+>(wavemenu)多重 1 次元
+<(wavemenu)Wavelet Principal Components Analysis  
+>(wavemenu)ウェーブレット主成分分析  
+<(wavemenu)Wavelet Multivariate Denoising
+>(wavemenu)ウェーブレット多変量ノイズ除去
+<(wmuldentool)Denoised Signals 
+>(wmuldentool)ノイズ除去信号 
+<(wmspcatool)Center
+>(wmspcatool)中央
+<(wmspcatool)On
+>(wmspcatool)オン
+
+<(wdretool)Stochastic Design  - Interval Dependent Noise Variance
+>(wdretool)確率的な設計  - 区間に依存したノイズの分散
+<(utthrw1d)Scaled white noise
+>(utthrw1d)スケーリングされた白色雑音
+<(utthrw1d)Non-white noise
+>(utthrw1d)非白色雑音
+
+
+%%%%%%%%%%%% 7a %%%%%%%%%
+%-----------------------------------------
+<(wavemenu)SWT Denoising 1-D
+>(wavemenu)1 次元 SWT ノイズ除去
+<(wavemenu)SWT Denoising 2-D
+>(wavemenu)2 次元 SWT ノイズ除去
+<(wavemenu)Multisignals Analysis 1-D
+>(wavemenu)1 次元複数信号解析
+<(wavemenu) One-Dimensional MultiSignals Analysis Tool
+>(wavemenu) 1 次元複数信号解析ツール
+<(wavemenu)Wavelet Principal Components Analysis Tool 
+>(wavemenu)ウェーブレット主成分分析ツール 
+<(wavemenu)One-Dimensional Multivariate De-noising Tool
+>(wavemenu)1 次元多変量ノイズ除去ツール
+
+%-----------------------------------------
+% String For WGUIUTILS (MDW1DSHOW)
+%---------------------------------
+<(wguiutils)Signals
+>(wguiutils)信号
+<(wguiutils)Selected Signals
+>(wguiutils)選択した信号
+<(wguiutils)Energy & Nb. Zeros Performances
+>(wguiutils)エネルギー & 0 の数の割合
+<(wguiutils)Values of Coefficients
+>(wguiutils)係数値
+<(wguiutils)Absolute Values of Coefficients
+>(wguiutils)係数の絶対値
+<(wguiutils)Squared Values of Coefficients
+>(wguiutils)係数の二乗値
+<(wguiutils)Energy Ratio Values of Coefficients
+>(wguiutils)係数のエネルギー比の値
+%-------------------------------------------------
+% MODIFICATIONS
+%---------------------------------
+<(wfustool)Wavelet Decomposition Tree
+>(wfustool)ウェーブレット分解ツリー
+<(wfustool)Coefficients: node
+>(wfustool)係数: ノード
+<(wfustool)or
+>(wfustool)または
+
+<(sw1dtool)One-Dimensional Analysis for Denoising
+>(sw1dtool)ノイズ除去用 1 次元解析
+<(sw1dtool)Stationary Wavelet Transform Denoising 1-D
+>(sw1dtool)1 次元定常ウェーブレット変換のノイズ除去
+<(sw2dtool)Stationary Wavelet Transform Denoising 2-D
+>(sw2dtool)2 次元定常ウェーブレット変換のノイズ除去
+<(utnbcfs)Selected  Biggest  Coefficients
+>(utnbcfs)選択した最大係数
+<()State
+>()状態
+%%% ===============================================================================
+
+%%wavelet\wavelet/@dtree/read.m
+<(read)Invalid node value.
+>(read)ノードの値が無効です。
+<(read)Unknown object field.
+>(read)オブジェクトフィールドが不明です。
+
+%%wavelet\wavelet/@dtree/write.m
+<(write)Invalid size for coefs.
+>(write)係数のサイズが無効です。
+
+%%wavelet\wavelet/@laurmat/laurmat.m
+<(laurmat)Invalid argument value.
+>(laurmat)引数の値が無効です。
+
+%%wavelet\wavelet/@laurmat/mftable.m
+<(mftable)*** STOP ***
+>(mftable)*** 中止 ***
+
+%%wavelet\wavelet/@laurmat/mtimes.m
+<(mtimes)Error using ==> *\nInner matrix dimensions must agree.
+>(mtimes)エラー ==> *\n内部の行列の次元は一致しなければなりません。
+
+%%wavelet\wavelet/@laurmat/plus.m
+<(plus)Error using ==> +\nMatrix dimensions must agree.
+>(plus)エラー ==> +\n行列の次元は一致しなければなりません。
+
+%%wavelet\wavelet/@laurmat/subsasgn.m
+<(subsasgn)Invalid field name.
+>(subsasgn)フィールド名が無効です。
+
+%%wavelet\wavelet/@laurpoly/eucfacttab.m
+<(eucfacttab)Modification of FactorTAB - idxFact = 
+>(eucfacttab)FactorTAB の修正 - idxFact = 
+
+%%wavelet\wavelet/@laurpoly/lp2ls.m
+<(lp2ls)Invalid value for factorization mode.
+>(lp2ls)分解モードの値が無効です。
+
+%%wavelet\wavelet/@laurpoly/mpower.m
+<(mpower)For negative powers, P must be a monomial.
+>(mpower)負のパワーに対して、P は単項でなければなりません。
+<(mpower)Invalid value for power argument.
+>(mpower)パワーの引数の値が無効です。
+
+%%wavelet\wavelet/@laurpoly/powers.m
+<(powers)Invalid argument value for ARG 2.
+>(powers)ARG 2 の引数の値が無効です。
+
+%%wavelet\wavelet/@ntree/nodeasc.m
+<(nodeasc)Invalid node(s) value.
+>(nodeasc)ノードの値が無効です。
+
+%%wavelet\wavelet/@ntree/ntree.m
+<(ntree)Invalid values for order or depth.
+>(ntree)次数、または深さの値が無効です。
+
+%%wavelet\wavelet/@wptree/read.m
+<(read)Invalid node index ... 
+>(read)無効なノードインデックス ... 
+
+%%wavelet\wavelet/@wptree/wpcutree.m
+<(wpcutree)Invalid level value.
+>(wpcutree)レベル値が無効です。
+
+%%wavelet\wavelet/@wptree/wptree.m
+<(wptree)Invalid function name for user entropy.
+>(wptree)ユーザ指定のエントロピーの関数名が無効です。
+<(wptree)Invalid number of input arguments.
+>(wptree)入力引数の数が無効です。
+
+%%wavelet\wavelet/@wptree/write.m
+<(write)Unknown argNAME ...
+>(write)不明な argNAME ...
+
+%%wavelet\wavelet/biorlift.m
+<(biorlift)Invalid wavelet number.
+>(biorlift)ウェーブレットの番号が無効です。
+
+%%wavelet\wavelet/cf1dcoor.m
+<(cf1dcoor)Level = %0.2g
+>(cf1dcoor)レベル = %0.2g
+
+%%wavelet\wavelet/cf1dtool.m
+<(cf1dtool)Number of kept coefficients:  %s
+>(cf1dtool)残った係数の数:  %s
+
+%%wavelet\wavelet/cmorwavf.m
+<(cmorwavf)Invalid Wavelet Number.
+>(cmorwavf)ウェーブレットの番号が無効です。
+
+%%wavelet\wavelet/cw1dmngr.m
+<(cw1dmngr)Error ...
+>(cw1dmngr)エラー ...
+<(cw1dmngr)Max  ( <= %.0f )
+>(cw1dmngr)最大  ( <= %.0f )
+
+%%wavelet\wavelet/ddencmp.m
+<(ddencmp)Invalid argument value
+>(ddencmp)無効な引数値
+
+%%wavelet\wavelet/detcoef.m
+<(detcoef)Invalid level(s) value.
+>(detcoef)レベル値が無効です。
+
+%%wavelet\wavelet/dw1dcoor.m
+<(dw1dcoor)E = %2.2f %%
+>(dw1dcoor)E = %2.2f %%
+
+%%wavelet\wavelet/dw1dtrem.m
+<(dw1dtrem) Approximation at level %d (reconstructed).
+>(dw1dtrem) レベル %d の Approximation (再構成)
+<(dw1dtrem)Approximation at level %d (reconstructed).
+>(dw1dtrem)レベル %d の Approximation (再構成)
+
+%%wavelet\wavelet/fact_and_ls.m
+<(fact_and_ls) - diff POW = 
+>(fact_and_ls) - POW の差 = 
+<(fact_and_ls)% Pow MAX = 
+>(fact_and_ls)% パワーの最大 = 
+<(fact_and_ls)%--------------------  Num LS = 
+>(fact_and_ls)%--------------------  LS 数 = 
+<(fact_and_ls)%=-=-=-=-=-=-=-=-=-=-=% Filters %=-=-=-=-=-=-=-=-=-=-=-=%
+>(fact_and_ls)%=-=-=-=-=-=-=-=-=-=-=% フィルタ %=-=-=-=-=-=-=-=-=-=-=-=%
+<(fact_and_ls)All LS are differents. 
+>(fact_and_ls)すべての LS が異なります。 
+<(fact_and_ls)Error: 
+>(fact_and_ls)エラー: 
+<(fact_and_ls)Invalid wavelet name.
+>(fact_and_ls)ウェーブレット名が無効です。
+<(fact_and_ls)Test for 
+>(fact_and_ls)テスト 
+<(fact_and_ls)Wavelet: 
+>(fact_and_ls)ウェーブレット: 
+
+%%wavelet\wavelet/filters2lp.m
+<(filters2lp)Invalid biorthogonal filters
+>(filters2lp)無効な双直交フィルタ
+<(filters2lp)Too much input arguments.
+>(filters2lp)入力引数が多すぎます。
+
+%%wavelet\wavelet/imgxtool.m
+<(imgxtool)Truncate / Extend
+>(imgxtool)打ち切り / 拡張
+
+%%wavelet\wavelet/lwt2.m
+<(lwt2)Invalid number of output arguments.
+>(lwt2)出力引数の数が無効です。
+
+%%wavelet\wavelet/meyer.m
+<(meyer)N must be a power of two !
+>(meyer)N は 2 のべき乗でなければなりません。
+
+%%wavelet\wavelet/pat2cwav.m
+<(pat2cwav)Invalid value for Regularity.
+>(pat2cwav)規則性の値が無効です。
+
+%%wavelet\wavelet/qmf.m
+<(qmf)Invalid input argument: p
+>(qmf)入力引数が無効です: p
+
+%%wavelet\wavelet/redimfig.m
+<(redimfig)## Not Used ##
+>(redimfig)## 使用しない ##
+
+%%wavelet\wavelet/utguidiv.m
+<(utguidiv)File %s doesn't contain a real Signal.
+>(utguidiv)ファイル %s は実信号を含んでいません。
+<(utguidiv)File %s doesn't contain one dimensional Signal.
+>(utguidiv)ファイル %s は 1 次元信号を含んでいません。
+
+%%wavelet\wavelet/utnbcfs.m
+<(utnbcfs)Wavelet Toolbox Select
+>(utnbcfs)Wavelet Toolbox の選択
+
+%%wavelet\wavelet/wavemngr.m
+<(wavemngr)*** File : %s not found ! ***
+>(wavemngr)*** ファイル : %s は見つかりません ! ***
+
+%%wavelet\wavelet/wavenames.m
+<(wavenames)Unknown type of wavelet.
+>(wavenames)ウェーブレットのタイプが不明です。
+
+%%wavelet\wavelet/wcodemat.m
+
+%%wavelet\wavelet/wdretool.m
+<(wdretool)File %s doesn't contain real data.
+>(wdretool)ファイル %s は実数データを含んでいません。
+
+%%wavelet\wavelet/wfbm.m
+<(wfbm)Fractal index must be a number between 0 and 1
+>(wfbm)フラクタルのインデックスは、0 と 1 の間の数値でなければなりません。
+<(wfbm)Number of levels must be an integer greater than 1
+>(wfbm)レベル数は 1 より大きい整数でなければなりません。
+<(wfbm)Signal length must be an integer greater than 100
+>(wfbm)信号の長さは 100 より大きい整数でなければなりません。
+<(wfbm)Wavelet must be orthogonal
+>(wfbm)ウェーブレットは直交でなければなりません。
+
+%%wavelet\wavelet/wfighelp.m
+<(wfighelp)%s version %s
+>(wfighelp)%s バージョン %s
+
+%%wavelet\wavelet/wfilters.m
+<(wfilters)Invalid wavelet file : %s
+>(wfilters)無効なウェーブレットのファイル : %s
+
+%%wavelet\wavelet/wfusdec.m
+<(wfusdec)Invalid Inputs
+>(wfusdec)無効な入力
+
+%%wavelet\wavelet/wfusimg.m
+<(wfusimg)Both images X1 and X2 must be given.
+>(wfusimg)イメージ X1 と X2 の両方が与えられなければなりません。
+<(wfusimg)Input images must be of the same size.
+>(wfusimg)入力イメージは同じサイズでなければなりません。
+<(wfusimg)Invalid input arguments.
+>(wfusimg)入力引数が無効です。
+
+%%wavelet\wavelet/wfustool.m
+<(wfustool)The two images must be of the same size
+>(wfustool)2 つのイメージは同じサイズでなければなりません。
+
+%%wavelet\wavelet/wkeep1.m
+<(wkeep1)Arg2: invalid argument value
+>(wkeep1)Arg2: 無効な引数の値
+
+%%wavelet\wavelet/wkeep2.m
+<(wkeep2)Arg2: invalid argument value.
+>(wkeep2)Arg2: 引数の値が無効です。
+
+%%wavelet\wavelet/wmemtool.m
+<(wmemtool)Delete Globals Buffer ?
+>(wmemtool)グローバルなバッファを削除しますか?
+<(wmemtool)Main Memory Buffer
+>(wmemtool)主要なメモリバッファ
+
+%%wavelet\wavelet/wmoreres.m
+<(wmoreres)** STOP **
+>(wmoreres)** 中止 **
+
+%%wavelet\wavelet/wnoisest.m
+<(wnoisest)Invalid argument value for: 
+>(wnoisest)無効な引数の値: 
+
+%%wavelet\wavelet/wrmcoef.m
+<(wrmcoef)Invalid level(s) value(s).
+>(wrmcoef)レベル値が無効です。
+
+%%wavelet\wavelet/wthcoef.m
+<(wthcoef)Invalid level(s) number(s).
+>(wthcoef)レベル番号が無効です。
+
+%%wavelet\wavelet/wtitle.m
+<(wtitle)Incorrect number of input arguments
+>(wtitle)不正な入力引数の数
+
+%% wwaitans() is under wavelet/wavelet although stings are in wavelet/wmultisig1
+<(wmltisig1/)Update Synthesized Signals ?
+>(wmltisig1/)合成した信号を更新しますか?
+<(wmltisig1/)Clear Selected Partition(s) ?
+>(wmltisig1/)選択した区分をクリアしますか?
+<(wmltisig1/)Wavelet 1-D Multisignals
+>(wmltisig1/)1 次元の複数信号のウェーブレット
+<(wmltisig1/)Save the Simplified Signals ?
+>(wmltisig1/)簡易信号を保存しますか?
+<(wmltisig1/)Save Synthesized Signals?
+>(wmltisig1/)合成した信号を保存しますか?
+<(wmltisig1/)Store Partition
+>(wmltisig1/)区分を保存
+<(wmltisig1/)Save the De-noised Signals ?
+>(wmltisig1/)ノイズ除去信号を保存しますか?
+<(wmltisig1/)Multivariate De-noising
+>(wmltisig1/)多変量ノイズ除去
+<(wmltisig1/)Multivariate PCA
+>(wmltisig1/)多変量 PCA
+<(wmltisig1/)Multisignals Compression
+>(wmltisig1/)複数信号の圧縮
+<(wmltisig1/)Multisignals Denoising
+>(wmltisig1/)複数信号のノイズ除去
+
+%---------------------------------
+% MODIFICATIONS  === the 2ed round updating
+%---------------------------------
+
+<()Multiple 1-D -- Multivariate Denoising
+>()多重 1 次元 -- 多変量ノイズ除去
+
+%-----------------------------------------
+% MODIFICATIONS (more)
+%-----------------------------------------
+<(wavemenu)Multisignal Analysis 1-D
+>(wavemenu)1 次元複数信号解析
+<(wavemenu) One-Dimensional MultiSignal Analysis Tool
+>(wavemenu) 1 次元複数信号解析ツール
+<(utthrset)Number of Intervals
+>(utthrset)区間数
+ 
+%-----------------------------------------
+% MODIFICATIONS (Version 2007b)
+%-----------------------------------------
+<(wmltisig1/)Import from Workspace
+>(wmltisig1/)ワークスペースからインポート
+<(wmltisig1/)Import Signal
+>(wmltisig1/)信号のインポート
+<(wmltisig1/)Import Coefficients
+>(wmltisig1/)係数のインポート
+<(wmltisig1/)Import Decomposition
+>(wmltisig1/)分解のインポート
+<(wmltisig1/)Export to Workspace
+>(wmltisig1/)ワークスペースへエクスポート
+<(wmltisig1/)Export Signal
+>(wmltisig1/)信号のエクスポート
+<(wmltisig1/)Export Coefficients
+>(wmltisig1/)係数のエクスポート
+<(wmltisig1/)Export Decomposition
+>(wmltisig1/)分解のエクスポート
+ 
+%-----------------------------------------
+% NEW MODIFICATIONS (Version 2007b)
+%-----------------------------------------
+<(wmltisig1/)Import Signals from Workspace
+>(wmltisig1/)ワークスペースから信号をインポート
+<(wmltisig1/)Export Signals to Workspace
+>(wmltisig1/)信号をワークスペースへエクスポート
+<(cw1dtool/)Import Signal from Workspace
+>(cw1dtool/)ワークスペースから信号をインポート
+<(cw1dtool/)Export Coefficients to Workspace
+>(cw1dtool/)係数をワークスペースへエクスポート
+<(dw2dtool/)Import Image
+>(dw2dtool/)イメージのインポート
+<(dw2dtool/)Export Image
+>(dw2dtool/)イメージのエクスポート
+<(wdretool/)Export Signal to Workspace
+>(wdretool/)信号をワークスペースへエクスポート
+<(wdretool/)Export Density to Workspace
+>(wdretool/)密度をワークスペースへエクスポート
+<(wdretool/)Export Estimated Function to Workspace
+>(wdretool/)推定関数をワークスペースへエクスポート
+<(sw2dtool/)Import Image from Workspace
+>(sw2dtool/)ワークスペースからイメージをインポート
+<(sw2dtool/)Export Image to Workspace
+>(sw2dtool/)イメージをワークスペースへエクスポート
+<(wfustool/)&Load or Import Image 1
+>(wfustool/)イメージ 1 の読み込みまたはインポート(&L)
+<(wfustool/)&Load or Import Image 2
+>(wfustool/)イメージ 2 の読み込みまたはインポート(&L)
+<(mdw1dtool/)Import Signals
+>(mdw1dtool/)信号のインポート
+<(mdw1dtool/)Import Decompositions
+>(mdw1dtool/)分解のインポート
+<(mdw1dtool/)Export Signals
+>(mdw1dtool/)信号のエクスポート
+<(mdw1dtool/)Export Decompositions
+>(mdw1dtool/)分解のエクスポート
+<(utthrset)Intervals Selection
+>(utthrset)区間の選択
+ 
+ 
+%--------------------------------------------
+% NEW MODIFICATIONS (Version 2007b continue)
+%--------------------------------------------
+<(sigxtool)Symmetric (Half-Point)
+>(sigxtool)対称 (半分の点)
+<(sigxtool)Symmetric (Whole-Point)
+>(sigxtool)対称 (全体の点)
+<(sigxtool)Antisymmetric (Half-Point)
+>(sigxtool)非対称 (半分の点)
+<(sigxtool)Antisymmetric (Whole-Point)
+>(sigxtool)非対称 (全体の点)
+<(sigxtool)Periodic
+>(sigxtool)周期的
+<(sigxtool)Zero Padding
+>(sigxtool)ゼロパディング
+<(sigxtool)Smooth
+>(sigxtool)平滑化
+<(sigxtool)For SWT
+>(sigxtool)SWT
+<(Import)Filter:
+>(Import)フィルタ:
+<(Import)Variables:
+>(Import)変数:
+<(Import)One-Dimensional Real Data
+>(Import)1 次元実数データ
+<(Import)Two-Dimensional Real Data (Concatenated)
+>(Import)2 次元実数データ (連結)
+<(Import)One-Dimensional Data
+>(Import)1 次元データ
+<(Import)2D_Concat
+>(Import)2D_Concat
+<(Import)Two-Dimensional Data or Indexed Image
+>(Import)2 次元データまたはインデックス付きイメージ
+<(Import)True Color Image
+>(Import)トゥルーカラーイメージ
+<(Import)One-Dimensional Wavelet Packet Tree
+>(Import)1 次元ウェーブレットパケットツリー
+<(Import)Two-Dimensional Data
+>(Import)2 次元データ
+<(Import)Two-Dimensional Wavelet Packet Tree
+>(Import)2 次元ウェーブレットパケットツリー
+<(Import)Multi-Dimensional Decompositions
+>(Import)多次元分解
+<(Import)Multi-Dimensional Data (nb<9) 
+>(Import)多次元データ (nb<9) 
+<(Import)Partition Data
+>(Import)区分データ
+<(Import)Binary (M-by-N logical type)
+>(Import)バイナリ (M x N の論理タイプ)
+<(Import)Indexed (M-by-N integer values)
+>(Import)インデックス付き (M x N の整数値)
+<(Import)Intensity (M-by-N)
+>(Import)強度 (M x N)
+<(Import)Truecolor (M-by-N-by-3)
+>(Import)トゥルーカラー (M x N x 3)
+<(Import)Decomposition
+>(Import)分解
+<(Import)All (M-by-N, M-by-N-by-3)
+>(Import)すべて (M x N, M x N x 3)
+<(Import)Select data to import:
+>(Import)インポートするデータの選択:
+<(Import)No data of selected type.
+>(Import)選択したタイプのデータはありません。
+<(Export)Enter Var Name
+>(Export)変数名を入力
+<(Export)Variables on Workspace
+>(Export)ワークスペース上の変数
+<(Import)Import Pattern from Workspace
+>(Import)ワークスペースからパターンのインポート
+<(Export)Export Adapted Wavelet to Workspace
+>(Export)適応ウェーブレットをワークスペースへエクスポート
+% 
+<(import)Choose Colormap...
+>(import)カラーマップの選択...
+<(import)Warning Message
+>(import)警告メッセージ
+<(import)Concataned by:
+>(import)連結:
+<(import)Col
+>(import)列
+<(import)Row
+>(import)行
+<(import)You have not selected a variable from the workspace.
+>(import)ワークスペースから選択した変数がありません。
+<(wtbximport)Import DW1D Coefficients
+>(wtbximport)DW1D 係数のインポート
+<(wtbximport)Import DW1D Decomposition
+>(wtbximport)DW1D 分解のインポート
+<(wtbximport)Import DW2D Coefficients
+>(wtbximport)DW2D 係数のインポート
+<(wtbximport)Import DW2D Decomposition
+>(wtbximport)DW2D 分解のインポート
+<(wtbximport)Import WP1D Decomposition
+>(wtbximport)WP1D 分解のインポート
+<(wtbximport)Import WP2D Decomposition
+>(wtbximport)WP2D 分解のインポート
+<(wtbximport)Import MultiSignal Decompositions
+>(wtbximport)複数信号分解のインポート
+<(wtbximport)Import Pattern
+>(wtbximport)パターンのインポート
+<(wtbximport)There are no variables containing image data in the workspace.
+>(wtbximport)ワークスペース内にイメージデータを含む変数がありません。
+<(wtbximport)Multi-Dimensional Data (nb<9)
+>(wtbximport)多次元データ (nb<9)
+<(wtbximport)Import From Workspace
+>(wtbximport)ワークスペースからインポート
+<(wtbximport)Replace VAR
+>(wtbximport)変数の置換
+<(wtbximport)Replace the variable %s on the Workspace?
+>(wtbximport)ワークスペースの変数 %s を置換しますか?
+
+%---------------------------------------------
+% NEW MODIFICATIONS (Version 2007b continue 2)
+%---------------------------------------------
+<(Export)Wait ... exporting data
+>(Export)お待ちください ... データのエクスポート中
+<(Export)Wait ... exporting
+>(Export)お待ちください ... エクスポート中
+<(Import)Wait ... importing data
+>(Import)お待ちください ... データのインポート中
+
+% put two spaces on the second string since they are constructed as
+% strvcat([absStr,midStr,endStr],[argStr,midStr,endStr]);
+<(cw1dutil)Modulus of Ca,b Coefficients
+>(cw1dutil)Ca,b 係数の剰余
+<(cw1dutil)Angle of Ca,b Coefficients  
+>(cw1dutil)Ca,b 係数の角度  
+
+
+%---------------------------------------------
+% NEW MODIFICATIONS - Version 2008a
+%---------------------------------------------
+<(cw1dutil)Ca,b Coefficients - Coloration mode: 
+>(cw1dutil)Ca,b 係数 - カラーリングモード: 
+<(cw1dutil)Angle of Ca,b Coefficients
+>(cw1dutil)Ca,b 係数の角度
+<(cw1dutil) - Coloration mode: 
+>(cw1dutil) - カラーリングモード : 
+<(cw1dutil)Ca,b 
+>(cw1dutil)Ca,b 
+<(cw1dutil)Modulus (Ca,b) 
+>(cw1dutil)剰余 (Ca,b) 
+<(cw1dutil)Angle (Ca,b) 
+>(cw1dutil)角度 (Ca,b) 
+<(cw1dutil)for scale a =  
+>(cw1dutil)スケール a =  
+<(cw1dutil)  (frequency = 
+>(cw1dutil)  (周波数 = 
+<(cw1dutil)Coefficients Line - 
+>(cw1dutil)係数ライン - 
+<(cw1dutil)for a =  
+>(cw1dutil)a =  
+<(cw1dutil)  (frq = 
+>(cw1dutil)  (周波数 = 
+<(cw1dutil)for a = %s
+>(cw1dutil)a = %s
+<(cw1dutil)Coefficients Line - Ca,b for scale a = %s  (frequency = %s)
+>(cw1dutil)係数ライン - スケール a = %s に対する Ca,b  (周波数 = %s)
+<(cw1dutil)Coefficients Line - Modulus (Ca,b) for scale a = %s   (frequency = %s)
+>(cw1dutil)係数ライン - スケール a = %s に対する剰余 (Ca,b)   (周波数 = %s)
+<(cw1dutil)Coefficients Line - Angle (Ca,b) for scale a = %s   (frequency = %s)
+>(cw1dutil)係数ライン - スケール a = %s に対する角度 (Ca,b)   (周波数 = %s)
+<(cw1dutil)Modulus (Ca,b) for a = %s   (frq = %s)
+>(cw1dutil)a = %s に対する剰余 (Ca,b)   (frq = %s)
+<(cw1dutil)Angle (Ca,b) for a = %s   (frq = %s)
+>(cw1dutil)a = %s に対する角度 (Ca,b)   (frq = %s)
+<(dw1dview_dorc)View Denoised Signal
+>(dw1dview_dorc)ノイズ除去信号を表示
+<(dw1dview_dorc)View Compressed Signal
+>(dw1dview_dorc)圧縮した信号を表示
+<(dw1dview_dorc)Original and Denoised Signals
+>(dw1dview_dorc)オリジナルとノイズ除去信号
+<(dw1dview_dorc)Original and Compressed Signals
+>(dw1dview_dorc)オリジナルと圧縮した信号
+<(dw1dview_dorc)View Original and Denoised Signals
+>(dw1dview_dorc)オリジナルとノイズ除去信号を表示
+<(dw1dview_dorc)View Original and Compressed Signals
+>(dw1dview_dorc)オリジナルと圧縮した信号を表示
+<(dw1dview_dorc)Denoised Signal
+>(dw1dview_dorc)ノイズ除去信号
+<(utstats)Standard dev.
+>(utstats)標準偏差
+<(utstats)Median abs. dev.
+>(utstats)中央値 絶対値 偏差
+<(utstats)Mean abs. dev.
+>(utstats)平均値 絶対値 偏差
+<(utstats)L1 norm
+>(utstats)L1 ノルム
+<(utstats)L2 norm
+>(utstats)L2 ノルム
+<(utstats)Max norm
+>(utstats)最大ノルム
+<(wfbmtool)Examples
+>(wfbmtool)例
+<(wfbmtool)Synthesized Fractional Brownian Motion of parameter H = %s using %s
+>(wfbmtool)パラメータ H = %s の合成した非整数ブラウン運動 (%s を使用)
+<(wfbmstat)Synthesized Fractional Brownian Motion of length %s using %s and H = %s
+>(wfbmstat)長さ %s の合成した非整数ブラウン運動 (%s と H = %s を使用)
+<(wfbmstat)Fractional Brownian Motion Increments of Order %s
+>(wfbmstat)非整数ブラウン運動の次数のインクリメント %s
+<(wfbmstat)Fractional Brownian Motion Increments Statistics
+>(wfbmstat)非整数ブラウン運動のインクリメントの統計量
+<(wfustool)The two images must be of the same size and of the same type.
+>(wfustool)2 つのイメージは、同じサイズで同じタイプでなければなりません。
+<(wscalogram)Analyzed Signal
+>(wscalogram)解析した信号
+<(wscalogram)Scalogram \nPercentage of energy for each wavelet coefficient
+>(wscalogram)各ウェーブレット係数に対するエネルギーのスカログラム/割合
+<(wscalogram)Scales a
+>(wscalogram)スケール a
+<(wscalogram)Time (or Space) b
+>(wscalogram)時間 (空間) b
+<(utguidiv)Loading an Image
+>(utguidiv)イメージの読み込み中
+<(utguidiv)Use true color image?
+>(utguidiv)トゥルーカラーイメージを使用しますか?
+<(dw2dtool)Truecolor Image
+>(dw2dtool)トゥルーカラーイメージ
+<(dw2dtool)Wavelet 2-D : Indexed Image
+>(dw2dtool)2 次元ウェーブレット : インデックス付きイメージ
+<(dw2dtool)Wavelet 2-D : Truecolor Image
+>(dw2dtool)2 次元ウェーブレット : トゥルーカラーイメージ
+<(w2pdtool)Wavelet Packets 2-D : Indexed Image
+>(w2pdtool)2 次元ウェーブレットパケット : インデックス付きイメージ
+<(w2pdtool)Wavelet Packets 2-D : Truecolor Image
+>(w2pdtool)2 次元ウェーブレットパケット : トゥルーカラーイメージ
+<(sw2dtool)Stationary Wavelet Transform Denoising 2-D : Indexed Image
+>(sw2dtool)2 次元定常ウェーブレット変換のノイズ除去 : インデックス付きイメージ
+<(sw2dtool)Stationary Wavelet Transform Denoising 2-D : Truecolor Image
+>(sw2dtool)2 次元定常ウェーブレット変換のノイズ除去 : トゥルーカラーイメージ
+<(cf2dtool)Wavelet Coefficients Selection 2-D : Indexed Image
+>(cf2dtool)2 次元ウェーブレット係数選択 : インデックス付きイメージ
+<(cf2dtool)Wavelet Coefficients Selection 2-D : Truecolor Image
+>(cf2dtool)2 次元ウェーブレット係数選択 : トゥルーカラーイメージ
+<(imgxtool)Image Extension / Truncation : Indexed Image
+>(imgxtool)イメージの拡張 / 切り取り : インデックス付きイメージ
+<(imgxtool)Image Extension / Truncation : Truecolor Image
+>(imgxtool)イメージの拡張 / 切り取り : トゥルーカラーイメージ
+<(wfustool)Wavelet 2-D -- Image Fusion : Indexed Image
+>(wfustool)ウェーブレット 2-D -- イメージフュージョン : インデックス付きイメージ
+<(wfustool)Wavelet 2-D -- Image Fusion : Truecolor Image
+>(wfustool)ウェーブレット 2-D -- イメージフュージョン : トゥルーカラーイメージ
+<(wtbximport)There are no variables containing selected data type in the workspace.
+>(wtbximport)ワークスペース内に選択したデータタイプを含む変数がありません。
+
+% see attached image in g409604 for translation
+<()current + all scales + abs
+>()現在値 + すべてのスケール + 絶対値
+<()init + by scale + abs     
+>()初期化 + スケール毎 + 絶対値     
+<()init + by scale           
+>()初期化 + スケール毎           
+<()init + all scales + abs   
+>()初期化 + すべてのスケール + 絶対値   
+<()init + all scales         
+>()初期化 + すべてのスケール         
+<()current + by scale + abs  
+>()現在値 + スケール毎 + 絶対値  
+<()current + by scale        
+>()現在値 + スケール毎        
+<()current + all scales      
+>()現在値 + すべてのスケール      
+
+<(wfustool)&Save Synthesized Image 
+>(wfustool)合成したイメージを保存(&S) 
+<(wfustool)Indexed Images 
+>(wfustool)インデックス付きイメージ 
+<(wfustool)Truecolor Images 
+>(wfustool)トゥルーカラーイメージ 
+<(wfustool)0 <= Param.
+>(wfustool)0 <= パラメータ
+<(wfustool)0 <= Param. <= 1
+>(wfustool)0 <= パラメータ <= 1
+<(wfustool)Func. Name
+>(wfustool)関数名
+
+<(wavemenu)True Compression 2-D
+>(wavemenu)トゥルーカラーイメージ 2 次元圧縮
+<(dw1ddtool)with %s at level %s
+>(dw1ddtool)%s - レベル %s
+<(dw2ddtool)At level %s , with %s
+>(dw2ddtool)レベル %s, %s
+<(wavemenu)Two-Dimensional Wavelet Compression Tool
+>(wavemenu)2 次元ウェーブレット圧縮ツール
+<(wavemenu)Two-Dimensional True Compression
+>(wavemenu)2 次元トゥルーカラーイメージ圧縮
+<()Wait ... Computing
+>()お待ちください ... 計算中
+
+<(wavemenu)One-Dimensional Multisignal Wavelet Analysis Tool
+>(wavemenu)1 次元複数信号ウェーブレット解析ツール
+
+%%% 9b
+%
+%% wavelet/wavelet/cgauwavf.m
+<(cgauwavf)Symbolic Math Toolbox(TM) is required!
+>(cgauwavf)Symbolic Math Toolbox(TM) が必要です!
+
+%% wavelet/wavelet/coiflift.m
+<(coiflift)Invalid wavelet number%d.
+>(coiflift)ウェーブレットの番号 %d が無効です。
+
+%% wavelet/wavelet/coifwavf.m
+<(coifwavf)Invalid coiflet
+>(coifwavf)無効な coiflet
+
+%% wavelet/wavelet/cwt.m
+<(cwt)Invalid Value for Signal !
+>(cwt)信号の値が無効です!
+<(cwt)Invalid Value for Wavelet !
+>(cwt)ウェーブレットの値が無効です!
+
+%% wavelet/wavelet/cwtext.m
+<(cwtext)Invalid Value for Extension Mode !
+>(cwtext)拡張モードの値が無効です !
+
+%% wavelet/wavelet/dbwavf.m
+<(dbwavf)Invalid Input Argument.
+>(dbwavf)入力引数が無効です。
+
+%% wavelet/wavelet/dw1dmngr.m
+<(dw1dmngr)The level of the decomposition \nis too large (max = %d).
+>(dw1dmngr)分解レベルが大きすぎます\n(max = %d)。
+
+%% wavelet/wavelet/dw1dview_dorc.m
+<(dw1dview_dorc)%s Signal
+>(dw1dview_dorc)%s 信号
+<(dw1dview_dorc)View Original and %s Signals
+>(dw1dview_dorc)オリジナルと %s 信号を表示
+
+%% wavelet/wavelet/dw2dmngr.m
+<(dw2dmngr)Wait ... loading data
+>(dw2dmngr)お待ちください ... データの読み込み中
+
+%% wavelet/wavelet/dwtmode.m
+<(dwtmode)Antisymmetrization (half-point)
+>(dwtmode)反対称化 (半分の点)
+<(dwtmode)Antisymmetrization (whole-point)
+>(dwtmode)反対称化 (全体の点)
+<(dwtmode)DWT Extension Mode: 
+>(dwtmode)DWT 拡張モード: 
+<(dwtmode)Periodized Padding
+>(dwtmode)周期的なパディング
+<(dwtmode)Smooth Padding of order 0
+>(dwtmode)0 次の平滑化パデイング
+<(dwtmode)Symmetrization (half-point)
+>(dwtmode)対称化 (半分の点)
+<(dwtmode)Symmetrization (whole-point)
+>(dwtmode)対称化 (全体の点)
+
+%% wavelet/wavelet/readtree.m
+<(readtree)no tree and data structures in the figure %s
+>(readtree)Figure %s にはツリーとデータ構造がありません
+
+%% wavelet/wavelet/utguidiv.m
+<(utguidiv)File %s doesn't contain  an indexed Image.
+>(utguidiv)ファイル %s はインデックス付きイメージを含んでいません。
+<(utguidiv)File %s doesn't contain an Image.
+>(utguidiv)ファイル %s はイメージを含んでいません。
+
+%% wavelet/wavelet/wave2lp.m
+<(wave2lp)Invalid wavelet name: %s.
+>(wave2lp)無効なウェーブレット名: %s。
+
+%% wavelet/wavelet/wavenames.m
+<(wavenames)Unknown type of wavelet.
+>(wavenames)ウェーブレットのタイプが不明です。
+
+%% wavelet/wavelet/wmoreres.m
+<(wmoreres)Invalid handle!
+>(wmoreres)ハンドルが無効です!
+
+%% wavelet/wavelet/@laurmat/mftable.m
+<(mftable)*** INVALID RESULT ***
+>(mftable)*** 無効な結果 ***
+
+%% wavelet/wavelet/@wptree/write.m
+<(write)Unknown argNAME ...
+>(write)不明な argNAME ...
+
+% Last modifications 08 Apr 2009
+%-------------------------------
+<(wtbxmngr)Invalid value for Figure Ratio
+>(wtbxmngr)Figure の比率に対する無効な値
+<(wtbxmngr)Choose a value between 0.75 and 1.25
+>(wtbxmngr)0.75 から 1.25 までの値を選択してください。
+<(wtbxmngr)Current value is: %s
+>(wtbxmngr)現在の値: %s
+<(wtbxmngr)The current value for Wavelet Toolbox Figure Ratio is : %s
+>(wtbxmngr)Wavelet Toolbox の Figure の比率に対する現在の値 : %s
+<(wtbximport)There are no variables containing selected data type in the workspace.
+>(wtbximport)ワークスペース内に選択したデータタイプを含む変数がありません。
+<(swt)The level of decomposition %s and \nthe length of the signal %s are not compatible. \nSuggested length: %s (see Signal Extension Tool)\n\n2^Level has to divide the length of the signal.
+>(swt)分解レベル %s と\n信号の長さ %s が一致しません。\n推奨する長さ: %s (信号の拡張ツールを参照)\n\n2^Level は信号の長さで割れなければなりません。
+<(swt2dtool)The level of decomposition %s and \nthe size of the image %s are not compatible.\nSuggested size: %s (see Image Extension Tool)\n\n2^Level has to divide the size of the image.
+>(swt2dtool)分解レベル %s と\nイメージのサイズ %s が一致しません。\n推奨するサイズ: %s (イメージの拡張ツールを参照)\n\n2^Level はイメージのサイズで割れなければなりません。
+
+%% wavelet\wavelet\utnbcfs.m
+<(utnbcfs)To select or to unselect coefficients, select an area in one of\nlower plots by holding down the left-mouse button and dragging.\nThen click on the select or on the unselect button.\nYou may select or unselect individual coefficients by clicking\non the stems.
+>(utnbcfs)係数を選択または選択を解除するには、下側のプロット上で\n左マウスボタンを押したままドラッグして領域を選択してください。\nもしくは、選択解除ボタンをクリックしてください。\nステムプロット上をクリックすることで、個々の係数の選択、\nまたは選択の解除を行うことができます。
+
+%% wavelet/wavelet/wavenames.m
+<(wavenames)Unknown type of wavelet.
+>(wavenames)ウェーブレットのタイプが不明です。
+
+%% wavelet/wavelet/wtbxmngr.m
+<(wtbxmngr)Wavelet Toolbox Version: %s
+>(wtbxmngr)Wavelet Toolbox のバージョン: %s
+
+%% wavelet/wavelet/@wptree/write.m
+<(write)Unknown argNAME ...
+>(write)不明な argNAME ...
+
+% Last modifications June 2009
+%-----------------------------
+<(utguidiv)This is a true color image.
+>(utguidiv)これはトゥルカラーイメージです。
+<(utguidiv)This is a matlab indexed image.
+>(utguidiv)これは MATLAB インデックス付きイメージです。
+<(utguidiv)Keep it (Yes) or convert it to grayscale (No) ?
+>(utguidiv)そのままにしますか (はい) それともグレースケールに変換しますか (いいえ) ?
+<(utguidiv)Use the true color image (Yes) or the grayscale one (No) ?
+>(utguidiv)トゥルーカラーイメージを使用しますか (はい) それともグレースケールイメージを使用しますか?
+%------------------------------------------
+<(dw1d)Approximations
+>(dw1d)Approximation
+<(dw1d)Approximation at level %s
+>(dw1d)Approximation - レベル %s
+<(dw1d)All the Approximations
+>(dw1d)すべての Approximation
+<(dw1d)Save Approximation Signal
+>(dw1d)Approximation 信号を保存
+<(dw1d)Coefficient of Approximations
+>(dw1d)Approximation 係数
+<(dw1d)Save Coefficients of approximation at level %s
+>(dw1d)レベル %s の Approximation 係数を保存
+<(dw1d)Coefficients of A%s
+>(dw1d)A%s 係数
+%-------------------------------------------------
+<(dw3d)Three-Dimensional 
+>(dw3d)3 次元 
+<(dw3d)Three-Dimensional Discrete Wavelet Analysis Tool
+>(dw3d)3 次元離散ウェーブレット解析ツール
+<(dw3d)Load Data
+>(dw3d)データの読み込み
+<(dw3d)Wavelet 3-D
+>(dw3d)3 次元ウェーブレット
+<(dw3d)Wavelet (X)
+>(dw3d)ウェーブレット (X)
+<(dw3d)Wavelet (Y)
+>(dw3d)ウェーブレット (Y)
+<(dw3d)Wavelet (Z)
+>(dw3d)ウェーブレット (Z)
+<(dw3d)Ext. Mode
+>(dw3d)拡張モード
+<(dw3d)Discrete Wavelet Transform Extension Mode
+>(dw3d)離散ウェーブレット変換の拡張モード
+<(dw3d)Slice Orientation
+>(dw3d)スライス方向
+<(dw3d)Slice Movie
+>(dw3d)スライス ムービー
+<(dw3d)3D Display
+>(dw3d)3 次元表示
+<(dw3d)Rec. %s -Slice Num 1 to %s
+>(dw3d)再構成 %s - スライス番号 (1 から %s)
+<(dw3d)Cfs. %s -Slice Num 1 to %s
+>(dw3d)Cfs. %s - スライス番号 (1 から %s)
+<(dw3d)Rec. %s -Slice Num 1 to ---
+>(dw3d)再構成 %s - スライス番号 (すべて)
+<(dw3d)Cfs. %s -Slice Num 1 to ---
+>(dw3d)Cfs. %s - スライス番号 (すべて)
+<(dw3d)Initial Data
+>(dw3d)初期データ
+<(dw3d)APP%s
+>(dw3d)APP%s
+<(dw3d)DET%s
+>(dw3d)DET%s
+<(dw3d)Level %s
+>(dw3d)レベル %s
+<(dw3d)Level 1
+>(dw3d)レベル 1
+<(dw3d)Save
+>(dw3d)保存
+<(dw3d)Import Data
+>(dw3d)データのインポート
+<(dw3d)Save Decomposition
+>(dw3d)分解構造を保存
+<(dw3d)Save Approximation
+>(dw3d)Approximation を保存
+<(dw3d)Display 3D
+>(dw3d)3 次元表示
+<(dw3d)Wait Computing ... 
+>(dw3d)計算中です ... 
+<(dw3d)Wait Computing ... %s
+>(dw3d)計算中です ... %s
+<(dw3d)Azimuth
+>(dw3d)方位角
+<(dw3d)Elevation
+>(dw3d)仰角
+<(dw3d)Cfs. %s - Lev. %s
+>(dw3d)Cfs. %s - レベル %s
+<(dw3d)ORI
+>(dw3d)ORI
+<(dw3d)APP %s
+>(dw3d)APP %s
+<(dw3d)DET %s
+>(dw3d)DET %s
+<(dw3d)APP %s Complementary
+>(dw3d)APP %s 補完
+<(dw3d)Displayed Level
+>(dw3d)表示レベル
+<(dw3d)Save Decomposition ?
+>(dw3d)分解構造を保存しますか?
+<(dw3d)3D Analysis
+>(dw3d)3D 解析
+<(dw3d)Decomposition
+>(dw3d)分解構造
+%-------------------------------------------------
+
+% Last modifications October 2009
+%--------------------------------
+<(dw3d)Original Data
+>(dw3d)元のデータ
+<(dw3d)Reconstructed approximation at level %s
+>(dw3d)再構成した Approximation - レベル %s
+<(dw3d)All details from level 1 to level %s
+>(dw3d)レベル 1 から レベル %s までのすべての Detail
+<(dw3d)Reconstructed details at level %s
+>(dw3d)再構成した Detail - レベル %s
+<(dw3d)DET from level 1 to %1.0f
+>(dw3d)レベル 1 から %1.0f までの DET
+<(dw3d)DET %1.0f
+>(dw3d)DET %1.0f
+
+% Last modifications October 19, 2009
+%--------------------------------
+<(dw3d)DET from level 1 to %s
+>(dw3d)レベル 1 から %s までの DET
+
+<(utcolmap)Colormap Settings
+>(utcolmap)カラーマップの設定
+
+<(wfigmngr)Expo&rt Setup...
+>(wfigmngr)エクスポート設定(&R)...
+
+
+
+%%% Threshold Fixes 
+% toolbox/wavelet/ja/xlate
+
+<(de1dtool)Variance Adaptive Thresholding
+>(de1dtool)分散に依存した適応しきい値法
+
+<(utthrgbl)Select thresholding method
+>(utthrgbl)しきい値法の選択
+
+<(utthrgbl)Select Global Threshold
+>(utthrgbl)グローバルなしきい値法の選択
+
+<(utthrgbl)  Global threshold
+>(utthrgbl)  グローバルなしきい値
+
+<(utthrset)Interval Dependent Threshold Settings for 
+>(utthrset)区間依存のしきい値の設定 
+<(utthrset)Int. Dependent Threshold Settings for 
+>(utthrset)区間依存のしきい値の設定 
+<(utthrset)&One-Dimensional Local Thresholding
+>(utthrset)1 次元のローカルなしきい値(&O)
+
+<(utthrset)Update thresholds ?
+>(utthrset)しきい値を更新しますか?
+
+<(utthrset)Generate Interval Dependent Thresholds
+>(utthrset)区間依存のしきい値を作成
+
+<(utthrw1d)Thresh
+>(utthrw1d)しきい値
+<(utthrw1d)Int. dependent threshold settings
+>(utthrw1d)区間依存のしきい値の設定
+
+<(utthrw1d)Interval dependent threshold Settings
+>(utthrw1d)区間依存のしきい値の設定
+<(utthrw1d)Fixed form threshold
+>(utthrw1d)固定型のしきい値
+
+<(utthrw1d)Global threshold    
+>(utthrw1d)グローバルなしきい値    
+<(utthrw1d)By level threshold 1
+>(utthrw1d)しきい値 1 のレベル毎
+<(utthrw1d)By level threshold 2
+>(utthrw1d)しきい値 2 のレベル毎
+<(utthrw1d)By level threshold 3
+>(utthrw1d)しきい値 3 のレベル毎
+
+<(utthrw2d)Fixed form threshold     
+>(utthrw2d)固定型のしきい値     
+
+<(utthrwpd)Fixed form thr. (unscaled wn)
+>(utthrwpd)固定型のしきい値 (スケーリングなしの白色雑音)
+<(utthrwpd)Fixed form thr. (scaled wn)  
+>(utthrwpd)固定型のしきい値 (スケーリングありの白色雑音)  
+
+<(ddencmp)Global thresholding  
+>(ddencmp)グローバルなしきい値  
+
+<(ddencmp)Global thresholding
+>(ddencmp)グローバルなしきい値
+
+<(ddencmp)Thresholded coefficients
+>(ddencmp)しきい値適用後の係数
+
+<(utentpar)threshold 
+>(utentpar)しきい値 
+
+<(nwavtool)Contours with threshold
+>(nwavtool)しきい値付き等高線
+
+% ================
+% Wavelet
+% ================
+<(dw3d)3-D Display
+>(dw3d)3 次元表示
+<(dw3d)3-D Analysis
+>(dw3d)3 次元解析
+
+<()Wavelet packet indices - Natural order
+>()ウェーブレット パケットのインデックス - 自然順
+<()Wavelet packet indices - Frequential order
+>()ウェーブレット パケットのインデックス - 頻度順
+
+%
+% Last modifications April 10, 2010
+%-------------------------------------
+% toolbox\wavelet\wavelet\wpspectrum.m
+<(wpspectrum)Time (secs)
+>(wpspectrum)時間 (秒)
+<(wpspectrum)Freq (Hz)
+>(wpspectrum)周波数 (Hz)
+<(wpspectrum)Wavelet packet decomposition
+>(wpspectrum)ウェーブレット パケット分解
+% toolbox\wavelet\wavelet\wcoher.m
+<(wcoher)Analyzed Signal
+>(wcoher)解析した信号
+<[wchoher](wcoher)Modulus
+>(wcoher)剰余
+<[wchoher](wcoher)Angle
+>(wcoher)角度
+<(wcoher)Continuous Wavelet Transform (CWT)
+>(wcoher)連続ウェーブレット変換 (CWT)
+<(wcoher)Analyzed Signals
+>(wcoher)解析した信号
+<(wcoher)Wavelet Cross Spectrum (WCS)
+>(wcoher)ウェーブレット クロス スペクトル (WCS)
+<(wcoher)Wavelet Coherence - Phase
+>(wcoher)ウェーブレット コヒーレンス - 位相
+<(wcoher)Wavelet Coherence - Modulus and Phase
+>(wcoher)ウェーブレット コヒーレンス - 剰余と位相
+<[wcoher](wcoher)Times
+>(wcoher)時間
+<(wcoher)Wavelet Coherence
+>(wcoher)ウェーブレット コヒーレンス
+<(wcoher)CWT for %s and %s
+>(wcoher)%s と %s の CWT
+
+% MODIFICATIONS for RELEASE R2011b
+%---------------------------------
+% toolbox/wavelet/wavelet/ja/xlate
+
+<(GUIs)Select colormap
+>(GUIs)カラーマップの選択
+<(GUIs)Increase or decrease the number of colors
+>(GUIs)カラー数の増減
+<(GUIs)Increase or decrease the brightness
+>(GUIs)明度の増減
+<(wavemenu)One-Dimensional Continuous Wavelet Analysis Tool (Using FFT)
+>(wavemenu)1 次元連続ウェーブレット解析ツール (FFT 使用)
+<[wavemenu](wavemenu)Continuous Wavelet 1-D (Using FFT)
+>[wavemenu](wavemenu)1-D 連続ウェ-ブレット (FFT 使用)
+<[cwtfttool](cwtfttool)Sampling period
+>[cwtfttool](cwtfttool)サンプリング周期
+<[cwtfttool](cwtfttool)Wavelet
+>[cwtfttool](cwtfttool)ウェーブレット
+<[cwtfttool](cwtfttool)Parameter(s)
+>[cwtfttool](cwtfttool)パラメーター
+<[cwtfttool](cwtfttool)Dyadic default
+>[cwtfttool](cwtfttool)2 進既定値
+<[cwtfttool](cwtfttool)Linear default
+>[cwtfttool](cwtfttool)線形既定値
+<[cwtfttool](cwtfttool)Define Scales
+>[cwtfttool](cwtfttool)スケールの定義
+<[cwtfttool](cwtfttool)    Synthesize   
+>[cwtfttool](cwtfttool)    合成   
+<[cwtfttool](cwtfttool)Synthesis Method
+>[cwtfttool](cwtfttool)合成メソッド
+<[cwtfttool](cwtfttool)Dyadic
+>[cwtfttool](cwtfttool)2 進
+<[cwtfttool](cwtfttool)Linear
+>[cwtfttool](cwtfttool)線形
+<[cwtfttool](cwtfttool)Scales Selection
+>[cwtfttool](cwtfttool)スケール選択
+<[cwtfttool](cwtfttool)Manual Selection of Coefficients
+>[cwtfttool](cwtfttool)係数の手動選択
+<[cwtfttool](cwtfttool)Manual selection
+>[cwtfttool](cwtfttool)手動選択
+<[cwtfttool](cwtfttool)Show synthesized signals from
+>[cwtfttool](cwtfttool)合成元信号の表示
+<[cwtfttool](cwtfttool)Initial scales
+>[cwtfttool](cwtfttool)初期スケール
+<[cwtfttool](cwtfttool)List of scales selection
+>[cwtfttool](cwtfttool)スケール選択のリスト
+<[cwtfttool](cwtfttool)Manual selection tool of coefficients
+>[cwtfttool](cwtfttool)係数の手動選択ツール
+<[cwtfttool](cwtfttool)Delete All Boxes
+>[cwtfttool](cwtfttool)すべてのボックスを削除
+<[cwtfttool](cwtfttool)HELP
+>[cwtfttool](cwtfttool)ヘルプ
+<[cwtfttool](cwtfttool)Select the Coefficients Manually
+>[cwtfttool](cwtfttool)係数を手動で選択
+<[cwtfttool](cwtfttool)Select the Coefficients Manually
+>[cwtfttool](cwtfttool)係数を手動で選択
+<[cwtfttool](cwtfttool)       Selection of Scales         
+>[cwtfttool](cwtfttool)       スケールの選択         
+<[cwtfttool](cwtfttool) N  |     Value 
+>[cwtfttool](cwtfttool) N  |     値 
+<[cwtfttool](cwtfttool)Dyn Visu
+>[cwtfttool](cwtfttool)動的可視化
+<[cwtfttool](cwtfttool)Defaults
+>[cwtfttool](cwtfttool)既定の設定
+<[cwtfttool](cwtfttool)Real part
+>[cwtfttool](cwtfttool)実数部
+<[cwtfttool](cwtfttool)Imaginary part
+>[cwtfttool](cwtfttool)虚数部
+<(cwtftbtn)UnSelect
+>(cwtftbtn)選択解除
+<()Concatenated by:
+>()連結:
+

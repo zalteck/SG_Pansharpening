@@ -1,0 +1,22 @@
+% Copyright 2001-2005 The MathWorks, Inc.
+% $Revision: 1.2.4.3 $
+<(read)invalid node value
+>(read)不適切なノード値  
+<(read)unknown object field
+>(read)未知なオブジェクトフィールド 
+<(read)Node Action  
+>(read)ノードアクション
+<(dtree)Invalid argument name: %s
+>(dtree)不適切な引数名: %s 
+<(dtree)* STOP *
+>(dtree))* 停止 *
+<(disp) Data Tree Object Structure 
+>(disp) Data Tree オブジェクト構造 
+<(disp) size of initial data : 
+>(disp) 初期データのサイズ :
+<(disp) order                : 
+>(disp) 次数           : 
+<(disp) depth                : 
+>(disp) 深さ           :
+<(disp) terminal nodes       : 
+>(disp) 終端子ノード     :

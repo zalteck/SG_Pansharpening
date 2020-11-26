@@ -1,0 +1,898 @@
+% Copyright 2001-2009 The MathWorks, Inc.
+% $Revision: 1.7.4.8 $
+
+<(dcmdcomp)Compression 1-D
+>(dcmdcomp)1 次元圧縮
+<(dcmdcomp)Original signal
+>(dcmdcomp)オリジナル信号
+<(dcmdcomp)Compressed signal
+>(dcmdcomp)圧縮した信号
+<(dcmdcomp)Compression 2-D
+>(dcmdcomp)2 次元圧縮
+<(dcmdcomp)Original image
+>(dcmdcomp)オリジナルイメージ
+<(dcmdcomp)Compressed Image. Threshold = %s
+>(dcmdcomp)圧縮したイメージ。スレッシュホールド = %s
+<(dcmdcasc)Cascade algorithm
+>(dcmdcasc)カスケードアルゴリズム
+<(dcmdcw1d)level
+>(dcmdcw1d)レベル
+<(dcmdcw1d)Analyzed signal.
+>(dcmdcw1d)解析した信号。
+<(dcmdcw1d)Continuous Wavelet Transform 1-D
+>(dcmdcw1d)1 次元連続ウェーブレット変換
+<(dcmdcw1d)Discrete Transform, absolute coefficients.
+>(dcmdcw1d)離散変換、係数の絶対値。
+<(dcmddeno)Denoised signal
+>(dcmddeno)ノイズ除去信号
+<(dcmddeno)Original Image
+>(dcmddeno)オリジナルイメージ
+<(dcmddeno)1-D De-noising using wavelet
+>(dcmddeno)ウェーブレットを使った 1 次元のノイズ除去
+<(dcmddeno)Noisy signal - Signal to noise ratio = %s
+>(dcmddeno)ノイズを含む信号 - S/N 比 = %s
+<(dcmddeno)Denoised signal - heuristic SURE
+>(dcmddeno)ノイズ除去信号 - 経験的な SURE
+<(dcmddeno)Denoised signal - SURE
+>(dcmddeno)ノイズ除去信号 - SURE
+<(dcmddeno)Denoised signal - Fixed form threshold
+>(dcmddeno)ノイズ除去信号 - 固定型のスレッシュホールド
+<(dcmddeno)Denoised signal - Minimax
+>(dcmddeno)ノイズ除去信号 - ミニマックス
+<(dcmddeno)Noisy and Original signals
+>(dcmddeno)ノイズを含む信号とオリジナル信号
+<(dcmddeno)Signal to noise ratio = %s
+>(dcmddeno)S/N 比 = %s
+<(dcmddeno)Denoised and Original signals
+>(dcmddeno)ノイズ除去信号とオリジナル信号
+<(dcmddeno)2-D De-noising using wavelet
+>(dcmddeno)ウェーブレットを使った 2 次元のノイズ除去
+<(dcmddeno)Noisy Image
+>(dcmddeno)ノイズを含むイメージ
+<(dcmddeno)De-noised Image
+>(dcmddeno)ノイズ除去したイメージ
+<(dcmddw1d)Orthogonal Wavelets 1-D
+>(dcmddw1d)1 次元直交ウェーブレット
+<(dcmddw1d)Original signal s.
+>(dcmddw1d)オリジナル信号 s.
+<(dcmddw1d)Reconstructed signal : a0.
+>(dcmddw1d)再構成された信号 : a0.
+<(dcmddw1d)Original signal s and ca3.
+>(dcmddw1d)オリジナル信号 s と ca3.
+<(dcmddw1d)Original signal s , ca3 and cd3.
+>(dcmddw1d)オリジナル信号 s , ca3 と cd3.
+<(dcmddw1d)Original signal s , ca3, cd3 and cd2.
+>(dcmddw1d)オリジナル信号 s , ca3, cd3, cd2.
+<(dcmddw1d)Original signal s , ca3, cd3, cd2 and cd1.
+>(dcmddw1d)オリジナル信号 s , ca3, cd3, cd2, cd1.
+<(dcmddw1d)Original signal s and app. level 3.
+>(dcmddw1d)オリジナル信号 s と app. のレベル 3.
+<(dcmddw1d)Original signal and a3 d3 d2 d1.
+>(dcmddw1d)オリジナル信号と a3 d3 d2 d1.
+<(dcmddw1d)Reconstructed signal a0.
+>(dcmddw1d)再構成された信号 a0.
+<(dcmddw2d)Orthogonal Wavelets 2-D
+>(dcmddw2d)2 次元直交ウェーブレット
+<(dcmddw2d)Decomposition at level 1
+>(dcmddw2d)レベル 1 での分解
+<(dcmddw2d)Coef. of Approximation at level 1
+>(dcmddw2d)レベル 1 での Approximation 係数
+<(dcmddw2d)Coef. of Horizontal Detail at level 1
+>(dcmddw2d)レベル 1 での水平 Detail 係数
+<(dcmddw2d)Coef. of Vertical Detail at level 1
+>(dcmddw2d)レベル 1 での垂直 Detail 係数
+<(dcmddw2d)Coef. of Diagonal Detail at level 1
+>(dcmddw2d)レベル 1 での対角 Detail 係数
+<(dcmddw2d)Decomposition at level 2
+>(dcmddw2d)レベル 2 での分解
+<(dcmddw2d)Original image X.
+>(dcmddw2d)オリジナルイメージ X.
+<(dcmddw2d)Decomp. at level 1
+>(dcmddw2d)レベル 1 での分解
+<(dcmddw2d)Recons. image : a0.
+>(dcmddw2d)再構成イメージ : a0.
+<(dcmddw2d)Coef. at level 2.
+>(dcmddw2d)レベル 2 の係数.
+<(dcmddw2d)Coef. at level 1.
+>(dcmddw2d)レベル 1 の係数.
+<(dcmddw2d)Reconstructed image a0.
+>(dcmddw2d)再構成されたイメージ a0.
+<(dcmdextm)Border distortion
+>(dcmdextm)境界の歪み
+<(dcmdextm)Original Signal : two near first derivative discontinuities
+>(dcmdextm)オリジナル信号: 2 つの近い 1 階微分の不連続部
+<(dcmdextm)Coefficients using zero padding
+>(dcmdextm)ゼロパディングを使った係数
+<(dcmdextm)Coefficients using symmetrization padding
+>(dcmdextm)対称パディングを使った係数
+<(dcmdextm)Coefficients using smooth padding
+>(dcmdextm)平滑化パディングを使った係数
+<(dcmdextm)app. 3 using zero padding
+>(dcmdextm)ゼロパディングを使った app.3
+<(dcmdextm)app. 3 using symmetrization padding
+>(dcmdextm)対称パディングを使った app.3
+<(dcmdextm)app. 3 using smooth padding
+>(dcmdextm)平滑化パディングを使った app.3
+<(dcmdmala)Upsampled det. coeff. cd1.
+>(dcmdmala)アップサンプルした det. 係数 cd1.
+<(dcmdmala)Mallat Algorithm (FWT)
+>(dcmdmala)Mallat アルゴリズム (FWT)
+<(dcmdmala)s and Lo_D convolution.
+>(dcmdmala)s と Lo_D コンボリューション
+<(dcmdmala)s and Hi_D convolution.
+>(dcmdmala)s と Hi_D コンボリューション
+<(dcmdmala)Upsampled detail coeff. and Hi_R convolution.
+>(dcmdmala)アップサンプルした detail 係数と Hi_R コンボリューション
+<(dcmdmala)Reconstructed detail d1.
+>(dcmdmala)再構成された detail d1.
+<(dcmdmala)Upsampled approx. coeff. ca1
+>(dcmdmala)アップサンプルした approx. 係数 ca1
+<(dcmdmala)Upsampled approx coeff. and Lo_R convolution.
+>(dcmdmala)アップサンプルした approx 係数と Lo_R コンボリューション
+<(dcmdmala)Reconstructed approx. a1.
+>(dcmdmala)再構成された approx. a1.
+<(dcmdmala)Reconstructed signal : a0 = a1 + d1.
+>(dcmdmala)再構成された信号 : a0 = a1 + d1.
+<(dcmdmala)Noisy Signal
+>(dcmdmala)ノイズ信号
+<(dcmdmala) Mallat algorithm in the Wavelet Toolbox.
+>(dcmdmala) Wavelet Toolbox の Mallet アルゴリズム。
+%
+%
+<(dcmdwpck)Denoised Signal using Wavelet Packets
+>(dcmdwpck)ウェーブレットパケットを使ってノイズ除去した信号
+<(dcmdwpck)Denoised Signal using Wavelets
+>(dcmdwpck)ウェーブレットを使ってノイズ除去した信号
+<(dcmdwpck)Compressed Image
+>(dcmdwpck)圧縮したイメージ
+<(dcmdwpck)Denoised Signals : Wavelet Packets (m) , Wavelets (y)
+>(dcmdwpck)ノイズ除去した信号 : ウェーブレットパケット (m) , ウェーブレット (y)
+<(dcmdwpck)Denoised Image
+>(dcmdwpck)ノイズ除去イメージ
+<(dcmdwpck)Wavelet packets demo
+>(dcmdwpck)ウェーブレットパケットデモ
+<(dmsgfun)Message window
+>(dmsgfun)メッセージウィンドウ
+<(dmsgfun)Command line mode demos
+>(dmsgfun)コマンドラインモードデモ
+<(dmsgfun)Wavelet 1-D
+>(dmsgfun)1 次元ウェーブレット
+<(dmsgfun)Continuous Wavelet 1-D
+>(dmsgfun)1 次元連続ウェーブレット
+<(dmsgfun)Wavelet 2-D
+>(dmsgfun)2 次元ウェーブレット
+<(dmsgfun)Compression
+>(dmsgfun)圧縮(Compression)
+<(dmsgfun)De-noising
+>(dmsgfun)ノイズ除去
+<(dmsgfun)Wavelet Packets
+>(dmsgfun)ウェーブレットパケット
+<(dmsgfun)Mallat algorithm
+>(dmsgfun)Mallat アルゴリズム
+<(dmsgfun)Close
+>(dmsgfun)閉じる
+<(dmsgfun)Image
+>(dmsgfun)画像
+<(dmsgfun)Wavelet
+>(dmsgfun)ウェーブレット
+<(dmsgfun)Unknown Option
+>(dmsgfun)不明なオプション
+<(demoguim)Gui mode demo
+>(demoguim)GUI モードデモ
+<(demoguim)Wavelet Packet 1-D
+>(demoguim)1 次元ウェーブレットパケット
+<(demoguim)Complex Continuous Wavelet 1-D
+>(demoguim)1 次元複素連続ウェーブレット
+<(demoguim)Wavelet Packet 2-D
+>(demoguim)2 次元ウェーブレットパケット
+<(demoguim)Wavelet Display
+>(demoguim)ウェーブレット表示
+<(demoguim)Wavelet Packet Display
+>(demoguim)ウェーブレットパケットの表示
+<(demoguim)SWT Denoising 1-D
+>(demoguim)1 次元 SWT ノイズ除去
+<(demoguim)Density Estimation 1-D
+>(demoguim)1 次元密度推定
+<(demoguim)Regression Estimation 1-D
+>(demoguim)1 次元回帰推定
+<(demoguim)Wavelet Coefficients Selection 1-D
+>(demoguim)1 次元ウェーブレット係数選択
+<(demoguim)SWT Denoising 2-D
+>(demoguim)2 次元 SWT ノイズ除去
+<(demoguim)Wavelet Coefficients Selection 2-D
+>(demoguim)2 次元ウェーブレット係数選択
+<(demoguim)Signal Extension
+>(demoguim)信号の拡張
+<(demoguim)Image Extension
+>(demoguim)イメージの拡張
+<(demoguim)One-Dimensional
+>(demoguim)1 次元
+<(demoguim)Two-Dimensional
+>(demoguim)2 次元
+<(demoguim)Display
+>(demoguim)表示
+<(demoguim)Specialized Tools 1-D
+>(demoguim)1 次元特殊ツール
+<(demoguim)Specialized Tools 2-D
+>(demoguim)2 次元特殊ツール
+<(demoguim)Extension
+>(demoguim)拡張
+%
+%
+% demoscen.m の中のメッセージの後、多くのスペースが存在します。
+<(demoscen)This demo shows the 1-D wavelet capabilities of the     
+>(demoscen)このデモは、ウェーブレット GUI ツールの 1 次元ウェーブレットの     
+<(demoscen)Wavelet GUI tools. The scenario supposes that we want to
+>(demoscen)機能を示します。シナリオでは、1 次元信号のノイズ除去と
+<(demoscen)de-noise or compress a 1-D signal. In this example, we  
+>(demoscen)圧縮を行います。この例では、シンプルな  
+<(demoscen)decompose a simple synthetic noisy Doppler signal using 
+>(demoscen)合成のノイズを含む Doppler 信号を Symlet 4 ウェーブレット 
+<(demoscen)the Symlet 4 wavelet (sym4) into five levels.           
+>(demoscen)(sym4) を使って 5 レベルに分解します。           
+<(demoscen)The full decomposition appears, with the signal denoted s at the top.   
+>(demoscen)一番上に s として定義された信号と、完全な分解構造が現れます。   
+<(demoscen)This signal is equal to the sum of the coarsest approximation (a5)      
+>(demoscen)この信号は、粗い分解の Approximation (a5) とレベル 1 から      
+<(demoscen)and the details at levels 1 to 5 (d1 ... d5).                           
+>(demoscen)5 の Detail 係数 (d1 ... d5) の和と等しくなります。                           
+<(demoscen)Since sym4 is an orthogonal wavelet, the decomposition is orthogonal.   
+>(demoscen)sym4 は直交ウェーブレットであるため、その分解も直交します。   
+<(demoscen)How do we select the wavelet and decomposition level?                   
+>(demoscen)ウェーブレットと分解レベルをどのように選択しますか?                   
+<(demoscen)For de-noising or compression, both the decomposition level and         
+>(demoscen)ノイズ除去、または圧縮の場合、分解レベルとウェーブレットはどちらも         
+<(demoscen)wavelet are useful tuning parameters.                                   
+>(demoscen)パラメータの調整に役立ちます。                                   
+<(demoscen)Recall that the de-noised or compressed signal is equal to              
+>(demoscen)ノイズ除去、または圧縮された信号は、スレッシュホールドを              
+<(demoscen)the coarsest approximation + some signal reconstructed using the        
+>(demoscen)適用した Detail 係数を使用して、粗い Approximation + いくつかの信号を再構成したものと        
+<(demoscen)thresholded detail coefficients.                                        
+>(demoscen)等しくなることを思い出してください。                                        
+<(demoscen)Often the wavelet choice is not crucial, and any "short" wavelet        
+>(demoscen)ウェーブレットの選択は重要ではなく、Haar 以外の "短い" ウェーブレットが        
+<(demoscen)except Haar is a good starting point.                                   
+>(demoscen)よい出発点になることがあります。                                   
+<(demoscen)Having selected a wavelet, the decomposition level needs to be selected.
+>(demoscen)ウェーブレットを選択すると、分解レベルも選択する必要があります。
+<(demoscen)To study this, let us change to the Separate display mode.              
+>(demoscen)これを学習するために、別モードに表示を変更しましょう。              
+<(demoscen)As a rule of thumb, we can select the decomposition level in such     
+>(demoscen)大雑把に言って、対応する Approximation のノイズが     
+<(demoscen)a way that the corresponding approximation is noise free. In this     
+>(demoscen)なくなるように、分解レベルを選択します。この例において、     
+<(demoscen)example 4 or 5 are good candidates, since the approximations at levels
+>(demoscen)レベル 1 から 3 までの Approximation には明らかにノイズを含んでいるため、
+<(demoscen)1 to 3 are clearly noisy. In addition, the detail d5 contains         
+>(demoscen)4 または 5 がよい候補になりそうです。さらに、Detail の後半を調べると         
+<(demoscen)significant noise as it can be seen inspecting the second half of the 
+>(demoscen)わかるように、Detail d5 は重要なノイズを含んでいるため、5 が分解レベルに 
+<(demoscen)detail, so 5 should be a good value for the decomposition level.      
+>(demoscen)対する適切な値になるべきです。      
+<(demoscen)The Wavelet GUI provides a flexible and configurable interface.       
+>(demoscen)ウェーブレット GUI は、柔軟な設定を行うことが可能なインタフェースを提供します。       
+<(demoscen)In the current view, one can see the wavelet coefficients, cfs. We    
+>(demoscen)現在の表示では、ウェーブレット係数 cfs を見ることができます。係数に    
+<(demoscen)focus on the coefficients, selecting Show and Scroll display mode,    
+>(demoscen)注目して、表示とスクロールの表示モードを選択し、レベル 5 の    
+<(demoscen)selecting the approximation at level 5 and using the More Display     
+>(demoscen)Approximation を選択します。そして、More Display オプションを使って    
+<(demoscen)Options and removing the Detail Axes.                                 
+>(demoscen)Detail の座標軸を削除します。                                 
+<(demoscen)The time-scale pattern shows that the                                      
+>(demoscen)時間-スケールパターンは、信号の                                      
+<(demoscen)deterministic part of the signal is concentrated in a few big coefficients,
+>(demoscen)確定的な部分は少数の大きな係数に集中しており、ノイズは時間-スケールの表示全体を
+<(demoscen)and noise corrupts all the time-scale representation.                      
+>(demoscen)覆っていることがわかります。                      
+<(demoscen)To reinforce this, use the coloration  mode init + all levels + abs        
+>(demoscen)これを補足するため、カラーリングモードの初期化 + すべてのレベル + 絶対値        
+<(demoscen)in order to rescale globally the absolute coefficients.                    
+>(demoscen)を使って、係数の絶対値をグローバルに再スケーリングします。                    
+<(demoscen)Clicking on the Histograms button and selecting all the detail coefficients,
+>(demoscen)ヒストグラムボタンをクリックしてすべての Detail 係数を選択すると、
+<(demoscen)we can see that the detail coefficients are approximately Gaussian N(0,1)   
+>(demoscen)Detail 係数が、信号の確定的な部分の分解にリンクする   
+<(demoscen)except for extreme values outside the interval [-4 4] which are             
+>(demoscen)区間 [-4 4] の外側の極値を除いてほぼガウス N(0,1)             
+<(demoscen)linked to the decomposition of the deterministic part of the signal.        
+>(demoscen)になっていることがわかります。        
+<(demoscen)The de-noising or compression procedure acts on these coefficients killing
+>(demoscen)ノイズ除去、または圧縮の方法は、絶対値の項の最も低い係数を切り捨て、
+<(demoscen)the lowest coefficients in absolute value terms and keeping large values. 
+>(demoscen)大きい値を保つことで、これらの係数に作用します。 
+<(demoscen)Compression.                                                      
+>(demoscen)圧縮.                                                      
+<(demoscen)We press the Compress button, and the compression window appears. 
+>(demoscen)圧縮ボタンを押して、圧縮ウィンドウを表示します。 
+<(demoscen)This allows the user to select the threshold value with respect to
+>(demoscen)ユーザはこれを使って、2 つの設計パラメータに対するスレッシュホールド値を
+<(demoscen)two design parameters:                                            
+>(demoscen)選択することができます:                                            
+<(demoscen)- the retained energy in percent which is equal to 100 times                 
+>(demoscen)- パーセントで表される残りのエネルギー: オリジナル信号の                 
+<(demoscen)the square norm of the compressed signal over the square norm of the         
+>(demoscen)二乗ノルムで圧縮された信号の二乗ノルムを                 
+<(demoscen)original signal (magenta line on the left);                                  
+>(demoscen)100 倍したもの (左側のマゼンタ色のライン)                                   
+<(demoscen)- the number of zeros in percent which is equal to the percentage of zeros of
+>(demoscen)- パーセントで表される 0 の数: 圧縮された信号の
+<(demoscen)the wavelet representation of the compressed signal (blue line on the left). 
+>(demoscen)ウェーブレット表現の 0 の割合 (左側の青色のライン)。 
+<(demoscen)The threshold default value given by the toolbox in the 1-D case is the one  
+>(demoscen)1 次元の場合、ツールボックスで与えられたスレッシュホールドの  
+<(demoscen)for which the two previously defined design parameters are approximately the 
+>(demoscen)デフォルト値は、2 つ前に定義した設計パラメータで計算したものとほぼ同じ
+<(demoscen)same.                                                                        
+>(demoscen)です。                                                                        
+<(demoscen)Then compression using the threshold default value leads a smoothed signal,  
+>(demoscen)そして、スレッシュホールドのデフォルト値を使った圧縮は滑らかな信号になり、  
+<(demoscen)and the explanation of how the compression works is clear from the           
+>(demoscen)時間-スケール表示のオリジナルとスレッシュホールドを適用した           
+<(demoscen)comparison of original and thresholded coefficients in the time-scale        
+>(demoscen)係数の比較によりどのように圧縮の操作が行われたかを説明することが        
+<(demoscen)representations.                                                             
+>(demoscen)できます。                                                             
+<(demoscen)You can then iterate choosing the threshold value or the retained energy
+>(demoscen)その後で、ユーザは、スレッシュホールド値、残りのエネルギー、または 0 の数を選択を
+<(demoscen)or the number of zeros. A modification of each of the three parameters  
+>(demoscen)繰り返すことができます。これらのパラメータを個々に修正すると、  
+<(demoscen)automatically updates the other two.                                    
+>(demoscen)残りの 2 つも自動的に更新されます。                                    
+<(demoscen)To learn more about the compression procedure we select                       
+>(demoscen)圧縮手順について更に詳細を学ぶには、レベル毎の                       
+<(demoscen)the By-Level thresholding mode.                                                
+>(demoscen)スレッシュホールドのモードを選択します。                                                
+<(demoscen)The detail coefficients are thresholded according to the thresholds represented
+>(demoscen)Detail 係数は左側の黄色いラインで表されるスレッシュホールドに従って、
+<(demoscen)by the yellow lines on the left. With respect to the previous mode, this one   
+>(demoscen)スレッシュホールドが適用されます。前のモードに対して、さらに柔軟になるように   
+<(demoscen)allows level-dependent threshold values leading to additional flexibility.     
+>(demoscen)レベルに依存するスレッシュホールド値を設定することができます。     
+<(demoscen)The resulting compressed signal can be found in the following figure.         
+>(demoscen)結果の圧縮された信号は、以下の Figure に表示されます。         
+<(demoscen)De-noising.                                                                    
+>(demoscen)ノイズ除去.                                                                    
+<(demoscen)The design objective is to recover the signal or to remove noise,              
+>(demoscen)設計の目的は、オリジナルの対象となる信号が未知であるものと              
+<(demoscen)without reference to an original interesting signal which is supposed to be    
+>(demoscen)仮定されることに関係なく、信号を復元、または、ノイズを    
+<(demoscen)unknown. It is assumed that additive noise corrupts the signal to be           
+>(demoscen)除去することです。付加雑音は、復元される信号を汚すものと考えられ、           
+<(demoscen)recovered, and is supposed to be stationary (at least at each scale).          
+>(demoscen)(少なくとも各スケールにおいて) 定常であるものと仮定します。          
+<(demoscen)The main ideas for de-noising and for compression are the same. The differences
+>(demoscen)ノイズ除去と圧縮に関する主な考え方は同じです。異なるのは、
+<(demoscen)are located at two points:                                                     
+>(demoscen)次の 2 点です:                                                     
+<(demoscen)- soft thresholding (shrinkage) is often used instead of the more crude        
+>(demoscen)- ソフトスレッシュホールド法 (shrinkage) は、より粗いハードスレッシュホールド法の        
+<(demoscen)hard thresholding.                                                             
+>(demoscen)代わりによく使用されます。                                                             
+<(demoscen)- the noise structure (scaled or unscaled white noise, coloured noise) is of   
+>(demoscen)- ノイズ構造 (スケーリングされた、またはスケーリングされていない白色雑音、有色雑音)   
+<(demoscen)interest.                                                                      
+>(demoscen)が対象です。                                                                      
+<(demoscen)The GUI tools for de-noising are similar to the Compression tools.             
+>(demoscen)ノイズ除去のための GUI ツールは、圧縮ツールと似ています。             
+<(demoscen)When you push on De-noise, the de-noising window appears,                      
+>(demoscen)ノイズ除去を選ぶと、ノイズ除去ウィンドウが現れ、                      
+<(demoscen)we apply the default selection.                                                
+>(demoscen)デフォルト選択を適用します。                                                
+<(demoscen)As can be seen, the procedure keeps roughly the highest coefficients.
+>(demoscen)これまで見てきたように、その手順は高い係数を保ちます。
+<(demoscen)Then using the same default, we can show the differences between     
+>(demoscen)その後、同じデフォルトを使用し、ソフトスレッシュホールドとハードスレッシュホールドの     
+<(demoscen)soft and hard thresholding.                                          
+>(demoscen)違いを示すことができます。                                          
+<(demoscen)Now we close the de-noising window, update the de-noised signal and compare
+>(demoscen)ノイズ除去ウィンドウを閉じ、ノイズ除去された信号を更新して、フルサイズで
+<(demoscen)the two signals in full size.                                              
+>(demoscen)2 つの信号を比較します。                                              
+<(dguidw1d)The present Display mode is Full Decomposition mode.
+>(dguidw1d)現在の表示モードは、完全な分解構造モードです。
+<(dguidw1d)The present mode is the (init+ by scale + abs) mode.
+>(dguidw1d)現在のモードは、(初期化 + スケール毎 + 絶対値) モードです。
+<(dguidw1d)The present View mode is Square mode.                                          
+>(dguidw1d)現在の表示モードは方形モードです。                                          
+<(dguidw1d)Two view modes are available.                                                  
+>(dguidw1d)2 つの表示モードが利用可能です。                                                  
+<(dguidw1d)To change the Display mode use the corresponding popupmenu in the middle of the window.
+>(dguidw1d)表示モードを変更するには、ウィンドウ中央のポップアップメニューを使用します。
+<(dguidw1d)Six display modes are available.
+>(dguidw1d)6 つの表示モードを使用することができます。
+<(dguidw1d)We select the Superimpose Mode.
+>(dguidw1d)重ね書きモードを選択します。
+<(dguidw1d)We select the Show and Scroll Mode.
+>(dguidw1d)表示とスクロールモードを選択します。
+<(dguidw1d)We select the Separate Mode.
+>(dguidw1d)別モードを選択します。
+<(dguidw1d)We select the Tree Mode.
+>(dguidw1d)ツリーモードを選択します。
+<(dguidw1d)We select the Show and Scroll (Stem Cfs) Mode.
+>(dguidw1d)表示とスクロール (離散プロット Cfs) モードを選択します。
+<(dguidw1d)We go back to the Full Decomposition mode.
+>(dguidw1d)完全な分解構造モードに戻ります。
+<(dguidw1d)We select the Full Decomposition at level 2.
+>(dguidw1d)レベル 2 の完全な分解構造を選択します。
+<(dguidw1d)We restore the Full Decomposition at level 6.
+>(dguidw1d)レベル 6 の完全な分解構造に戻します。
+<(dguidw1d)The Compress pushbutton is used to call the compression tool.
+>(dguidw1d)圧縮ボタンを使って、圧縮ツールを呼び出します。
+<(dguidw1d)We compress the signal with the default options.
+>(dguidw1d)デフォルトオプションで信号を圧縮します。
+<(dguidw1d)The De-noise pushbutton is used to call the de-noising tool.
+>(dguidw1d)ノイズ除去ボタンを使って、ノイズ除去ツールを呼び出します。
+<(dguidw1d)We de-noise the signal with the default options.
+>(dguidw1d)デフォルトオプションで信号のノイズ除去を行います。
+<(dguidw1d)The Statistics pushbutton is used to call the statistics tool.
+>(dguidw1d)統計量ボタンを使って、統計量ツールを呼び出します。
+<(dguidw1d)The Histograms pushbutton is used to call the histograms tool.
+>(dguidw1d)ヒストグラムボタンを使って、ヒストグラムツールを呼び出します。
+<(dguidw1d)Let's display the decomposition (button 4) Full Size.
+>(dguidw1d)分解構造 (ボタン 4) をフルサイズで表示しましょう。
+<(dguidw1d)Let's display the reconstructed packets (button 2) Full Size.
+>(dguidw1d)再構成されたパケット (ボタン 2) をフルサイズで表示しましょう。
+<(dguidw2d)The present View mode is Square mode.
+>(dguidw2d)現在の表示モードは方形モードです。
+<(dguidw2d)Two view modes are available.
+>(dguidw2d)2 つの表示モードが利用可能です。
+<(dguidw2d)We go back to the Square mode.
+>(dguidw2d)方形モードに戻ります。
+<(dguidw2d)The four pushbuttons labelled [1 2 3 4] in the middle of the window
+>(dguidw2d)ウィンドウの中央に [1 2 3 4] というラベルの付いた 4 つのプッシュボタンは、
+<(dguidw2d)allow to see Full Size for one of the four axes.
+>(dguidw2d)4 つの座標軸のいずれかをフルサイズで見ることができます。
+<(dguidw2d)Let's display the coefficients (button 4) Full Size.
+>(dguidw2d)係数 (ボタン 4) をフルサイズで表示しましょう。
+<(dguidw2d)We select the decomposition at level 1.
+>(dguidw2d)レベル 1 の分解を選択します。
+<(dguidw2d)We restore the decomposition at level 2.
+>(dguidw2d)レベル 2 の分解に戻ります。
+<(dguidw2d)We compress the image with the default options.
+>(dguidw2d)デフォルトオプションでイメージを圧縮します。
+<(dguidw2d)We de-noise the image with the default options.
+>(dguidw2d)デフォルトオプションでイメージのノイズ除去を行います。
+<(dguiwp1d)To change the Node Label use the corresponding popupmenu in the middle of the window.
+>(dguiwp1d)ノードラベルを変更するには、ウィンドウ中央のポップアップメニューを使用します。
+<(dguiwp1d)The default labelling is the depth-position labelling
+>(dguiwp1d)デフォルトのラベル付けは、深さ-位置のラベル付けです
+<(dguiwp1d)We select the indices labelling.
+>(dguiwp1d)インデックスのラベル付けを選択します。
+<(dguiwp1d)We select the entropy labelling which gives the entropy of each packet
+>(dguiwp1d)各パケットのエントロピーを表示するエントロピーのラベル付けを選択します。
+<(dguiwp1d)We select the length labelling which gives the length of each packet
+>(dguiwp1d)各パケットの長さを表示する長さのラベル付けを選択します。
+<(dguiwp1d)We go back to the depth-position labelling.
+>(dguiwp1d)深さ-位置のラベル付けに戻ります。
+<(dguiwp1d)We extract the Wavelet tree using the corresponding pushbutton in the middle of the window.
+>(dguiwp1d)ウィンドウの中央のプッシュボタンを使って、ウェーブレットツリーを抽出します。
+<(dguiwp1d)We restore the Initial tree using the corresponding pushbutton in the middle of the window.
+>(dguiwp1d)ウィンドウの中央のプッシュボタンを使って、初期ツリーに戻します。
+<(dguiwp1d)We Compute the Best tree using the corresponding pushbutton in the middle of the window.
+>(dguiwp1d)ウィンドウの中央のプッシュボタンを使って、ベストツリーを計算します。
+<(dguiwp1d)We restore the previous display.
+>(dguiwp1d)前の表示に戻ります。
+<(dguiwp1d)To change the Coloration Mode use the popupmenu at the bottom of the window.
+>(dguiwp1d)カラーリングモードを変更するには、ウィンドウの下のポップアップメニューを使用します。
+<(dguiwp1d)Eight coloration modes are available.
+>(dguiwp1d)8 つのカラーリングモードを使用することができます。
+<(dguiwp1d)Four are based on the frequency order of the packets,
+>(dguiwp1d)4 つは、パケットの周波数順に基づきます
+<(dguiwp1d)The other four are based on the natural order of the packets.
+>(dguiwp1d)他の 4 つは、パケットの自然順に基づきます。
+<(dguiwp1d)We select the natural order : by level and with abs. value of coefficients.
+>(dguiwp1d)自然順 (係数の絶対値でレベル毎に) を選択します。
+<(dguiwp1d)We restore the frequency order : global with abs. value of coefficients.
+>(dguiwp1d)周波数順 (係数の絶対値でグローバル) に戻します。
+<(dguiwp1d)We change Node Action to Split-Merge and we merge the node (1,1) or 2.
+>(dguiwp1d)ノードアクションを分割-結合に変更し、ノード (1,1) または 2 をマージします。
+<(dguiwp1d)The Statistics information for the node 1 are displayed clicking on the node.
+>(dguiwp1d)ノード 1 に対する統計量の情報は、ノード上をクリックして表示します。
+<(dguiwp1d)To change the Node Action use the corresponding popupmenu in the middle of the window.
+>(dguiwp1d)ノードアクションを変更するには、ウィンドウ中央のポップアップメニューを使用します。
+<(dguiwp2d)The default Node Action is Visualize.
+>(dguiwp2d)デフォルトのノードアクションは可視化です。
+<(dguiwp2d)We select the Select On node action.
+>(dguiwp2d)選択開始ノードアクションを選択します。
+<(dguiwp2d)Now we select the nodes [2 3 5].
+>(dguiwp2d)ノード [2 3 5] を選択します。
+<(dguiwp2d)We use the "Reconstruct" pushbutton.
+>(dguiwp2d)"再構成" プッシュボタンを使用します。
+<(dguiwp2d)We change the node action and unselect the nodes [2 3 5].
+>(dguiwp2d)ノードアクションを変更し、ノード [2 3 5] の選択を解除します。
+<(dguiwp2d)The Statistics information for the node 0 are displayed clicking on the node.
+>(dguiwp2d)ノード 0 に対する統計量の情報は、ノード上をクリックして表示します。
+<(dscedw1d)Inactive
+>(dscedw1d)非アクティブ
+<(wavedemo)Wait ... loading
+>(wavedemo)お待ちください ... 読み込み中
+<(wavedemo)Wavelet Toolbox Demo
+>(wavedemo)Wavelet Toolbox デモ
+<(wavedemo)Command line mode
+>(wavedemo)コマンドラインモード
+<(wavedemo)GUI mode
+>(wavedemo)GUI モード
+<(wavedemo)Short 1D scenario
+>(wavedemo)短い 1D シナリオ
+%
+%
+<(whelpdem)Page %s
+>(whelpdem)ページ %s
+<(whelpdem)Wavelet Toolbox Demos - Info Window
+>(whelpdem)Wavelet Toolbox デモ - 情報ウィンドウ
+%
+%
+<(wshowdrv) Press any key to continue
+>(wshowdrv) 続けるには、いずれかのキーを押してください
+<(wshowdrv) You should be aware that when you are            
+>(wshowdrv) ユーザがスライドショーを実行している間は、            
+<(wshowdrv) running a slide show (from the time after you    
+>(wshowdrv)スライドショーが終了するか、    
+<(wshowdrv) press the "Start" button until either the slide  
+>(wshowdrv)"停止" ボタンでスライドショーを  
+<(wshowdrv) show is complete or you end the slide show       
+>(wshowdrv)終了させるかしない限り、"開始" ボタンを押した後は) MATLAB が       
+<(wshowdrv) with the "Stop" button) you will NOT be able     
+>(wshowdrv)デモスクリプトを実行してビジーになるため、     
+<(wshowdrv) to execute commands from the command line,       
+>(wshowdrv)コマンドラインからコマンドを実行することが       
+<(wshowdrv) since MATLAB will be busy executing a            
+>(wshowdrv)できないことに注意して            
+<(wshowdrv) demo script.                                     
+>(wshowdrv) ください。                                     
+<(wshowdrv) For this reason it is strongly recommended       
+>(wshowdrv) このため、他のデモを始める前に、       
+<(wshowdrv) that you finish the slide show or end it by      
+>(wshowdrv)そのスライドショーを終了させるか、      
+<(wshowdrv) pushing the "Stop" button before you begin       
+>(wshowdrv)"停止" ボタンを押してスライドショーを終了させることを       
+<(wshowdrv) any other demos.                                 
+>(wshowdrv)強くお勧めします。                                 
+<(wshowdrv)Slide Show Driver
+>(wshowdrv)スライドショーのドライバ
+<(wshowdrv) This window is a Slide Show Driver.            
+>(wshowdrv) このウィンドウは、スライドショーのドライバです。            
+<(wshowdrv) The actions of the buttons are summarized      
+>(wshowdrv) ボタンのアクションを下記に      
+<(wshowdrv) below:                                         
+>(wshowdrv) まとめます:                                         
+<(wshowdrv) "Start" begins the slide show.                 
+>(wshowdrv) "開始" はスライドショーを始めます。                 
+<(wshowdrv) "Next" proceeds to the next slide.             
+>(wshowdrv) "次へ" は次のスライドに進みます。             
+<(wshowdrv) "Stop" halts the slide show.                   
+>(wshowdrv) "停止" はスライドショーを停止します。                   
+<(wshowdrv) "Autoplay" lets the show play automatically.   
+>(wshowdrv) "自動再生" はスライドショーを自動的に再生します。   
+<(wshowdrv)                ***  CAUTION ***                
+>(wshowdrv)                ***  注意 ***                
+<(wshowdrv) There is a normal way to go through the demo.  
+>(wshowdrv) デモを進めるための通常の方法があります。  
+<(wshowdrv) If ever you follow another path, which is      
+>(wshowdrv) 別の方法を使っている場合でも      
+<(wshowdrv) always possible, when over, the best is to     
+>(wshowdrv)常に可能ですが、停止、リセット、開始を     
+<(wshowdrv) Stop, Reset and Start again.                   
+>(wshowdrv)再度使用するのが最適な方法です。                   
+<(wshowdrv)Reset
+>(wshowdrv)リセット
+<(wshowdrv)Slide Show Info
+>(wshowdrv)スライドショー情報
+<(wshowdrv)Name
+>(wshowdrv)名前
+<(wshowdrv)Start >>
+>(wshowdrv)開始 >>
+<(wshowdrv)Next >>
+>(wshowdrv)次へ >>
+<(wshowdrv)Prev <<
+>(wshowdrv)戻る <<
+<(wshowdrv)Stop
+>(wshowdrv)停止
+<(wshowdrv)AutoPlay
+>(wshowdrv)自動再生
+<(wshowdrv)Info
+>(wshowdrv)情報
+<(demos)Slideshow demos
+>(demos)スライドショーデモ
+<(demos)   Wavelet 1-D
+>(demos)   1 次元ウェーブレット
+<(demos)   Continuous Wavelet 1-D
+>(demos)   1 次元連続ウェーブレット
+<(demos)   Wavelet 2-D
+>(demos)   2 次元ウェーブレット
+<(demos)   Compression
+>(demos)   圧縮(Compression)
+<(demos)   De-noising
+>(demos)   ノイズ除去
+<(demos)   Wavelet Packets
+>(demos)   ウェーブレットパケット
+<(demos)   Mallat Algorithm
+>(demos)   Mallat アルゴリズム
+<(demos)   Cascade Algorithm
+>(demos)   カスケードアルゴリズム
+<(demos)   Border Distortion
+>(demos)   境界の歪み
+<(demos)Graphical User Interface demos
+>(demos)グラフィカルユーザインタフェースのデモ
+<(demos)   Wavelet Packet 1-D
+>(demos)   1 次元ウェーブレットパケット
+<(demos)   Continuous Wavelet 1-D (complex)
+>(demos)   1-D 連続ウェーブレット (複素数)
+<(demos)   Wavelet Packet 2-D
+>(demos)   2 次元ウェーブレットパケット
+<(demos)   Wavelet Display
+>(demos)   ウェーブレット表示
+<(demos)   Wavelet Packet Display
+>(demos)   ウェーブレットパケットの表示
+<(demos)   Stationary Wavelet 1-D
+>(demos)   1 次元定常ウェーブレット
+<(demos)   Wavelet Density estimation
+>(demos)   ウェーブレット密度推定
+<(demos)   Wavelet Regression estimation
+>(demos)   ウェーブレット回帰推定
+<(demos)   Wavelet Coefficients 1-D tool
+>(demos)   1 次元ウェーブレット係数ツール
+<(demos)   Stationary Wavelet 2-D
+>(demos)   2 次元定常ウェーブレット
+<(demos)   Wavelet Coefficients 2-D tool
+>(demos)   2 次元ウェーブレット係数ツール
+<(demos)   Signal extension tool
+>(demos)   信号の拡張ツール
+<(demos)   Image extension tool
+>(demos)   イメージの拡張ツール
+<(dguicwim)To change the Colormap use the popupmenu at the bottom right of the window.\nWe select the %s colormap
+>(dguicwim)カラーマップを変更するには、ウィンドウの右のポップアップメニューを使用します。\n%s のカラーマップを選択します
+<(dguicwim)To change the Coloration Mode use the popupmenu in the middle of the window.
+>(dguicwim)カラーリングモードを変更するには、ウィンドウの中央のポップアップメニューを使用します。
+<(dguicwim)The present mode is the (init+ by scale) mode.
+>(dguicwim)現在のモードは、(初期化 + スケール毎) モードです。
+<(dguicwim)We select the (init+ all scales) mode.
+>(dguicwim)(初期化 + すべてのスケール) モードを選択します。
+<(dguicwim)We select the (init+ by scale) mode.
+>(dguicwim)(初期化 + スケール毎) モードを選択します。
+<(dguicwim)We select the hot colormap
+>(dguicwim)hot のカラーマップを選択します
+<(dguicwim)We select the cool colormap
+>(dguicwim)cool のカラーマップを選択します
+<(dguicw1d)We select the %s colormap
+>(dguicw1d)%s のカラーマップを選択します
+<(dguicw1d)We select the (%s) mode.
+>(dguicw1d)(%s) のモードを選択します。
+<(dguicw1d)The present mode is the (%s) mode. 
+>(dguicw1d)現在のモードは、(%s) モードです。 
+<(dggucw1d)To change the Colormap use the popupmenu at the bottom right of the window.
+>(dggucw1d)カラーマップを変更するには、ウィンドウの右のポップアップメニューを使用します。
+<(wshowdrv)Slide Player
+>(wshowdrv)スライドプレーヤー
+<(dcmdextm) Press the "Start" button to see a demonstration on
+>(dcmdextm) "開始" ボタンを押して、デモを参照します
+%The following is the first part of some messages
+<(dcmdcasc) Press the "Start" button to see a demonstration of
+>(dcmdcasc) "開始" ボタンを押して、デモを参照します
+%The followings are the second parts of the above message===BEGIN
+<(dcmdcasc) cascade algorithm in the Wavelet Toolbox.
+>(dcmdcasc) Wavelet Toolbox のカスケードアルゴリズム
+<(dcmddw1d) 1-D wavelet tools.
+>(dcmddwld) 1 次元ウェーブレットツール.
+<(dcmdcomp) compression tools in the Wavelet Toolbox.
+>(dcmdcomp) Wavelet Toolbox の圧縮ツール.
+<(dcmdcw1d) continuous wavelet tools in the Wavelet Toolbox
+>(dcmdcw1d) Wavelet Toolbox の連続ウェーブレットツール.
+<(dcmddeno) denoising tools in the Wavelet Toolbox.
+>(dcmddeno) Wavelet Toolbox のノイズ除去ツール.
+<(dcmddw2d) 2-D wavelet tools in the Wavelet Toolbox.
+>(dcmddw2d) Wavelet Toolbox の 2 次元ウェーブレットツール.
+<(dcmdextm) border distortions for Discrete Wavelet Transform (DWT).
+>(dcmdextm) 離散ウエーブレット変換 (DWT) の境界の歪み.
+<(dcmdwpck) wavelet packet tools in the Wavelet Toolbox.
+>(dcmdwpck) Wavelet Toolbox のウェーブレットパケットツール.
+%=============================================================END
+<(dcmdcasc) This demo uses Wavelet Toolbox functions.
+>(dcmdcasc) このデモは Wavelet Toolbox の関数を使用します。
+<(dguicf1d)Wavelet GUI Demo: Coefficients 1-D selection
+>(dguicf1d)ウェーブレット GUI デモ: 1 次元係数選択
+<(dguicf2d)Wavelet GUI Demo: Coefficients 2-D selection
+>(dguicf2d)ウェーブレット GUI デモ: 2 次元係数選択
+<(dguicw1d)Wavelet GUI Demo: Continuous Wavelet Analysis
+>(dguicw1d)ウェーブレット GUI デモ: 連続ウェーブレット解析
+<(dguide1d)Wavelet GUI Demo: Complex Continuous Wavelet Analysis
+>(dguied1d)ウェーブレット GUI デモ: 複素数連続ウェーブレット解析
+<(dguidw1d)Wavelet GUI Demo: Density Estimation
+>(dguidw1d)ウェーブレット GUI デモ: 密度推定
+<(dguidw2d)Wavelet GUI Demo: Wavelet 1-D
+>(dguidw2d)ウェーブレット GUI デモ: 1 次元ウェーブレット
+<(dguiiext)Wavelet GUI Demo: Wavelet 2-D
+>(dguiiext)ウェーブレット GUI デモ: 2 次元ウェーブレット
+<(dguicf1d)Wavelet GUI Demo: Image Extension
+>(dguicf1d)ウェーブレット GUI デモ: イメージの拡張
+<(dguireld)Wavelet GUI Demo: Regression Estimation
+>(dguireld)ウェーブレット GUI デモ: 回帰推定
+<(dguisext)Wavelet GUI Demo: Signal Extension
+>(dguisext)ウェーブレット GUI デモ: 信号の拡張
+<(dguisw1d)avelet GUI Demo: SW1D
+>(dguisw1d)ウェーブレット GUI デモ: SW1D
+<(dguisw2d)Wavelet GUI Demo: SW2D
+>(dguisw2d)ウェーブレット GUI デモ: SW2D
+<(dguiwp1d)Wavelet GUI Demo: Wavelet Packet 1-D
+>(dguiwp1d)ウェーブレット GUI デモ: 1 次元ウェーブレットパケット
+<(dguiwp2d)Wavelet GUI Demo: Wavelet Packet 2-D
+>(dguiwp2d)ウェーブレット GUI デモ: 2 次元ウェーブレットパケット
+<(dguiwpdi)Wavelet GUI Demo: Wavelet Packet Display
+>(dguiwpdi)ウェーブレット GUI デモ: ウェーブレットパケット表示
+<(dguiwvde)Wavelet GUI Demo: Wavelet Display
+>(dguiwvdi)ウェーブレット GUI デモ: ウェーブレット表示
+<(wshowdrv)Slide 1 of %s
+>(wshowdrv)スライド 1 / %s
+<(wshowdrv)Slide %s of %s
+>(wshowdrv)スライド %s / %s
+<(dcmddw1d) Press the "Start" button to see a demonstration of 1-D wavelet tools.
+>(dcmddw1d) "開始" ボタンを押して、1 次元ウェーブレットツールのデモを参照します。
+%
+%
+<(demoguim)Wavelet Toolbox Main Menu
+>(demoguim)Wavelet Toolbox メインメニュー
+<(demoguim)Multisignal Analysis 1-D
+>(demoguim)1 次元複数信号解析
+<(demoguim)Multivariate Denoising
+>(demoguim)多変量ノイズ除去
+<(demoguim)Multiscale Princ. Comp. Analysis
+>(demoguim)マルチスケール主成分解析
+<(demoguim)New Wavelet for CWT
+>(demoguim)CWT の新規ウェーブレット
+<(demoguim)Fractional Brownian Generation 1-D
+>(demoguim)1 次元非整数ブラウン運動生成
+<(demoguim)Image Fusion
+>(demoguim)イメージフュージョン
+<(wavemenu) One-Dimensional 
+>(wavemenu) 1 次元 
+<(wavemenu) Two-Dimensional 
+>(wavemenu) 2 次元 
+<(wavemenu)Multiple 1-D
+>(wavemenu)多重 1 次元
+<(wavemenu)  Wavelet Design  
+>(wavemenu)  ウェーブレット設計  
+<(wavemenu) Specialized Tools 1-D 
+>(wavemenu) 1 次元特殊ツール 
+<(wavemenu) Specialized Tools 2-D 
+>(wavemenu) 2 次元特殊ツール 
+<(wavemenu)  Display  
+>(wavemenu)  表示  
+<(wavemenu)  Extension  
+>(wavemenu)  拡張  
+
+% tooltips
+<(wavemenu)Exit the Wavelet Toolbox Main Menu
+>(wavemenu)Wavelet Toolbox メインメニューの終了
+<(wavemenu)Wavelet Principal Components Analysis Tool 
+>(wavemenu)ウェーブレット主成分分析ツール 
+<(wavemenu) One-Dimensional MultiSignals Analysis Tool
+>(wavemenu) 1 次元複数信号解析ツール
+<(wavemenu)One-Dimensional  Multivariate Denoising Tool
+>(wavemenu)1 次元多変量ノイズ除去ツール
+<(wavemenu)New Wavelet Tool for Continuous Analysis
+>(wavemenu)連続解析の新規ウェーブレットツール
+<(wavemenu)Two-Dimensional Wavelet Image Fusion Tool
+>(wavemenu)2 次元ウェーブレットイメージフュージョンツール
+<(wavemenu)Two-Dimensional Wavelet Coefficient Selection Tool
+>(wavemenu)2 次元ウェーブレット係数選択ツール
+<(wavemenu)Two-Dimensional Stationary Wavelet Analysis Tool
+>(wavemenu)2 次元定常ウェーブレット解析ツール
+<(wavemenu)Two-Dimensional Image Extension and Truncation Tool
+>(wavemenu)2 次元イメージ拡張と切り取りツール
+<(wavemenu)One-Dimensional Signal Extension and Truncation Tool
+>(wavemenu)1 次元信号拡張と切り取りツール
+<(wavemenu)Wavelet Packet Display Tool
+>(wavemenu)ウェーブレットパケット表示ツール
+<(wavemenu)Wavelet Display Tool
+>(wavemenu)ウェーブレット表示ツール
+<(wavemenu)Two-Dimensional Discrete Wavelet Packet Analysis Tool
+>(wavemenu)2 次元離散ウェーブレットパケット解析ツール
+<(wavemenu)Two-Dimensional Discrete Wavelet Analysis Tool
+>(wavemenu)2 次元離散ウェーブレット解析ツール
+<(wavemenu)Fractional Brownian Generation Tool
+>(wavemenu)非整数ブラウン運動生成ツール
+<(wavemenu)One-Dimensional Wavelet Coefficient Selection Tool
+>(wavemenu)1 次元ウェーブレット係数選択ツール
+<(wavemenu)One-Dimensional Regression Estimation Tool
+>(wavemenu)1 次元回帰推定ツール
+<(wavemenu)One-Dimensional Density Estimation Tool
+>(wavemenu)1 次元密度推定ツール
+<(wavemenu)One-Dimensional Stationary Wavelet Analysis Tool
+>(wavemenu)1 次元定常ウェーブレット解析ツール
+<(wavemenu)One-Dimensional Discrete Wavelet Analysis Tool
+>(wavemenu)1 次元離散ウェーブレット解析ツール
+<(wavemenu)One-Dimensional Continuous Wavelet (Complex Case) Analysis Tool
+>(wavemenu)1 次元連続ウェーブレット (複素数) 解析ツール
+<(wavemenu)One-Dimensional Continuous Wavelet Analysis Tool
+>(wavemenu)1 次元連続ウェーブレット解析ツール
+<(wavemenu)One-Dimensional Discrete Wavelet Packet Analysis Tool
+>(wavemenu)1 次元離散ウェーブレットパケット解析ツール
+
+%% wavelet/wavedemo/democmdm.m
+<(democmdm)Invalid argument value.
+>(democmdm)引数の値が無効です。
+
+%% wavelet/wavedemo/dguidw1d.m
+<(dguidw1d)We select the Full Decomposition mode.
+>(dguidw1d)完全な分解構造モードを選択します。
+
+%% wavelet/wavedemo/dguiwp2d.m
+<(dguiwp2d)The default Node Action is Visualize.We select the Select On node action.
+>(dguiwp2d)デフォルトのノード アクションは [可視化] です。[選択開始] ノード アクションを選択します。
+
+%% wavelet/wavedemo/lemwavf.m
+<(lemwavf)Invalid Wavelet Number.
+>(lemwavf)ウェーブレットの番号が無効です。
+<(lemwavf)The Extended Symbolic Toolbox is required!
+>(lemwavf)Extended Symbolic Toolbox が必要です。
+
+%% wavelet/wavedemo/mdw1dcmddemo.m
+<(mdw1dcmddemo)Denoising, compression and clustering using wavelets are very efficient
+>(mdw1dcmddemo)ウェーブレットを使用したノイズ除去、データ圧縮、クラスタリングは非常に効率的です。
+
+%% wavelet/wavedemo/wshowdrv.m
+<(wshowdrv)You need to assign a name for script, for example: wshowdrv intro
+>(wshowdrv)wshowdrv intro のように、スクリプト名を割り当てる必要があります。
+
+% toolbox/wavelet/wavedemo/ja/xlate
+
+<(dcmdcomp)Compressed Image. Threshold = %s
+>(dcmdcomp)圧縮イメージ。 しきい値 = %s
+
+<(dcmddeno)Denoised signal - Fixed form threshold
+>(dcmddeno)雑音除去信号 - 固定型のしきい値
+
+<(demoscen)Recall that the de-noised or compressed signal is equal to              
+>(demoscen)雑音除去、または圧縮信号は、しきい値を適用した Detail 係数を              
+<(demoscen)the coarsest approximation + some signal reconstructed using the        
+>(demoscen)使用して、粗い Approximation にいくつかの信号を加えて再構成したものと        
+<(demoscen)thresholded detail coefficients.                                        
+>(demoscen)等しくなることを思い出してください。                                        
+
+<(demoscen)This allows the user to select the threshold value with respect to
+>(demoscen)ユーザーはこれを使って 2 つの設計パラメーターのしきい値を
+<(demoscen)two design parameters:                                            
+>(demoscen)選択することができます。                                            
+
+<(demoscen)The threshold default value given by the toolbox in the 1-D case is the one  
+>(demoscen)1 次元の場合、ツールボックスで与えられたしきい値の既定値は、  
+<(demoscen)for which the two previously defined design parameters are approximately the 
+>(demoscen)2 つ前に定義した設計パラメーターで計算したものとほぼ同じ 
+<(demoscen)same.                                                                        
+>(demoscen)です。                                                                        
+<(demoscen)Then compression using the threshold default value leads a smoothed signal,  
+>(demoscen)そして、しきい値の既定値を使った圧縮は滑らかな信号になり、  
+<(demoscen)and the explanation of how the compression works is clear from the           
+>(demoscen)時間 - スケール表示でオリジナルとしきい値を適用した           
+<(demoscen)comparison of original and thresholded coefficients in the time-scale        
+>(demoscen)係数を比較することでどのように圧縮の操作が行われたかを説明することが        
+<(demoscen)representations.                                                             
+>(demoscen)できます。                                                             
+<(demoscen)You can then iterate choosing the threshold value or the retained energy
+>(demoscen)その後で、しきい値、残りのエネルギー、またはゼロの数を選択することを
+<(demoscen)or the number of zeros. A modification of each of the three parameters  
+>(demoscen)繰り返すことができます。これらのパラメーターを個別に変更すると  
+<(demoscen)automatically updates the other two.                                    
+>(demoscen)の残りの 2 つも自動的に更新されます。                                    
+<(demoscen)To learn more about the compression procedure we select                       
+>(demoscen)圧縮手順についてさらに詳しく学ぶには、レベル毎の                       
+<(demoscen)the By-Level thresholding mode.                                                
+>(demoscen)しきい値のモードを選択します。                                                
+<(demoscen)The detail coefficients are thresholded according to the thresholds represented
+>(demoscen)Detail 係数は左側の黄色いラインで表されるしきい値に従って
+<(demoscen)by the yellow lines on the left. With respect to the previous mode, this one   
+>(demoscen)しきい値が適用されます。前のモードに対してさらに柔軟になるように   
+<(demoscen)allows level-dependent threshold values leading to additional flexibility.     
+>(demoscen)レベル依存のしきい値を設定することができます。     
+
+<(demoscen)- soft thresholding (shrinkage) is often used instead of the more crude        
+>(demoscen)- ソフトなしきい値法 (shrinkage) は、より粗いハードなしきい値法の        
+<(demoscen)hard thresholding.                                                             
+>(demoscen)代わりによく使われます。                                                             
+
+<(demoscen)Then using the same default, we can show the differences between     
+>(demoscen)その後、同じ既定値を使用し、ソフトなしきい値法とハードなしきい値法の     
+<(demoscen)soft and hard thresholding.                                          
+>(demoscen)違いを示すことができます。  

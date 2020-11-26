@@ -1,0 +1,1379 @@
+% Copyright 2006-2009 The MathWorks, Inc.
+% $Revision: 1.1.6.17 $ $Date: 2009/12/28 04:54:40 $
+
+% Notes: 
+% For wguiutils() strings, need to put them in wavelet/wavelet/ja/xlate.
+% For strings from *.fig, need to keep the length of translation as the 
+% same as the original string. Otherwise, it will be truncated.
+
+%%d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d/chgwdeccfs.m
+<(chgwdeccfs)Invalid argument value.
+>(chgwdeccfs)引数の値が無効です。
+
+%%d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d/mdwtrec.m
+<(mdwtrec)Invalid argument value
+>(mdwtrec)無効な引数値
+
+%%d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d/mswcmp.m
+<(mswcmp)Invalid value for first input argument.
+>(mswcmp)第 1 入力引数への無効な値です。
+
+%%d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d/mswcmptp.m
+<(mswcmptp)Unknown method
+>(mswcmptp)不明なメソッド
+
+%%d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d/mswthresh.m
+<(mswthresh)Invalid argument value for threshold.
+>(mswthresh)しきい値への無効な引数値です。
+
+%%d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d/wfastmcd.m
+<(wfastmcd)A probability should be 0<=p<=1, please!
+>(wfastmcd)確率は 0<=p<=1 です。
+<(wfastmcd)All observations have missing or infinite values.
+>(wfastmcd)全ての観測が欠損値または無限値を持っています。
+<(wfastmcd)DegreesOfFreedom is wrong
+>(wfastmcd)DegreesOfFreedom が不正です
+<(wfastmcd)Need at least 2*(number of variables) observations.
+>(wfastmcd)少なくとも 2*(変数の数) の観測が必要です。
+
+%%d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d/wmspcatool.m
+<(wmuldentool)Multiple 1-D -- Multivariate De-Noising
+>(wmuldentool)多重 1 次元 -- 多変量ノイズ除去
+<(wmuldentool)Signals 
+>(wmuldentool)信号
+<(wmuldentool)&Save Simplified Signals 
+>(wmuldentool)簡易信号を保存(&S)
+<(wmuldentool)&Save Simplified Signals only
+>(wmuldentool)簡易信号のみ保存(&S)
+<(wmuldentool)&Save Simplified Signals and Parameters 
+>(wmuldentool)簡易信号とパラメータを保存(&S)
+<(wmspcatool)Save Parameters with Signals?
+>(wmspcatool)信号と共にパラメータを保存しますか?
+<(wmspcatool)Save Signals
+>(wmspcatool)信号の保存
+<(wmspcatool)Load Signals 
+>(wmspcatool)信号の読み込み
+<(wmspcatool)Simplified Signals
+>(wmspcatool)簡易信号
+<(wmspcatool)Save Simplified Signals
+>(wmspcatool)簡易信号を保存
+<(wmspcatool)Save Simplified Signals only
+>(wmspcatool)簡易信号のみ保存
+<(wmspcatool)Save Simplified Signals and Parameters
+>(wmspcatool)簡易信号とパラメータを保存
+<(wmspcatool)Multiscale Principal Component Analysis
+>(wmspcatool)マルチスケール主成分分析
+<(wmspcatool)Multiple 1-D -- Multivariate Principal Components Analysis
+>(wmspcatool)多重 1 次元 -- 多変量主成分分析
+<(wmspcatool)Multiple 1-D -- Multiscale Principal Components Analysis
+>(wmspcatool)多重 1 次元 -- マルチスケール主成分分析
+<(wmspcatool)WMSPCA Procedure
+>(wmspcatool)WMSPCA 手続き
+<(wmspcatool)Center
+>(wmspcatool)中央
+<(wmspcatool)On
+>(wmspcatool)オン
+<(wmspcatool)Signals
+>(wmspcatool)信号
+<(wmspcatool)DWT Extension Mode
+>(wmspcatool)DWT 拡張モード
+<(wmspcatool)Decompose and Diagonalize
+>(wmspcatool)分解と対角化
+<(wmspcatool)More on Adapted Basis
+>(wmspcatool)適用ベースの詳細
+<(wmspcatool)Select Parameters
+>(wmspcatool)パラメータ選択
+<(wmspcatool)Provide default using
+>(wmspcatool)デフォルトの使用法を与える
+<(wmspcatool)Nb. of  non-centered PC
+>(wmspcatool)非中心化 PC の数
+<(wmspcatool)Number of PC for final PCA
+>(wmspcatool)最終 PCA の PC 数
+<(wmspcatool)More on Principal Components
+>(wmspcatool)主成分についての詳しい情報
+<(wmspcatool)Close More on Principal Components
+>(wmspcatool)主成分についての詳しい情報を閉じる
+<(wmspcatool)Coefs
+>(wmspcatool)係数
+<(wmspcatool)Simplified Coefs
+>(wmspcatool)簡易係数
+<(wmspcatool)Display up to level
+>(wmspcatool)レベルまで表示
+<(wmspcatool)Max
+>(wmspcatool)最大     
+<(wmspcatool)Min
+>(wmspcatool)最小値
+<(wmspcatool)Std. Dev.
+>(wmspcatool)標準偏差
+<(wmspcatool)Mean Abs Dev
+>(wmspcatool)平均絶対偏差
+<(wmspcatool)Med Abs Dev
+>(wmspcatool)中間絶対偏差
+<(wmspcatool) Residuals 
+>(wmspcatool) 残差
+<(wmspcatool)Close Residuals
+>(wmspcatool)残差を閉じる
+<(wmspcatool)Cumulative histograms
+>(wmspcatool)累積ヒストグラム
+<(wmspcatool)% of total variability explained by each PC
+>(wmspcatool)各 PC による合計変動の割合(%)
+<(wmspcatool)Cumulative percentages
+>(wmspcatool)累積パーセンテージ
+<(wmspcatoolmopc)   Nb. of PC for Details or Approximations   
+>(wmspcatoolmopc)   詳細または近似の PC 数
+<(wmspcatoolmopc)            Nb. of PC for Details or Approximations            
+>(wmspcatoolmopc)            詳細または近似の PC 数
+<(wmspcatoolmopc)   Nb. of PC for Final PCA   
+>(wmspcatoolmopc)   最終 PCA の PC 数
+<(wmspcatoolmopc)Close   
+>(wmspcatoolmopc)閉じる
+<(wmspcatoolmoab)Eigenvectors defining the new basis
+>(wmspcatoolmoab)新規ベースを定義する固有ベクトル
+<(wmspcatoolmoab)Eigenvalues
+>(wmspcatoolmoab)固有値
+<(wmuldentool)&Load Signals
+>(wmuldentool)信号の読み込み(&L)
+<(wmuldentool)&Save Denoised Signals 
+>(wmuldentool)ノイズ除去信号を保存(&S)
+<(wmuldentool)&Save Denoised Signals only
+>(wmuldentool)ノイズ除去信号のみ保存(&S)
+<(wmuldentool)&Save Denoised Signals and Parameters 
+>(wmuldentool)ノイズ除去信号とパラメータを保存(&S)
+<(wmuldentool)More on Noise-adapted Basis
+>(wmuldentool)ノイズ適用ベースの詳細
+<(wmuldentool)More on Noise Adapted Basis
+>(wmuldentool)ノイズ適用ベースの詳細
+<(wmuldentool)Close More on Noise Adapted Basis
+>(wmuldentool)ノイズ適用ベースの詳細を閉じる
+<(wmuldentool)Multivariate De-noising
+>(wmuldentool)多変量ノイズ除去
+<(wmuldentool)Original Basis
+>(wmuldentool)オリジナルベース
+<(wmuldentool)Noise Adapted Basis
+>(wmuldentool)ノイズ適用ベース
+<(wmuldentool)Denoised Signals 
+>(wmuldentool)ノイズ除去信号
+<(wmuldentool)Select De-noising Parameters
+>(wmuldentool)ノイズ除去パラメータを選択
+<(wmuldentool)  PCA 
+>(wmuldentool)  PCA
+<(wmuldentool)Nb. of  PC for APP.
+>(wmuldentool)最終 APP の PC 数
+<(wmuldentool)Nb. of PC for final PCA
+>(wmuldentool)最終 PCA の PC 数
+<(wmuldentool)Show De-noised Signals
+>(wmuldentool)ノイズ除去信号の表示
+<(wmuldentool)De-noised Coefs
+>(wmuldentool)ノイズ除去係数
+<(wmuldentool)  Original Basis  
+>(wmuldentool)  オリジナルベース
+<(wmuldentool)                    Original Basis            
+>(wmuldentool)                    オリジナルベース
+<(wmuldentool)Denoised Signals
+>(wmuldentool)ノイズ除去信号
+<(wmuldentool)  Residuals  
+>(wmuldentool)  残差
+<(wmuldentool)      Residuals     
+>(wmuldentool)      残差
+<(wmuldentool)               Noise Adapted Basis            
+>(wmuldentool)               ノイズ適用ベース
+<(wmuldentoolmonab)Robust Noise Covariance Estimate
+>(wmuldentoolmonab)ロバストノイズ共分散推定
+<(wmuldentoolmopc)   Nb. of PC for Approximations   
+>(wmuldentoolmopc)   近似の PC 数
+<(wmuldentoolmopc)            Nb. of PC for Approximations            
+>(wmuldentoolmopc)            近似の PC 数
+<(wmuldentoolmopc)            Nb. of PC for Final PCA            
+>(wmuldentoolmopc)            最終 PCA の PC 数
+<(wmuldentoolmopc)Close
+>(wmuldentoolmopc)閉じる
+<(wmspcatool)Coefficients
+>(wmspcatool)係数
+<(wmspcatool)Show Simplified Signals
+>(wmspcatool)簡易信号を表示
+
+%% 22 M-files have been searched in d:\work\2006b\matlab\toolbox\wavelet\wmultisig1d on 2006/05/08.
+
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DTOOL  === 7a
+%----------------------------------------------------------
+<(mdw1dtool)Wavelet 1-D -- Multisignals Analysis
+>(mdw1dtool)1 次元ウェーブレット -- 複数信号の解析
+<(mdw1dtool)&Signals
+>(mdw1dtool)信号(&S)
+<(mdw1dtool)&Decompositions
+>(mdw1dtool)分解(&D)
+<(mdw1dtool)&Synthesized Signals
+>(mdw1dtool)合成した信号(&S)
+<(mdw1dtool)Ex1 :      3 shapes - 3 Periods
+>(mdw1dtool)例 1 :      3 形状 - 3 周期
+<(mdw1dtool)Ex2 :      5 clusters of 100 signals
+>(mdw1dtool)例 2 :      100 信号の 5 クラスタ
+<(mdw1dtool)Ex3 :      6 clusters of 50 signals
+>(mdw1dtool)例 3 :      50 信号の 6 クラスタ
+<(mdw1dtool)Ex4 :      10 clusters of 10 synthesized signal
+>(mdw1dtool)例 4 :      10 の合成した信号の 10 クラスタ
+<(mdw1dtool)Ex5 :      4 noisy signals (1)
+>(mdw1dtool)例 5 :      4 ノイズ信号 (1)
+<(mdw1dtool)Ex6 :      4 noisy signals (2)
+>(mdw1dtool)例 6 :      4 ノイズ信号 (2)
+<(mdw1dtool)Ex7 :      4 noisy signals (3)
+>(mdw1dtool)例 7 :      4 ノイズ信号 (3)
+<(mdw1dtool)Ex8 :      4 noisy signals (4)
+>(mdw1dtool)例 8 :      4 ノイズ信号 (4)
+<(mdw1dtool)Ex9 :      8 noisy signals
+>(mdw1dtool)例 9 :      8 ノイズ信号
+<(mdw1dtool)Ex10 :      Real noisy signals (1)
+>(mdw1dtool)例 10 :      実ノイズ信号 (1)
+<(mdw1dtool)Ex11 :      Real noisy signals (2)
+>(mdw1dtool)例 11 :      実ノイズ信号 (2)
+<(mdw1dtool)Ex12 :      Real noisy signals (3)
+>(mdw1dtool)例 12 :      実ノイズ信号 (3)
+<(mdw1dtool)Ex13 :      Real noisy signals (4)
+>(mdw1dtool)例 13 :      実ノイズ信号 (4)
+<(mdw1dtool)Ex14 :      Real noisy signals (all)
+>(mdw1dtool)例 14 :      実ノイズ信号 (すべて)
+<(mdw1dtool)Ex15 :      7 clusters of 10 electrical signals
+>(mdw1dtool)例 15 :      10 の電気信号の 7 クラスタ
+<(mdw1dtool)Ex16 :      7 clusters of 100 electrical signals
+>(mdw1dtool)例 16 :      100 の電気信号の 7 クラスタ
+<(mdw1dtool)Ex17 :      Noisy Woman (rows)
+>(mdw1dtool)例 17 :      ノイズを含む女性像 (行)
+<(mdw1dtool)Ex18 :      Noisy Woman (col.)
+>(mdw1dtool)例 18 :      ノイズを含む女性像 (列)
+<(mdw1dtool)Ex19 :      Jelly Fish (rows)
+>(mdw1dtool)例 19 :      クラゲ (行)
+<(mdw1dtool)Ex20 :      Jelly Fish (col.)
+>(mdw1dtool)例 20 :      クラゲ (列)
+<(mdw1dtool)Ex21 :      Thinker (rows)
+>(mdw1dtool)例 21 :      考える人 (行)
+<(mdw1dtool)Load Partition
+>(mdw1dtool)区分の読み込み
+<(mdw1dtool)Clear Partition
+>(mdw1dtool)区分のクリア
+<(mdw1dtool)&Load
+>(mdw1dtool)読み込み(&L)
+<(mdw1dtool)&Save
+>(mdw1dtool)保存(&S)
+<(mdw1dtool)&Example
+>(mdw1dtool)例(&E)
+<(mdw1dtool)Partitions
+>(mdw1dtool)区分
+<(mdw1dtool)&Multisignal Analysis 1-D
+>(mdw1dtool)1 次元複数信号解析(&M)
+<(mdw1dtool)Wait ... initialization
+>(mdw1dtool)お待ちください ... 初期化中
+<(mdw1dtool)View Axes
+>(mdw1dtool)座標軸を表示
+<(mdw1dtool)History
+>(mdw1dtool)履歴
+<(mdw1dtool)Info
+>(mdw1dtool)情報
+<(mdw1dtool)App. On/Off
+>(mdw1dtool)App. オン/オフ
+<(mdw1dtool)Mean
+>(mdw1dtool)平均値
+<(mdw1dtool)Information on Selected Data
+>(mdw1dtool)選択データの情報
+<(mdw1dtool)Statistics
+>(mdw1dtool)統計量
+<(mdw1dtool)Decompose
+>(mdw1dtool)分解
+<(mdw1dtool)Denoise
+>(mdw1dtool)ノイズ除去
+<(mdw1dtool)Compress
+>(mdw1dtool)圧縮
+<(mdw1dtool)Clustering
+>(mdw1dtool)分類
+<(mdw1dtool)Superimpose Mode
+>(mdw1dtool)重ね書きモード
+<(mdw1dtool)Separate Mode
+>(mdw1dtool)別モード
+<(mdw1dtool)Highlight Sel
+>(mdw1dtool)選択を強調
+<(mdw1dtool)Visualization of Selected Data
+>(mdw1dtool)選択データの可視化
+<(mdw1dtool)One by one Plot
+>(mdw1dtool)1 枚ずつプロット
+<(mdw1dtool)Import Part
+>(mdw1dtool)一部インポート
+<(mdw1dtool)Select ALL
+>(mdw1dtool)すべて選択
+<(mdw1dtool)Clear
+>(mdw1dtool)クリア
+<(mdw1dtool)Selection of Data
+>(mdw1dtool)データの選択
+<(mdw1dtool)level 1
+>(mdw1dtool)レベル 1
+<(mdw1dtool)level 2
+>(mdw1dtool)レベル 2
+<(mdw1dtool)Visualization of Decompositions
+>(mdw1dtool)分解構造の可視化
+<(mdw1dtool)Grid On
+>(mdw1dtool)グリッドオン
+<(mdw1dtool)Energy
+>(mdw1dtool)エネルギー
+<(mdw1dtool)Energy and Energy Ratios
+>(mdw1dtool)エネルギーとエネルギー比
+<(mdw1dtool)columnwise
+>(mdw1dtool)列単位
+<(mdw1dtool)rowwise
+>(mdw1dtool)行単位
+<(mdw1dtool)Storage
+>(mdw1dtool)格納
+<(mdw1dtool)Ext.Mode
+>(mdw1dtool)拡張モード
+<(mdw1dtool)Level
+>(mdw1dtool)レベル
+<(mdw1dtool)Wavelet
+>(mdw1dtool)ウェーブレット
+<(mdw1dtool)   Selection of Data Sets   
+>(mdw1dtool)   データセットの選択   
+<(mdw1dtool)Selected Data Sets
+>(mdw1dtool)選択したデータセット
+<(mdw1dtool)Desc.
+>(mdw1dtool)降順
+<(mdw1dtool)Idx Sel
+>(mdw1dtool)インデックス選択
+<(mdw1dtool)Idx Sig
+>(mdw1dtool)インデックス信号
+<(mdw1dtool)Dwt Attr (Dw)
+>(mdw1dtool)Dwt 属性 (Dw)
+<(mdw1dtool)Level (L)
+>(mdw1dtool)レベル (L)
+<(mdw1dtool)Type Sig (Typ)
+>(mdw1dtool)信号タイプ (Typ)
+<(mdw1dtool)Asc.
+>(mdw1dtool)昇順
+<(mdw1dtool)Sort
+>(mdw1dtool)ソート
+<(mdw1dtool) Selection of Data Sets
+>(mdw1dtool) データセットの選択
+<(mdw1dtool)Sort 
+>(mdw1dtool)ソート
+<(mdw1dtool)Percentage of energy
+>(mdw1dtool)エネルギーの割合
+<(mdw1dtool)Wavelet Decompositions Energy
+>(mdw1dtool)ウェーブレット分解のエネルギー
+<(mdw1dtool)Information on Selection
+>(mdw1dtool)選択の情報
+<(mdw1dtool)Selection
+>(mdw1dtool)選択
+<(mdw1dtool)Signal
+>(mdw1dtool)信号
+<(mdw1dtool)Energy & Energy Ratios - Signal
+>(mdw1dtool)エネルギー & エネルギー比 - 信号
+<(mdw1dtool)Energy & Ener.Rat. - Denoised Sig.
+>(mdw1dtool)エネルギー & エネルギー比 - 分解した信号
+<(mdw1dtool)Energy & Ener.Rat. - Residual Sig.
+>(mdw1dtool)エネルギー & エネルギー比 - 残差信号
+
+<(mdw1dstat)Wavelet 1-D -- Multisignals Analysis - Statistics
+>(mdw1dstat)1 次元ウェーブレット -- 複数信号の解析 - 統計量
+<(mdw1dstat)Wait ... Computing 
+>(mdw1dstat)お待ちください ... 計算中 
+<(mdw1dstat)History 
+>(mdw1dstat)履歴
+<(mdw1dstat)Info 
+>(mdw1dstat)情報
+<(mdw1dstat)Clear 
+>(mdw1dstat)クリア
+<(mdw1dstat)Select ALL 
+>(mdw1dstat)すべて選択
+<(mdw1dstat)Histogram
+>(mdw1dstat)ヒストグラム
+<(mdw1dstat)Cumulated Hist.
+>(mdw1dstat)累積ヒストグラム
+<(mdw1dstat)Boxplot
+>(mdw1dstat)ボックスプロット
+<(mdw1dstat)Autocorrelations
+>(mdw1dstat)自己相関
+<(mdw1dstat)Spectrum
+>(mdw1dstat)スペクトラム
+<(mdw1dstat)Boxplot 
+>(mdw1dstat)ボックスプロット
+<(mdw1dstat)Statistical Graphics
+>(mdw1dstat)統計グラフ
+<(mdw1dstat)Compute Statistics 
+>(mdw1dstat)統計量の計算
+<(mdw1dstat)Close 
+>(mdw1dstat)閉じる
+<(mdw1dstat)Select Tool Display 
+>(mdw1dstat)ツール表示の選択
+<(mdw1dstat)none
+>(mdw1dstat)なし
+<(mdw1dstat)One by one Plot 
+>(mdw1dstat)1 枚ずつプロット
+<(mdw1dstat)level 1 
+>(mdw1dstat)レベル 1
+<(mdw1dstat)level 2 
+>(mdw1dstat)レベル 2
+<(mdw1dstat)level 3 
+>(mdw1dstat)レベル 3
+<(mdw1dstat)level 4 
+>(mdw1dstat)レベル 4
+<(mdw1dstat)Full Dec Mode
+>(mdw1dstat)すべての分解モード
+<(mdw1dstat)Full Dec Mode (Cfs)
+>(mdw1dstat)すべての分解モード (Cfs)
+<(mdw1dstat)Stem Mode
+>(mdw1dstat)離散プロットモード
+<(mdw1dstat)Stem Mode (Squared)
+>(mdw1dstat)離散プロットモード (二乗)
+<(mdw1dstat)Stem Mode (Energy Ratio)
+>(mdw1dstat)離散プロットモード (エネルギー比)
+<(mdw1dstat)Tree Mode
+>(mdw1dstat)ツリーモード
+<(mdw1dstat)Magnify Statistical Graphics
+>(mdw1dstat)統計グラフを拡大
+<(mdw1dstat)Visualization of Decompositions 
+>(mdw1dstat)分解構造の可視化
+<(mdw1dstat)Dwt Attr   (Dw)
+>(mdw1dstat)Dwt 属性 (Dw)
+<(mdw1dstat)Level   (L)
+>(mdw1dstat)レベル (L)
+<(mdw1dstat)Type Sig   (Typ)
+>(mdw1dstat)信号タイプ (Typ)
+<(mdw1dstat)rowwise 
+>(mdw1dstat)行単位
+<(mdw1dstat)Storage 
+>(mdw1dstat)格納
+<(mdw1dstat)Level 
+>(mdw1dstat)レベル
+<(mdw1dstat)Wavelet 
+>(mdw1dstat)ウェーブレット
+<(mdw1dstat)  Statistics for Signals  
+>(mdw1dstat)  信号の統計量  
+<(mdw1dstat)Compute Statistics
+>(mdw1dstat)統計量の計算
+<(mdw1dstat)Mean Absolute Deviation
+>(mdw1dstat)平均絶対偏差
+<(mdw1dstat)Median Absolute Deviation
+>(mdw1dstat)中央絶対偏差
+<(mdw1dstat)Median
+>(mdw1dstat)中央値
+<(mdw1dstat)Std 
+>(mdw1dstat)標準偏差
+<(mdw1dstat)Range 
+>(mdw1dstat)範囲 
+<(mdw1dstat)Range
+>(mdw1dstat)範囲
+<(mdw1dstat)Min 
+>(mdw1dstat)最小値
+<(mdw1dstat)Max 
+>(mdw1dstat)最大値 
+<(mdw1dstat)  Selection of Data  Sets  
+>(mdw1dstat)  データセットの選択
+<(mdw1dstat)  Selection of Data  Sets   
+>(mdw1dstat)  データセットの選択
+<(mdw1dstat)Coefficients 
+>(mdw1dstat)係数
+<(mdw1dstat)Orig. Signals
+>(mdw1dstat)オリジナル信号
+<(mdw1dstat)Selected Data  Sets
+>(mdw1dstat)選択したデータセット
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DCOMP
+%----------------------------
+<(mdw1dcomp)&Save Compressed Signals
+>(mdw1dcomp)圧縮信号を保存(&S)
+<(mdw1dcomp)&Save Compressed Decompositions
+>(mdw1dcomp)圧縮分解構造を保存(&S)
+<(mdw1dcomp)Multisignals Compression
+>(mdw1dcomp)複数信号の圧縮
+<(mdw1dcomp)Compression Procedure
+>(mdw1dcomp)圧縮手順
+<(mdw1dcomp)Available Methods
+>(mdw1dcomp)利用可能な手法
+<(mdw1dcomp)Wavelet 1-D -- Multisignals Analysis - Compression
+>(mdw1dcomp)1 次元ウェーブレット -- 複数信号の解析 - 圧縮
+<(mdw1dcomp)Wait ... Computing
+>(mdw1dcomp)お待ちください ... 計算中
+<(mdw1dcomp)level 3
+>(mdw1dcomp)レベル 3
+<(mdw1dcomp)level 4
+>(mdw1dcomp)レベル 4
+<(mdw1dcomp)Stem Mode (Abs)
+>(mdw1dcomp)離散プロットモード (絶対値)
+<(mdw1dcomp)L2 and NZ Perf. Mode
+>(mdw1dcomp)L2 と NZ の実行モード
+<(mdw1dcomp)Selected Level
+>(mdw1dcomp)選択レベル
+<(mdw1dcomp)Threshold value
+>(mdw1dcomp)スレッシュホールド値
+<(mdw1dcomp)N0 Perf. Percent.
+>(mdw1dcomp)N0 実行の割合
+<(mdw1dcomp)L2 Perf. Percent.
+>(mdw1dcomp)L2 実行の割合
+<(mdw1dcomp)All
+>(mdw1dcomp)すべて
+<(mdw1dcomp)Select Signal
+>(mdw1dcomp)信号の選択
+<(mdw1dcomp)By level thresholding
+>(mdw1dcomp)レベル毎のスレッシュホールド
+<(mdw1dcomp)Global thresholding
+>(mdw1dcomp)グローバルなスレッシュホールド
+<(mdw1dcomp)Update Thresholds
+>(mdw1dcomp)スレッシュホールドの更新
+<(mdw1dcomp)Manual Threshold Tuning
+>(mdw1dcomp)手動のスレッシュホールド調整
+<(mdw1dcomp)  Thresholding  
+>(mdw1dcomp)  スレッシュホールド  
+<(mdw1dcomp)no
+>(mdw1dcomp)しない
+<(mdw1dcomp)yes
+>(mdw1dcomp)する
+<(mdw1dcomp)Keep Approximation
+>(mdw1dcomp)Approximation を保持
+<(mdw1dcomp)Enable Manual Threshold Tuning
+>(mdw1dcomp)手動のスレッシュホールド調整を有効にする
+<(mdw1dcomp)Reset
+>(mdw1dcomp)リセット
+<(mdw1dcomp)Selected
+>(mdw1dcomp)選択
+<(mdw1dcomp)Compute Thresholds and Perfo.
+>(mdw1dcomp)スレッシュホールドの計算と実行
+<(mdw1dcomp)ALL
+>(mdw1dcomp)すべて
+<(mdw1dcomp)hard
+>(mdw1dcomp)ハード
+<(mdw1dcomp)soft
+>(mdw1dcomp)ソフト
+<(mdw1dcomp)Type of thresholding
+>(mdw1dcomp)スレッシュホールドのタイプ
+<(mdw1dcomp)Parameter Selection
+>(mdw1dcomp)パラメータの選択
+<(mdw1dcomp)Remove near 0
+>(mdw1dcomp)0 近傍の除去
+<(mdw1dcomp)Balance sparsity-norm
+>(mdw1dcomp)バランススパース性ノルム
+<(mdw1dcomp)Balance sparsity-norm (sqrt)
+>(mdw1dcomp)バランススパース性ノルム (二乗)
+<(mdw1dcomp)Global threshold
+>(mdw1dcomp)グローバルなスレッシュホールド
+<(mdw1dcomp)Energy ratio
+>(mdw1dcomp)エネルギー比
+<(mdw1dcomp)Zero coefficients ratio
+>(mdw1dcomp)0 係数比
+<(mdw1dcomp)Scarce high
+>(mdw1dcomp)高圧縮
+<(mdw1dcomp)Scarce medium
+>(mdw1dcomp)中圧縮
+<(mdw1dcomp)Scarce low
+>(mdw1dcomp)低圧縮
+<(mdw1dcomp)Scarce
+>(mdw1dcomp)圧縮
+<(mdw1dcomp)Select Compression method
+>(mdw1dcomp)圧縮手法の選択
+<(mdw1dcomp)   Selection of Data Sets
+>(mdw1dcomp)   データセットの選択
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DDENO
+%----------------------------
+<(mdw1ddeno)&Save Denoised Signals
+>(mdw1ddeno)ノイズ除去信号を保存(&S)
+<(mdw1ddeno)&Save Denoised Decompositions
+>(mdw1ddeno)ノイズ除去した分解構造を保存(&S)
+<(mdw1ddeno)Multisignals Denoising
+>(mdw1ddeno)複数信号のノイズ除去
+<(mdw1ddeno)Denoising Procedure
+>(mdw1ddeno)ノイズ除去手順
+<(mdw1ddeno)Wavelet 1-D -- Multisignals Analysis - Denoising
+>(mdw1ddeno)1 次元ウェーブレット -- 複数信号の解析 - ノイズ除去
+<(mdw1ddeno)sym
+>(mdw1ddeno)sym 
+<(mdw1ddeno)  Thresholding
+>(mdw1ddeno)  スレッシュホールド
+<(mdw1ddeno)Compute thresholds
+>(mdw1ddeno)スレッシュホールドの計算
+<(mdw1ddeno)Unscaled white noise
+>(mdw1ddeno)スケーリングされていない白色雑音
+<(mdw1ddeno)Scaled white noise
+>(mdw1ddeno)スケーリングされた白色雑音
+<(mdw1ddeno)Non-white noise
+>(mdw1ddeno)非白色雑音
+<(mdw1ddeno)Select noise structure
+>(mdw1ddeno)ノイズ構造の選択
+<(mdw1ddeno)Fixed form threshold
+>(mdw1ddeno)固定型のスレッシュホールド
+<(mdw1ddeno)Rigorous SURE
+>(mdw1ddeno)厳密な SURE
+<(mdw1ddeno)Heuristic SURE
+>(mdw1ddeno)経験的な SURE
+<(mdw1ddeno)Minimax
+>(mdw1ddeno)ミニマックス
+<(mdw1ddeno)Penalize high
+>(mdw1ddeno)高い値にペナルティ
+<(mdw1ddeno)Penalize medium
+>(mdw1ddeno)中央値にペナルティ
+<(mdw1ddeno)Penalize low
+>(mdw1ddeno)低い値にペナルティ
+<(mdw1ddeno)Penalize
+>(mdw1ddeno)ペナルティ
+<(mdw1ddeno)Select thresholding method
+>(mdw1ddeno)スレッシュホールド法の選択
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DCLUS
+%----------------------------
+<(mdw1dclus)&Save Current Partition
+>(mdw1dclus)現在の区分を保存(&S)
+<(mdw1dclus)Multisignals Clustering
+>(mdw1dclus)複数信号の分類
+<(mdw1dclus)Wavelet 1-D -- Multisignals Analysis - Clustering
+>(mdw1dclus)1 次元ウェーブレット -- 複数信号の解析 - 分類
+<(mdw1dclus)Kmeans Representations
+>(mdw1dclus)Kmeans 表現
+<(mdw1dclus)Image
+>(mdw1dclus)イメージ
+<(mdw1dclus)Centers MDS
+>(mdw1dclus)MDS の中心
+<(mdw1dclus)Data MDS
+>(mdw1dclus)MDS のデータ
+<(mdw1dclus)Sort Indices
+>(mdw1dclus)インデックスの並び替え
+<(mdw1dclus)Part #1
+>(mdw1dclus)パート #1
+<(mdw1dclus)Part #2
+>(mdw1dclus)パート #2
+<(mdw1dclus)Plot Selection
+>(mdw1dclus)選択をプロット
+<(mdw1dclus)Clustered Data
+>(mdw1dclus)分類したデータ
+<(mdw1dclus)Number of Sig. : 192
+>(mdw1dclus)信号の数 : 192
+<(mdw1dclus)Selection by Links
+>(mdw1dclus)リンクによる選択
+<(mdw1dclus)Slider
+>(mdw1dclus)スライダ
+<(mdw1dclus)-       Translate X       +
+>(mdw1dclus)-       X を変換       +
+<(mdw1dclus)-          Dilate X          +
+>(mdw1dclus)-          X を削除          +
+<(mdw1dclus)Dil
+>(mdw1dclus)削除
+<(mdw1dclus)Yscale log
+>(mdw1dclus)対数軸 Y
+<(mdw1dclus)Selection by Dendrogram
+>(mdw1dclus)樹形図による選択
+<(mdw1dclus)Store Current Partition
+>(mdw1dclus)現在の区分を保存
+<(mdw1dclus)Open Partitions Manager
+>(mdw1dclus)区分管理ダイアログを開く
+<(mdw1dclus)Close Partitions Manager
+>(mdw1dclus)区分管理ダイアログを閉じる
+<(mdw1dclus)Distance
+>(mdw1dclus)距離
+<(mdw1dclus)Sort Data
+>(mdw1dclus)データの保存
+<(mdw1dclus)  Partitions Management   
+>(mdw1dclus)  区分管理   
+<(mdw1dclus)Renumber clusters 
+>(mdw1dclus)クラスタの再番号付け
+<(mdw1dclus)using selected Part
+>(mdw1dclus)選択部分を使用
+<(mdw1dclus)Apply
+>(mdw1dclus)適用
+<(mdw1dclus)Show Partitions
+>(mdw1dclus)区分を表示
+<(mdw1dclus)More on Partitions
+>(mdw1dclus)区分の詳細
+<(mdw1dclus)Save Partitions
+>(mdw1dclus)区分を保存
+<(mdw1dclus)  Data to Cluster  
+>(mdw1dclus)  分類するデータ  
+<(mdw1dclus)None
+>(mdw1dclus)なし
+<(mdw1dclus)Recons.
+>(mdw1dclus)再構成
+<(mdw1dclus)Res.
+>(mdw1dclus)残差
+<(mdw1dclus)Details
+>(mdw1dclus)Detail
+<(mdw1dclus)Den. or Cmp.
+>(mdw1dclus)ノイズ除去/圧縮
+<(mdw1dclus)Original
+>(mdw1dclus)オリジナル
+<(mdw1dclus)Static Text
+>(mdw1dclus)スタティックテキスト
+<(mdw1dclus)  Selection of Data Sets
+>(mdw1dclus)  データセットの選択
+<(mdw1dclus)Selected Data
+>(mdw1dclus)選択データ
+<(mdw1dclus)  Clustering  
+>(mdw1dclus)  分類  
+<(mdw1dclus)Ascending Hierarchical
+>(mdw1dclus)昇順の階層
+<(mdw1dclus)Method
+>(mdw1dclus)手法
+<(mdw1dclus)Show Clusters
+>(mdw1dclus)クラスタを表示
+<(mdw1dclus)Nb of Clusters
+>(mdw1dclus)クラスタ数
+<(mdw1dclus)Compute Clusters
+>(mdw1dclus)クラスタの計算
+<(mdw1dclus)Linkage
+>(mdw1dclus)連結法
+<(mdw1dclus)Clusters
+>(mdw1dclus)クラスタ
+<(mdw1dclus)Selected Partitions
+>(mdw1dclus)選択区分
+<(mdw1dclus)Sorted Indices with respect to Part #
+>(mdw1dclus)保存したパート # に関するインデックス
+<(mdw1dclus)Restrict Dendrogram
+>(mdw1dclus)樹形図の制限
+<(mdw1dclus)Data/Class - Image representation
+>(mdw1dclus)データ/クラス - イメージ表現
+<(mdw1dclus)Class Centers - Multidimensional Scaling
+>(mdw1dclus)クラスの中心 - 多次元スケーリング
+<(mdw1dclus)Data - Multidimensional Scaling
+>(mdw1dclus)データ - 多次元スケーリング
+<(mdw1dclus)Cluster
+>(mdw1dclus)クラスタ
+<(mdw1dclus)Loaded Partition
+>(mdw1dclus)読み込まれた区分
+<(mdw1dclus)Number of Classes: 
+>(mdw1dclus)クラス数: 
+%----------------------------------------------------------
+% XLATE STRINGS for SHOWCLUSTERS
+%-------------------------------
+<(showclusters)View Clusters
+>(showclusters)クラスタの表示
+<(showclusters)Curr. Part
+>(showclusters)現在のパート
+<(showclusters)Selected Partition
+>(showclusters)選択した区分
+<(showclusters)Loaded Data
+>(showclusters)読み込まれたデータ
+<(showclusters)PARTITION 1  --  Number of Clusters 6
+>(showclusters)区分 1  --  クラスタ 6 の数
+<(showclusters)  Plot Selection  
+>(showclusters)  選択をプロット
+<(showclusters)Curr. Clustered Data
+>(showclusters)現在の分類されたデータ
+<(showclusters)Original Signals
+>(showclusters)オリジナル信号
+<(showclusters)   Select display   
+>(showclusters)   表示の選択   
+<(showclusters)Highlight Selection
+>(showclusters)選択を強調
+<(showclusters)Signals OFF
+>(showclusters)信号オフ
+<(showclusters)Signals ON
+>(showclusters)信号オン
+<(showclusters)ON
+>(showclusters)オン
+<(showclusters)OFF
+>(showclusters)オフ
+<(showclusters)Med
+>(showclusters)中央値
+<(showclusters)Mean or Median
+>(showclusters)平均または中央値
+<(showclusters)Mean  +  n * D
+>(showclusters)平均  +  n * D
+<(showclusters)D = Global Std
+>(showclusters)D = グローバルな標準偏差
+<(showclusters)Mean + n * P
+>(showclusters)平均 + n * P
+<(showclusters)P = Pointwise Std
+>(showclusters)P = 点毎の標準偏差
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DPARTMNGR
+%--------------------------------
+<(mdw1dpartmngr)Partition Set Manager
+>(mdw1dpartmngr)区分の設定管理
+<(mdw1dpartmngr)List of partitions
+>(mdw1dpartmngr)区分のリスト
+<(mdw1dpartmngr)Current Partition
+>(mdw1dpartmngr)現在の区分
+<(mdw1dpartmngr)Full Partitions
+>(mdw1dpartmngr)全ての区分
+<(mdw1dpartmngr)Array of Indices
+>(mdw1dpartmngr)インデックス配列
+<(mdw1dpartmngr)Save
+>(mdw1dpartmngr)保存
+<(mdw1dpartmngr)Cancel
+>(mdw1dpartmngr)キャンセル
+<(mdw1dpartmngr)Import
+>(mdw1dpartmngr)インポート
+<(mdw1dpartmngr)Clear Import
+>(mdw1dpartmngr)インポートのクリア
+<(mdw1dpartmngr)Save Curr.
+>(mdw1dpartmngr)現在の設定を保存
+<(mdw1dpartmngr)No partition is selected!
+>(mdw1dpartmngr)選択した区分がありません。
+<(mdw1dpartmngr)Save Partition
+>(mdw1dpartmngr)区分を保存
+%----------------------------------------------------------
+% XLATE STRINGS for SHOWPARTTOOL
+%--------------------------------
+<(showparttool)Save Partitions and Similarity Indices
+>(showparttool)区分と類似インデックスを保存
+<(showparttool) Save Quality Indices
+>(showparttool) 特性インデックス
+<(showparttool) Save Partitions, Similarity Indices and Quality Indices
+>(showparttool) 区分、類似インデックス、特性インデックスを保存
+<(showparttool) &Save
+>(showparttool) 保存(&S)
+<(showparttool)Partitions tool
+>(showparttool)区分ツール
+<(showparttool) Consensus Partitions
+>(showparttool) 区分をまとめる
+<(showparttool)Opt. Method
+>(showparttool)最適化手法
+<(showparttool)Compute Part.
+>(showparttool)区分を計算
+<(showparttool)Store Part.
+>(showparttool)区分を保存
+<(showparttool)Delete Part.
+>(showparttool)区分を削除
+<(showparttool)Nb Part.
+>(showparttool)区分数
+<(showparttool)Percent
+>(showparttool)割合
+<(showparttool)Number
+>(showparttool)数
+<(showparttool)Number of Sig. : 0
+>(showparttool)信号数 : 0
+<(showparttool)Show All Partitions
+>(showparttool)すべての区分を表示
+<(showparttool)Consensus Partitions
+>(showparttool)区分をまとめる
+<(showparttool)ClusTool Sig.  (192x96) - 192 sig.
+>(showparttool)分類ツール信号  (192x96) - 192 信号
+<(showparttool)Data
+>(showparttool)データ
+<(showparttool)Show Partitions Performances
+>(showparttool)区分の機能を表示
+<(showparttool)  Partitions Similarity Indices  
+>(showparttool)  区分の類似インデックス
+<(showparttool)Show All Similarity Indices
+>(showparttool)すべての類似インデックスを表示
+<(showparttool)  Partitions Pairs Links  
+>(showparttool)  区分の組み合わせのリンク  
+<(showparttool)Percentage of linked pairs :
+>(showparttool)リンク付けされた組み合わせの割合 :
+<(showparttool)Number of pairs
+>(showparttool)組み合わせ数
+<(showparttool)not in P1 and in P2
+>(showparttool)P1 ではなく P2
+<(showparttool)in P1 and not in P2
+>(showparttool)P2 ではなく P1
+<(showparttool)not in P1 and not in P2
+>(showparttool)P1 と P2 以外
+<(showparttool)in P1 and in P2
+>(showparttool)P1 と P2
+<(showparttool)  Select Partitions and Clusters
+>(showparttool)  区分とクラスタを選択
+<(showparttool)Select
+>(showparttool)選択
+<(showparttool)Optimize Cluster Numbers
+>(showparttool)クラスタ番号の最適化
+<(showparttool)mat
+>(showparttool)行列
+<(showparttool)col
+>(showparttool)列
+<(showparttool)row
+>(showparttool)行
+<(showparttool)col / mat
+>(showparttool)列 / 行列
+<(showparttool)row / mat
+>(showparttool)行 / 行列
+<(showparttool)Sel. P2
+>(showparttool)選択 P2
+<(showparttool)Sel. P1
+>(showparttool)選択 P1
+%----------------------------------------------------------
+% XLATE STRINGS for SHOWPARTPERF
+%--------------------------------
+<(showpartperf)Partitions Performances
+>(showpartperf)区分の機能
+<(showpartperf)Display format
+>(showpartperf)表示形式
+<(showpartperf)Index
+>(showpartperf)インデックス
+<(showpartperf)ALL IDX
+>(showpartperf)すべてのインデックス
+<(showpartperf)Table
+>(showpartperf)表
+<(showpartperf)Graphic
+>(showpartperf)グラフィック
+<(showpartperf)Text
+>(showpartperf)テキスト
+<(showpartperf)Colormap
+>(showpartperf)カラーマップ
+<(showpartperf)default
+>(showpartperf)デフォルト
+<(showpartperf)Highlight Part
+>(showpartperf)パートの強調
+<(showpartperf)Select Part
+>(showpartperf)パートの選択
+<(showpartperf)Grid On/Off
+>(showpartperf)グリッドのオン/オフ
+%----------------------------------------------------------
+% XLATE STRINGS for SHOWPARTSIMIDX
+%----------------------------------
+<(showpartsimidx)Similarity Indices for Partitions
+>(showpartsimidx)区分の類似インデックス
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DMISC
+%----------------------------
+<(mdw1dmisc)Selection index:
+>(mdw1dmisc)選択インデックス:
+<(mdw1dmisc)Selections indices:
+>(mdw1dmisc)選択インデックス:
+<(mdw1dmisc)All Signals
+>(mdw1dmisc)すべての信号
+<(mdw1dmisc)Selection by CLASSES:
+>(mdw1dmisc)クラスによる選択:
+<(mdw1dmisc)Selection by LINKS
+>(mdw1dmisc)リンクによる選択
+<(mdw1dmisc)Selection by Full Dendrogram
+>(mdw1dmisc)完全な樹形図による選択
+<(mdw1dmisc)Selection by Restrict Dendrogram
+>(mdw1dmisc)制限した樹形図による選択
+<(mdw1dmisc)Selection by Kmeans representation
+>(mdw1dmisc)Kmeans 表現による選択
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DAFFLST
+%-------------------------------
+<(mdw1dafflst)Number of Sig. :
+>(mdw1dafflst)信号数 :
+%----------------------------------------------------------
+% XLATE STRINGS for MDW1DSHOW
+%-------------------------------
+<(mdw1dshow)Decompositions at level
+>(mdw1dshow)レベルにおける分解
+
+%%wavelet\wmultisig1d/mdw1dafflst.m
+
+%%wavelet\wmultisig1d/mdw1dclus.m
+<(mdw1dclus)**** INVALID VALUE ****
+>(mdw1dclus)**** 無効な値 ****
+
+%%wavelet\wmultisig1d/mdw1dcomp.m
+<(mdw1dcomp)Compressing signals
+>(mdw1dcomp)信号の圧縮中
+<(mdw1dcomp)Keep modified threshold values?
+>(mdw1dcomp)修正したスレッシュホールド値を残しますか?
+<(mdw1dcomp)Modification of Threshold Values
+>(mdw1dcomp)スレッシュホールド値の修正
+<(mdw1dcomp)Reset Threshold Values
+>(mdw1dcomp)スレッシュホールド値のリセット
+<(mdw1dcomp)Reset all threshold values?
+>(mdw1dcomp)すべてのスレッシュホールド値をリセットしますか?
+<(mdw1dcomp)Update modified threshold values?
+>(mdw1dcomp)修正したスレッシュホールド値を更新しますか?
+
+%%wavelet\wmultisig1d/mdw1ddeno.m
+<(mdw1ddeno)Denoising signals
+>(mdw1ddeno)信号のノイズ除去中
+
+%%wavelet\wmultisig1d/mdw1dtool.m
+<(mdw1dtool)Invalid data for Multisignal Analysis 1-D tool !
+>(mdw1dtool)1 次元複数信号解析ツールのデータが無効です。
+<(mdw1dtool)Load Signals or Decompositions
+>(mdw1dtool)信号または分解構造の読み込み
+
+%%wavelet\wmultisig1d/mdwtcluster.m
+<(mdwtcluster)Invalid type of argument
+>(mdwtcluster)無効な引数のタイプ
+
+%%wavelet\wmultisig1d/showpartperf.m
+<(showpartperf)Please wait...
+>(showpartperf)お待ちください...
+
+%%wavelet\wmultisig1d/tplnksim.m
+<(tplnksim)**  Partitions Links **
+>(tplnksim)**  区分のリンク **
+<(tplnksim)Invalid value for OPTION parameter
+>(tplnksim)無効な OPTION パラメータの値
+
+%%wavelet\wmultisig1d/wmspca.m
+<(wmspca)***  Input matrix size is not valid  ***
+>(wmspca)***  入力の行列サイズが無効です  ***
+<(wmspca)***  Invalid selection method  ***
+>(wmspca)***  無効な選択方法  ***
+<(wmspca)***  Invalid selection vector  ***
+>(wmspca)***  無効な選択ベクトル  ***
+
+%%wavelet\wmultisig1d/wmulden.m
+<(wmulden)***  Invalid selection number  ***
+>(wmulden)***  無効な選択数  ***
+
+%%wavelet\wmultisig1d/woptpart.m
+<(woptpart)Invalid number of inputs.
+>(woptpart)入力数が無効です。
+
+%%wavelet\wmultisig1d/wtbxcluster.m
+<(wtbxcluster)Invalid number of cluster
+>(wtbxcluster)無効なクラスタ数
+
+%%wavelet\wmultisig1d/wtbxkmeans.m
+<(wtbxkmeans)%d iterations, total sum of distances = %g
+>(wtbxkmeans)%d 回の繰り返し, 距離の総和 = %g
+<(wtbxkmeans)Ambiguous 'display' parameter value:  %s.
+>(wtbxkmeans)あいまいな 'display' パラメータ値:  %s。
+<(wtbxkmeans)Ambiguous 'distance' parameter value:  %s.
+>(wtbxkmeans)あいまいな 'distance' パラメータ値:  %s。
+<(wtbxkmeans)Ambiguous 'emptyaction' parameter value:  %s.
+>(wtbxkmeans)あいまいな 'emptyaction' パラメータ値:  %s。
+<(wtbxkmeans)Ambiguous 'start' parameter value:  %s.
+>(wtbxkmeans)あいまいな 'start' パラメータ値:  %s。
+<(wtbxkmeans)At least two input arguments required.
+>(wtbxkmeans)少なくとも 2 つの入力引数が必要です。
+<(wtbxkmeans)Empty cluster created at iteration %d.
+>(wtbxkmeans)繰り返し %d で空のクラスタが作成されました。
+<(wtbxkmeans)Failed to converge in %d iterations.
+>(wtbxkmeans)%d の繰り返しで収束しませんでした。
+<(wtbxkmeans)Hamming distance cannot be initialized with uniform random values.
+>(wtbxkmeans)ｈamming 距離は、一様分布する乱数値で初期化できません。
+<(wtbxkmeans)Non-binary data cannot be clustered using Hamming distance.
+>(wtbxkmeans)非バイナリデータは、hamming 距離を使って分類できません。
+<(wtbxkmeans)Removing rows of X with missing data.
+>(wtbxkmeans)欠損データをもつ X の行を削除しました。
+<(wtbxkmeans)Some points have small relative magnitudes, making them effectively zero.\nEither remove those points, or choose a distance other than 'cosine'.
+>(wtbxkmeans)いくつかの点は、効果的にそれらを 0 にするための小さい相対振幅をもちます。\nこれらの点を削除するか、'cosine' 以外の距離を選択してください。
+<(wtbxkmeans)Some points have small relative standard deviations, making them effectively constant.\nEither remove those points, or choose a distance other than 'correlation'.
+>(wtbxkmeans)いくつかの点は、効果的にそれらを定数にするための小さい相対標準偏差をもちます。\nこれらの点を削除するか、'correlation' 以外の距離を選択してください。
+<(wtbxkmeans)The 'display' parameter value must be a string.
+>(wtbxkmeans)'display' パラメータ値は文字列でなければなりません
+<(wtbxkmeans)The 'distance' parameter value must be a string.
+>(wtbxkmeans)'distance' パラメータ値は文字列でなければなりません
+<(wtbxkmeans)The 'emptyaction' parameter value must be a string.
+>(wtbxkmeans)'emptyaction' パラメータ値は文字列でなければなりません
+<(wtbxkmeans)The 'start' matrix must have K rows.
+>(wtbxkmeans)'start' 行列は K 個の行でなければなりません。
+<(wtbxkmeans)The 'start' matrix must have the same number of columns as X.
+>(wtbxkmeans)'start' 行列は、X と同じ列数でなければなりません。
+<(wtbxkmeans)The 'start' parameter value must be a string or a numeric matrix or array.
+>(wtbxkmeans)'start' パラメータ値は、文字列、数値行列、配列のいずれかでなければなりません。
+<(wtbxkmeans)The number of clusters must be greater than 1.
+>(wtbxkmeans)クラスタ数は 1 より大きくなければなりません。
+<(wtbxkmeans)The third dimension of the 'start' array must match the 'replicates' parameter value.
+>(wtbxkmeans)'start' 配列の 3 番目の次元は 'replicates' パラメータ値と一致しなければなりません。
+<(wtbxkmeans)Unknown 'display' parameter value:  %s.
+>(wtbxkmeans)不明な 'display' パラメータ値:  %s。
+<(wtbxkmeans)Unknown 'distance' parameter value:  %s.
+>(wtbxkmeans)不明な 'distance' パラメータ値:  %s。
+<(wtbxkmeans)Unknown 'emptyaction' parameter value:  %s.
+>(wtbxkmeans)不明な 'emptyaction' パラメータ値:  %s。
+<(wtbxkmeans)Unknown 'start' parameter value:  %s.
+>(wtbxkmeans)不明な 'start' パラメータ値:  %s。
+<(wtbxkmeans)X must have more rows than the number of clusters.
+>(wtbxkmeans)X はクラスタ数より多い行でなければなりません。
+<(wtbxkmeans)You must specify the number of clusters, K.
+>(wtbxkmeans)クラスタ数 K を指定しなければなりません。
+<(wtbxkmeans)Zero cluster centroid created at iteration %d.
+>(wtbxkmeans)0 のクラスタの中心は、繰り返し %d で作成されました。
+
+%% 64 M-files have been searched in C:\Work\Adsp_Nov5\matlab\toolbox\wavelet\wmultisig1d on 2006/11/09.
+%% 50 messages with 325 words need translation.
+
+
+%%%%% ===================================================
+<()Multiple 1-D -- Multivariate Denoising
+>()多重 1 次元 -- 多変量ノイズ除去
+<(wmuldentool)Save the De-noised Signals ?
+>(wmuldentool)ノイズ除去信号を保存しますか?
+<(wmuldentool)Save De-Noised Signals
+>(wmuldentool)ノイズ除去した信号を保存
+<(wmuldentool)Save De-Noised Signals and Parameters
+>(wmuldentool)ノイズ除去した信号とパラメータを保存
+<(wmuldentool)Wait ... computing
+>(wmuldentool)お待ちください ... 計算中
+<(wmuldentool)Wait ... cleaning
+>(wmuldentool)お待ちください ... クリア中
+<(wmuldentool)Wait ... saving
+>(wmuldentool)お待ちください ... 保存中
+<(wmuldentool)Save FAILED !
+>(wmuldentool)保存できませんでした。
+<(mdw1dmngr) Pick one or more data in the list 
+>(mdw1dmngr) リスト内のいくつかのデータを選択
+<(mdw1dclus)&Save Current Partition 
+>(mdw1dc1us)現在の区分を保存(&S)
+<(mdw1dclus)Start
+>(mdw1dclus)開始
+%startNames = {'uniform','sample','cluster'};
+<(mdw1dclus)uniform
+>(mdw1dclus)等間隔な
+%StrDIST = {'sqeuclidean','cityblock','cosine','hamming'};
+<(mdw1dcomp)Select Global threshold
+>(mdw1dcomp)グローバルなスレッシュホールドの選択
+<(mdw1dcomp)Select Energy Ratio
+>(mdw1dcomp)エネルギー比の選択
+<(mdw1dcomp)Select Zeros Coefficients Ratio
+>(mdw1dcomp)0 係数比の選択
+<(mdw1dcomp)Select Scarce Parameter
+>(mdw1dcomp)圧縮パラメータの選択
+<(mdw1dcomp)&Save 
+>(mdw1dcomp)保存(&S)
+<(mdw1dcomp)Caution: only original signals corresponding to your selection will be compressed. Do you want to proceed?
+>(mdw1dcomp)警告: 選択と一致するオリジナル信号のみ圧縮されます。続けますか?
+<(mdw1ddeno)Caution: only original signals corresponding to your selection will be denoised. Do you want to proceed?
+>(mdw1ddeno)警告: 選択と一致するオリジナル信号のみノイズ除去されます。続けますか?
+<(mdw1ddeno)Select scale value
+>(mdw1ddeno)スケール値の選択
+<(mdw1dmngr)Update Synthesized Signals ?
+>(mdw1dmngr)合成した信号を更新しますか?
+<(partsetmngr)Replace Partition: %s
+>(partsetmngr)区分の置き換え: %s
+<(partsetmngr)Clear Selected Partition(s)
+>(partsetmngr)選択した区分をクリアしますか?
+<(partsetmngr)Clear Partitions
+>(partsetmngr)区分のクリア
+<(partsetmngr)Store a Partition
+>(partsetmngr)区分の保存
+<(partsetmngr)Enter the name of the Partition
+>(partsetmngr)区分の名前を入力
+<(mdw1dstat)Covariance plot
+>(mdw1dstat)共分散プロット
+<(mdw1dstat)Correlation plot
+>(mdw1dstat)相関プロット
+<(mdw1dstat)Covariance plot (abs)
+>(mdw1dstat)共分散プロット (abs)
+<(mdw1dstat)Correlation plot (abs)
+>(mdw1dstat)相関プロット (abs)
+<(mdw1dmngr)Many selections
+>(mdw1dmngr)複数の選択
+<(mdw1dmngr)Man. Thr. Tuning (%s)
+>(mdw1dmngr)主要なスレッシュホールドの調整 (%s)
+<(mdw1dmngr)Save Synthesized Signals
+>(mdw1dmngr)合成した信号を保存
+<(mdw1dmngr)Save Decompositions
+>(mdw1dmngr)分解構造を保存
+<(mdw1dmngr)Save Compressed Signals
+>(mdw1dmngr)圧縮した信号を保存
+<(mdw1dmngr)Save Denoised Signals
+>(mdw1dmngr)ノイズ除去信号を保存
+<(mdw1dmngr)Save Compressed Decompositions
+>(mdw1dmngr)圧縮した分解構造を保存
+<(mdw1dmngr)Save Denoised Decompositions
+>(mdw1dmngr)ノイズ除去した分解構造を保存
+<(mdw1dmngr)Visualization of Selections
+>(mdw1dmngr)選択の可視化
+<(mdw1dstat)Selection Index: %s
+>(mdw1dstat)選択インデックス: %s
+<(mdw1dstat)Selection %s
+>(mdw1dstat)選択 %s
+<(mdw1dstat)%s - Mode: %s
+>(mdw1dstat)%s - モード: %s
+<(mdw1dstat)Std
+>(mdw1dstat)標準偏差
+
+%-----------------------------------------
+% MODIFICATIONS (more)
+%-----------------------------------------
+<(mdw1dtool)Wavelet 1-D -- Multisignal Analysis
+>(mdw1dtool)1 次元ウェーブレット -- 複数信号の解析
+<(mdw1dstat)Wavelet 1-D -- Multisignal Analysis - Statistics
+>(mdw1dstat)1 次元ウェーブレット -- 複数信号の解析 - 統計量
+<(mdw1dcomp)Multisignal Compression
+>(mdw1dcomp)複数信号の圧縮
+<(mdw1dcomp)Wavelet 1-D -- Multisignal Analysis - Compression
+>(mdw1dcomp)1 次元ウェーブレット -- 複数信号の解析 - 圧縮
+<(mdw1ddeno)Multisignal Denoising
+>(mdw1ddeno)複数信号のノイズ除去
+<(mdw1ddeno)Wavelet 1-D -- Multisignal Analysis - Denoising
+>(mdw1ddeno)1 次元ウェーブレット -- 複数信号の解析 - ノイズ除去
+<(mdw1dclus)Multisignal Clustering
+>(mdw1dclus)複数信号の分類
+<(mdw1dclus)Wavelet 1-D -- Multisignal Analysis - Clustering
+>(mdw1dclus)1 次元ウェーブレット -- 複数信号の解析 - 分類
+
+%------------------------------------------
+% MODIFICATION
+%------------------------------------------
+<(wmuldentool)Multivariate Denoising
+>(wmuldentool)多変量ノイズ除去
+<(wmuldentool)  Noise Adapted Basis  
+>(wmuldentool)  ノイズ適用ベース
+<(wmuldentool)  Select Denoising Parameters  
+>(wmuldentool)  ノイズ除去するパラメータを選択してください  
+<(wmuldentool)Show Denoised Signals
+>(wmuldentool)ノイズ除去信号を表示
+<(wmuldentool)Denoised Coefs
+>(wmuldentool)ノイズ除去係数
+<(wmuldentool)Save the Denoised Signals ?
+>(wmuldentool)ノイズ除去信号を保存しますか?
+
+<(mdw1dclus)Cfs
+>(mdw1dclus)係数
+<(wmspcatool)Residuals
+>(mwspcatool)残差
+
+%------------------------------------------
+% MODIFICATION version 2007b
+%------------------------------------------
+<(mdw1dcomp)Disable Manual Threshold Tuning
+>(mdw1dcomp)手動のスレッシュホールド調整を無効にする
+<(mdw1dtool)level 
+>(mdw1dtool)レベル 
+<(mdw1dtool)Thr. Cd
+>(mdw1dtool)スレッシュホールド Cd
+
+<(mdw1dclus)Yscale linear
+>(mdw1dclus)線形軸 Y
+<(isstatstbxinstalled)Statistics Toolbox is not available.\n \nTo use clustering functionality tool make sure that the Statistics Toolbox is installed and that a license is available.
+>(isstatstbxinstalled)Statistics Toolbox は利用可能ではありません。\n \nクラスタリング機能のツールを使用するには、Statistics Toolbox がインストールされていて、ライセンスが利用可能であることを確認してください。
+
+%------------------------------------------
+% MODIFICATION version 2008a
+%------------------------------------------
+<(mdw1dcomp)Man. Thr. Tuning (LVL)
+>(mdw1dcomp)手動のスレッシュホールド調整 (LVL) 
+<(mdw1dcomp)Man. Thr. Tuning (GLB)
+>(mdw1dcomp)手動のスレッシュホールド調整 (GLB) 
+<(mdw1dcomp)Ener Rat.
+>(mdw1dcomp)エネルギー比
+<(mdw1dcomp)NbZero Rat.
+>(mdw1dcomp)0 の数
+<(mdw1dtool)Load from Disk
+>(mdw1dtool)ディスクから読み込み
+<(mdw1dtool)Import from Workspace
+>(mdw1dtool)ワークスペースからインポート
+<(wtbximport)There are no variables containing selected data type in the workspace.
+>(wtbximport)ワークスペース内に選択したデータタイプを含む変数がありません。
+% g409603: a special translation below. %s in the second msg is the first msg.
+<(wtbximport)There are no variables containing selected
+>(wtbximport)ワークスペース内に選択した
+<(wtbximport)%s data type in the workspace.
+>(wtbximport)%sデータタイプを含む変数がありません。
+<(mdw1dclus)Export Current Partition to Workspace
+>(mdw1dclus)現在の区分をワークスペースへエクスポート
+<(partsetmngr)The partitions are loaded from file: %s. \n
+>(partsetmngr)区分をファイル %s から読み込まれます。\n
+<(partsetmngr)They are stored in the partition manager tool.
+>(partsetmngr)区分管理ツールに格納されます。
+<(partsetmngr)The number of signals in loaded \n
+>(partsetmngr)読み込まれた信号の数 \n
+<(partsetmngr)partitions is not valid!
+>(partsetmngr)区分は有効ではありません。
+<(woptpart)Initial Data Order
+>(woptpart)初期データ順
+<(woptpart)Reordered Data
+>(woptpart)並べ替えられたデータ
+<(woptpart)Partitions\n score : %s
+>(woptpart)区分\n スコア : %s
+<(showparttool)Close Consensus Part.
+>(showparttool)区分をまとめて閉じる
+<(mdw1dtool)Using clustering tools
+>(mdw1dtool)分類ツールの使い方
+<(wmspcatool)   Residuals   
+>(wmspcatool)   残差   
+<(mdw1dclus)Restricted Dendrogram
+>(mdw1dclus)制限した樹形図
+<(mdw1dmisc)Selection by Restricted Dendrogram
+>(mdw1dmisc)制限した樹形図による選択
+<(isstatstbxinstalled)Statistics Toolbox is not available.
+>(isstatstbxinstalled)Statistics Toolbox は利用可能ではありません。
+<(isstatstbxinstalled)To use clustering functionality tool make sure that
+>(isstatstbxinstalled)分類機能ツールを使用するには、Statistics Toolbox がインストールされており、
+<(isstatstbxinstalled)the Statistics Toolbox is installed and that a license is available.
+>(isstatstbxinstalled)ライセンスが利用可能であることを確認してください。
+<(isstatstbxinstalled)To use clustering functionality tool make sure that the Statistics Toolbox is installed and that a license is available.
+>(isstatstbxinstalled)分類機能ツールを使用するには、Statistics Toolbox がインストールされており、ライセンスが利用可能であることを確認してください。
+
+%%% 9b
+%
+%% wavelet/wmultisig1d/mdw1dstat.m
+<(mdw1dstat)%s  - Mode: %s
+>(mdw1dstat)%s - モード: %s
+<(mdw1dstat)Sel. %s - FFT - Energy Spectrum
+>(mdw1dstat)選択 %s - FFT - エネルギースペクトル
+<(mdw1dstat)Selection %s ...
+>(mdw1dstat)選択 %s ...
+
+%% wavelet/wmultisig1d/tplnksim.m
+<(tplnksim)*** TO VERIFY: Partitions Links ***
+>(tplnksim)*** 検証: 区別のリンク ***
+<(tplnksim)Invalid value for %s parameter.
+>(tplnksim)%s パラメータの値が無効です。
+
+%% wavelet/wmultisig1d/wfastmcd.m
+<(wfastmcd)The MCD must cover at least %s observations.
+>(wfastmcd)MCD は少なくとも %s の観測をカバーしなければなりません。
+<(wfastmcd)The program allows for at most %s  observations.
+>(wfastmcd)プログラムは最大 %s の観測を許可します。
+<(wfastmcd)The program allows for at most %s variables.
+>(wfastmcd)プログラムは最大 %s の変数を許可します。
+
+%% wavelet/wmultisig1d/wmspca.m
+<(wmspca)Input matrix size is not valid.
+>(wmspca)入力の行列サイズが無効です。
+<(wmspca)Invalid selection method.
+>(wmspca)選択方法が無効です。
+<(wmspca)Invalid selection vector.
+>(wmspca)選択ベクトルが無効です。
+
+%% wavelet/wmultisig1d/mdwtdec.m
+<(mdwtdec)Invalid Input Argument.
+>(mdwtdec)入力引数が無効です。
+
+
+%%% Threshold fixes
+% toolbox/wavelet/wmultisig1d/ja/xlate
+
+<(mdw1dcomp)Threshold value
+>(mdw1dcomp)しきい値
+
+<(mdw1dcomp)By level thresholding
+>(mdw1dcomp)レベル毎のしきい値
+<(mdw1dcomp)Global thresholding
+>(mdw1dcomp)グローバルなしきい値
+<(mdw1dcomp)Update Thresholds
+>(mdw1dcomp)しきい値の更新
+<(mdw1dcomp)Manual Threshold Tuning
+>(mdw1dcomp)手動のしきい値調整
+<(mdw1dcomp)  Thresholding  
+>(mdw1dcomp)  しきい値  
+
+<(mdw1dcomp)Enable Manual Threshold Tuning
+>(mdw1dcomp)手動のしきい値調整を有効にする
+
+<(mdw1dcomp)Compute Thresholds and Perfo.
+>(mdw1dcomp)しきい値の計算と実行
+
+<(mdw1dcomp)Type of thresholding
+>(mdw1dcomp)しきい値のタイプ
+
+<(mdw1dcomp)Global threshold
+>(mdw1dcomp)グローバルなしきい値
+
+<(mdw1ddeno)  Thresholding
+>(mdw1ddeno)  しきい値
+<(mdw1ddeno)Compute thresholds
+>(mdw1ddeno)しきい値の計算
+
+<(mdw1ddeno)Fixed form threshold
+>(mdw1ddeno)固定型のしきい値
+
+<(mdw1ddeno)Select thresholding method
+>(mdw1ddeno)しきい値法の選択
+
+<(mdw1dcomp)Keep modified threshold values?
+>(mdw1dcomp)変更したしきい値を残しますか?
+<(mdw1dcomp)Modification of Threshold Values
+>(mdw1dcomp)しきい値の変更
+<(mdw1dcomp)Reset Threshold Values
+>(mdw1dcomp)しきい値のリセット
+<(mdw1dcomp)Reset all threshold values?
+>(mdw1dcomp)すべてのしきい値をリセットしますか?
+<(mdw1dcomp)Update modified threshold values?
+>(mdw1dcomp)変更したしきい値を更新しますか?
+
+<(mdw1dcomp)Select Global threshold
+>(mdw1dcomp)グローバルなしきい値法の選択
+
+<(mdw1dmngr)Man. Thr. Tuning (%s)
+>(mdw1dmngr)手動のしきい値調整 (%s)
+
+<(mdw1dcomp)Disable Manual Threshold Tuning
+>(mdw1dcomp)手動のしきい値調整を無効にする
+
+<(mdw1dtool)Thr. Cd
+>(mdw1dtool)しきい値 Cd
+
+<(mdw1dcomp)Man. Thr. Tuning (LVL)
+>(mdw1dcomp)手動のしきい値調整 (LVL)
+<(mdw1dcomp)Man. Thr. Tuning (GLB)
+>(mdw1dcomp)手動のしきい値調整 (GLB)
