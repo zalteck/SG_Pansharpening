@@ -35,17 +35,18 @@ Directories:
                 
             Quality_Indices  (Functions to obtain quality indexes coming from Vivone 2015 paper (See https://rscl-grss.org/coderecord.php?id=541))
 
-            
-        NOTE: Datasets folder must be filled and data has to be obtained before using the functions below:
+Functions:
 
-        Recontructions of a Multi-spectral image using other authors methods and comparison with groundtruth following the Wald's protocol 
-        can be obtained using doothersSens0 function.
-
-        Recontructions of a Multi-spectral image using other authors methods and quantitative comparison using QNR measures 
-        can be obtained using doothersSens0FR function.
-
-        **Recontructions of a Multi-spectral image using TV, log and lp methods and comparison with groundtruth following the Wald's protocol 
-        can be obtained using doTVMESens0, dologSGMESens0 and dolpSGMESens0 respectively.**
-
-        **Recontructions of a Multi-spectral image using TV, log and lp methods 
-        can be obtained using doTVMESens0FR, dologSGMESens0FR and dolpSGMESens0FR respectively.**
+>NOTE: Datasets folder must be filled with the .mat files downloaded and data folder content has to be obtained before using the functions below:
+>
+>Recontructions of a Multi-spectral image using other authors methods and comparison with groundtruth following the Wald's protocol 
+>can be obtained using doothersSens0 function.
+>
+>Recontructions of a Multi-spectral image using other authors methods and quantitative comparison using QNR measures 
+>can be obtained using doothersSens0FR function.
+>
+>**Recontructions of a Multi-spectral image using TV, log and lp methods** and comparison with groundtruth following the Wald's protocol 
+>can be obtained using doTVMESens0, dologSGMESens0 and dolpSGMESens0 respectively.
+>
+>**Recontructions of a Multi-spectral image using TV, log and lp methods** 
+>can be obtained using doTVMESens0FR, dologSGMESens0FR and dolpSGMESens0FR respectively.
