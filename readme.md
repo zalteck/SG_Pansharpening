@@ -4,6 +4,10 @@ This directory holds implementations for the method proposed in the paper
             Pérez-Bueno, F., Vega, M., Mateos, J., Molina, R., & Katsaggelos, A. K. (2020). 
             Variational Bayesian Pansharpening with Super-Gaussian Sparse Image Priors. Sensors, 20(18), 5308. 
             https://www.mdpi.com/1424-8220/20/18/5308
+            
+            and also:
+            M. Vega, J. Mateos, R. Molina, and A. K. Katsaggelos, â€œSuper resolution of multispectral images using TV image models, 
+            in International Conference on Knowledge-Based and Intelligent Information and Engineering Systems, 2008, pp. 408-415.
 
 Directories:
 
@@ -29,7 +33,7 @@ Directories:
         Directories whithin work:
 
             Sensors
-                Datasets   (MS image Dataset for Pérez-Bueno, F. 2020 paper). Please download from: 
+                Datasets   (MS image Dataset for Pérez-Bueno, F. 2020 paper). Please download from:  https://drive.google.com/drive/folders/1oX25xQZ7eoVW-rvGWR7T36VGLXKwwb-K?usp=sharing
                 data       (Input data files for all experiments. dododoMain_Reduced_Resolution obtains those files from Dataset)
                 results    (Folder to store output data files for all experiments)
                 
